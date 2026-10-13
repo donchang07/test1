@@ -1,0 +1,692 @@
+[
+  {
+    "imageId": "KR-SYN-001-IMG01",
+    "vesselId": "KR-SYN-001",
+    "memberId": "KR-SYN-001-M05",
+    "capturedAt": "2026-09-07",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-001-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-001-IMG02",
+    "vesselId": "KR-SYN-001",
+    "memberId": "KR-SYN-001-M16",
+    "capturedAt": "2026-08-01",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-001-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-001-IMG03",
+    "vesselId": "KR-SYN-001",
+    "memberId": "KR-SYN-001-M10",
+    "capturedAt": "2026-08-30",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-001-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-001-IMG04",
+    "vesselId": "KR-SYN-001",
+    "memberId": "KR-SYN-001-M04",
+    "capturedAt": "2026-08-08",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-001-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-001-IMG05",
+    "vesselId": "KR-SYN-001",
+    "memberId": "KR-SYN-001-M11",
+    "capturedAt": "2026-08-29",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-001-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-001-IMG06",
+    "vesselId": "KR-SYN-001",
+    "memberId": "KR-SYN-001-M03",
+    "capturedAt": "2026-08-31",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-001-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-001-IMG07",
+    "vesselId": "KR-SYN-001",
+    "memberId": "KR-SYN-001-M14",
+    "capturedAt": "2026-08-26",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-001-IMG07.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-002-IMG01",
+    "vesselId": "KR-SYN-002",
+    "memberId": "KR-SYN-002-M03",
+    "capturedAt": "2026-09-06",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-002-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-002-IMG02",
+    "vesselId": "KR-SYN-002",
+    "memberId": "KR-SYN-002-M11",
+    "capturedAt": "2026-08-20",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-002-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-002-IMG03",
+    "vesselId": "KR-SYN-002",
+    "memberId": "KR-SYN-002-M02",
+    "capturedAt": "2026-08-08",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-002-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-002-IMG04",
+    "vesselId": "KR-SYN-002",
+    "memberId": "KR-SYN-002-M06",
+    "capturedAt": "2026-08-23",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-002-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-002-IMG05",
+    "vesselId": "KR-SYN-002",
+    "memberId": "KR-SYN-002-M03",
+    "capturedAt": "2026-08-24",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-002-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-002-IMG06",
+    "vesselId": "KR-SYN-002",
+    "memberId": "KR-SYN-002-M06",
+    "capturedAt": "2026-09-01",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-002-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-002-IMG07",
+    "vesselId": "KR-SYN-002",
+    "memberId": "KR-SYN-002-M05",
+    "capturedAt": "2026-08-10",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-002-IMG07.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-003-IMG01",
+    "vesselId": "KR-SYN-003",
+    "memberId": "KR-SYN-003-M09",
+    "capturedAt": "2026-08-24",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-003-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-003-IMG02",
+    "vesselId": "KR-SYN-003",
+    "memberId": "KR-SYN-003-M02",
+    "capturedAt": "2026-09-03",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-003-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-003-IMG03",
+    "vesselId": "KR-SYN-003",
+    "memberId": "KR-SYN-003-M01",
+    "capturedAt": "2026-09-08",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-003-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-003-IMG04",
+    "vesselId": "KR-SYN-003",
+    "memberId": "KR-SYN-003-M03",
+    "capturedAt": "2026-08-19",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-003-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-003-IMG05",
+    "vesselId": "KR-SYN-003",
+    "memberId": "KR-SYN-003-M10",
+    "capturedAt": "2026-09-10",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-003-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-003-IMG06",
+    "vesselId": "KR-SYN-003",
+    "memberId": "KR-SYN-003-M05",
+    "capturedAt": "2026-09-09",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-003-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-004-IMG01",
+    "vesselId": "KR-SYN-004",
+    "memberId": "KR-SYN-004-M14",
+    "capturedAt": "2026-08-10",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-004-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-004-IMG02",
+    "vesselId": "KR-SYN-004",
+    "memberId": "KR-SYN-004-M12",
+    "capturedAt": "2026-08-06",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-004-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-004-IMG03",
+    "vesselId": "KR-SYN-004",
+    "memberId": "KR-SYN-004-M13",
+    "capturedAt": "2026-09-14",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-004-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-004-IMG04",
+    "vesselId": "KR-SYN-004",
+    "memberId": "KR-SYN-004-M11",
+    "capturedAt": "2026-09-05",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-004-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-004-IMG05",
+    "vesselId": "KR-SYN-004",
+    "memberId": "KR-SYN-004-M11",
+    "capturedAt": "2026-08-27",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-004-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-004-IMG06",
+    "vesselId": "KR-SYN-004",
+    "memberId": "KR-SYN-004-M08",
+    "capturedAt": "2026-09-11",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-004-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-005-IMG01",
+    "vesselId": "KR-SYN-005",
+    "memberId": "KR-SYN-005-M04",
+    "capturedAt": "2026-08-21",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-005-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-005-IMG02",
+    "vesselId": "KR-SYN-005",
+    "memberId": "KR-SYN-005-M12",
+    "capturedAt": "2026-08-09",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-005-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-005-IMG03",
+    "vesselId": "KR-SYN-005",
+    "memberId": "KR-SYN-005-M07",
+    "capturedAt": "2026-09-09",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-005-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-005-IMG04",
+    "vesselId": "KR-SYN-005",
+    "memberId": "KR-SYN-005-M15",
+    "capturedAt": "2026-08-02",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-005-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-005-IMG05",
+    "vesselId": "KR-SYN-005",
+    "memberId": "KR-SYN-005-M16",
+    "capturedAt": "2026-08-09",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-005-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-005-IMG06",
+    "vesselId": "KR-SYN-005",
+    "memberId": "KR-SYN-005-M16",
+    "capturedAt": "2026-08-15",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-005-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-005-IMG07",
+    "vesselId": "KR-SYN-005",
+    "memberId": "KR-SYN-005-M15",
+    "capturedAt": "2026-08-26",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-005-IMG07.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-006-IMG01",
+    "vesselId": "KR-SYN-006",
+    "memberId": "KR-SYN-006-M13",
+    "capturedAt": "2026-08-26",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-006-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-006-IMG02",
+    "vesselId": "KR-SYN-006",
+    "memberId": "KR-SYN-006-M11",
+    "capturedAt": "2026-08-10",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-006-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-006-IMG03",
+    "vesselId": "KR-SYN-006",
+    "memberId": "KR-SYN-006-M13",
+    "capturedAt": "2026-08-12",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-006-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-006-IMG04",
+    "vesselId": "KR-SYN-006",
+    "memberId": "KR-SYN-006-M14",
+    "capturedAt": "2026-08-15",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-006-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-006-IMG05",
+    "vesselId": "KR-SYN-006",
+    "memberId": "KR-SYN-006-M05",
+    "capturedAt": "2026-08-21",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-006-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-006-IMG06",
+    "vesselId": "KR-SYN-006",
+    "memberId": "KR-SYN-006-M13",
+    "capturedAt": "2026-09-06",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-006-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-006-IMG07",
+    "vesselId": "KR-SYN-006",
+    "memberId": "KR-SYN-006-M02",
+    "capturedAt": "2026-08-23",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-006-IMG07.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-008-IMG01",
+    "vesselId": "KR-SYN-008",
+    "memberId": "KR-SYN-008-M05",
+    "capturedAt": "2026-08-18",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-008-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-008-IMG02",
+    "vesselId": "KR-SYN-008",
+    "memberId": "KR-SYN-008-M06",
+    "capturedAt": "2026-09-14",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-008-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-008-IMG03",
+    "vesselId": "KR-SYN-008",
+    "memberId": "KR-SYN-008-M11",
+    "capturedAt": "2026-08-02",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-008-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-008-IMG04",
+    "vesselId": "KR-SYN-008",
+    "memberId": "KR-SYN-008-M06",
+    "capturedAt": "2026-09-02",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-008-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-008-IMG05",
+    "vesselId": "KR-SYN-008",
+    "memberId": "KR-SYN-008-M03",
+    "capturedAt": "2026-08-24",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-008-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-008-IMG06",
+    "vesselId": "KR-SYN-008",
+    "memberId": "KR-SYN-008-M16",
+    "capturedAt": "2026-08-10",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-008-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-009-IMG01",
+    "vesselId": "KR-SYN-009",
+    "memberId": "KR-SYN-009-M09",
+    "capturedAt": "2026-08-06",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-009-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-009-IMG02",
+    "vesselId": "KR-SYN-009",
+    "memberId": "KR-SYN-009-M16",
+    "capturedAt": "2026-08-04",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-009-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-009-IMG03",
+    "vesselId": "KR-SYN-009",
+    "memberId": "KR-SYN-009-M01",
+    "capturedAt": "2026-08-16",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-009-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-009-IMG04",
+    "vesselId": "KR-SYN-009",
+    "memberId": "KR-SYN-009-M05",
+    "capturedAt": "2026-08-12",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-009-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-009-IMG05",
+    "vesselId": "KR-SYN-009",
+    "memberId": "KR-SYN-009-M01",
+    "capturedAt": "2026-08-10",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-009-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-010-IMG01",
+    "vesselId": "KR-SYN-010",
+    "memberId": "KR-SYN-010-M09",
+    "capturedAt": "2026-08-25",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-010-IMG01.svg",
+    "aiStatus": "failed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-010-IMG02",
+    "vesselId": "KR-SYN-010",
+    "memberId": "KR-SYN-010-M03",
+    "capturedAt": "2026-08-22",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-010-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-010-IMG03",
+    "vesselId": "KR-SYN-010",
+    "memberId": "KR-SYN-010-M07",
+    "capturedAt": "2026-08-01",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-010-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-010-IMG04",
+    "vesselId": "KR-SYN-010",
+    "memberId": "KR-SYN-010-M07",
+    "capturedAt": "2026-09-04",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-010-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-010-IMG05",
+    "vesselId": "KR-SYN-010",
+    "memberId": "KR-SYN-010-M11",
+    "capturedAt": "2026-08-26",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-010-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-010-IMG06",
+    "vesselId": "KR-SYN-010",
+    "memberId": "KR-SYN-010-M07",
+    "capturedAt": "2026-09-13",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-010-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-010-IMG07",
+    "vesselId": "KR-SYN-010",
+    "memberId": "KR-SYN-010-M15",
+    "capturedAt": "2026-08-15",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-010-IMG07.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-011-IMG01",
+    "vesselId": "KR-SYN-011",
+    "memberId": "KR-SYN-011-M10",
+    "capturedAt": "2026-09-10",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-011-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-011-IMG02",
+    "vesselId": "KR-SYN-011",
+    "memberId": "KR-SYN-011-M02",
+    "capturedAt": "2026-09-07",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-011-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-011-IMG03",
+    "vesselId": "KR-SYN-011",
+    "memberId": "KR-SYN-011-M07",
+    "capturedAt": "2026-09-07",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-011-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-011-IMG04",
+    "vesselId": "KR-SYN-011",
+    "memberId": "KR-SYN-011-M10",
+    "capturedAt": "2026-08-11",
+    "captureMethod": "검사원 촬영",
+    "imagePath": "/synthetic/inspection/KR-SYN-011-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-011-IMG05",
+    "vesselId": "KR-SYN-011",
+    "memberId": "KR-SYN-011-M11",
+    "capturedAt": "2026-08-14",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-011-IMG05.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-011-IMG06",
+    "vesselId": "KR-SYN-011",
+    "memberId": "KR-SYN-011-M12",
+    "capturedAt": "2026-08-23",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-011-IMG06.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-012-IMG01",
+    "vesselId": "KR-SYN-012",
+    "memberId": "KR-SYN-012-M13",
+    "capturedAt": "2026-08-05",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-012-IMG01.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-012-IMG02",
+    "vesselId": "KR-SYN-012",
+    "memberId": "KR-SYN-012-M05",
+    "capturedAt": "2026-09-13",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-012-IMG02.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-012-IMG03",
+    "vesselId": "KR-SYN-012",
+    "memberId": "KR-SYN-012-M03",
+    "capturedAt": "2026-08-26",
+    "captureMethod": "원격 카메라",
+    "imagePath": "/synthetic/inspection/KR-SYN-012-IMG03.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-012-IMG04",
+    "vesselId": "KR-SYN-012",
+    "memberId": "KR-SYN-012-M14",
+    "capturedAt": "2026-09-13",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-012-IMG04.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  },
+  {
+    "imageId": "KR-SYN-003-IMG99",
+    "vesselId": "KR-SYN-003",
+    "memberId": "KR-SYN-003-M06",
+    "capturedAt": "2026-09-10",
+    "captureMethod": "드론",
+    "imagePath": "/synthetic/inspection/KR-SYN-003-IMG99.svg",
+    "aiStatus": "completed",
+    "aiModelVersion": "synthetic-vision-0.1"
+  }
+]

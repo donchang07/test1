@@ -1,0 +1,1922 @@
+[
+  {
+    "memberId": "KR-SYN-001-M01",
+    "vesselId": "KR-SYN-001",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-001-M02",
+    "vesselId": "KR-SYN-001",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-001-M03",
+    "vesselId": "KR-SYN-001",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-001-M04",
+    "vesselId": "KR-SYN-001",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-001-M05",
+    "vesselId": "KR-SYN-001",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-001-M06",
+    "vesselId": "KR-SYN-001",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-001-M07",
+    "vesselId": "KR-SYN-001",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-001-M08",
+    "vesselId": "KR-SYN-001",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-001-M09",
+    "vesselId": "KR-SYN-001",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-001-M10",
+    "vesselId": "KR-SYN-001",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-001-M11",
+    "vesselId": "KR-SYN-001",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-001-M12",
+    "vesselId": "KR-SYN-001",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-001-M13",
+    "vesselId": "KR-SYN-001",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-001-M14",
+    "vesselId": "KR-SYN-001",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-001-M15",
+    "vesselId": "KR-SYN-001",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-001-M16",
+    "vesselId": "KR-SYN-001",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-002-M01",
+    "vesselId": "KR-SYN-002",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-002-M02",
+    "vesselId": "KR-SYN-002",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-002-M03",
+    "vesselId": "KR-SYN-002",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-002-M04",
+    "vesselId": "KR-SYN-002",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-002-M05",
+    "vesselId": "KR-SYN-002",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-002-M06",
+    "vesselId": "KR-SYN-002",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-002-M07",
+    "vesselId": "KR-SYN-002",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-002-M08",
+    "vesselId": "KR-SYN-002",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-002-M09",
+    "vesselId": "KR-SYN-002",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-002-M10",
+    "vesselId": "KR-SYN-002",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-002-M11",
+    "vesselId": "KR-SYN-002",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-002-M12",
+    "vesselId": "KR-SYN-002",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-002-M13",
+    "vesselId": "KR-SYN-002",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-002-M14",
+    "vesselId": "KR-SYN-002",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-002-M15",
+    "vesselId": "KR-SYN-002",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-002-M16",
+    "vesselId": "KR-SYN-002",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-003-M01",
+    "vesselId": "KR-SYN-003",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-003-M02",
+    "vesselId": "KR-SYN-003",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-003-M03",
+    "vesselId": "KR-SYN-003",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-003-M04",
+    "vesselId": "KR-SYN-003",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-003-M05",
+    "vesselId": "KR-SYN-003",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-003-M06",
+    "vesselId": "KR-SYN-003",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-003-M07",
+    "vesselId": "KR-SYN-003",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-003-M08",
+    "vesselId": "KR-SYN-003",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-003-M09",
+    "vesselId": "KR-SYN-003",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-003-M10",
+    "vesselId": "KR-SYN-003",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-003-M11",
+    "vesselId": "KR-SYN-003",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-003-M12",
+    "vesselId": "KR-SYN-003",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-003-M13",
+    "vesselId": "KR-SYN-003",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-003-M14",
+    "vesselId": "KR-SYN-003",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-003-M15",
+    "vesselId": "KR-SYN-003",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-003-M16",
+    "vesselId": "KR-SYN-003",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-004-M01",
+    "vesselId": "KR-SYN-004",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-004-M02",
+    "vesselId": "KR-SYN-004",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-004-M03",
+    "vesselId": "KR-SYN-004",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-004-M04",
+    "vesselId": "KR-SYN-004",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-004-M05",
+    "vesselId": "KR-SYN-004",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-004-M06",
+    "vesselId": "KR-SYN-004",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-004-M07",
+    "vesselId": "KR-SYN-004",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-004-M08",
+    "vesselId": "KR-SYN-004",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-004-M09",
+    "vesselId": "KR-SYN-004",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-004-M10",
+    "vesselId": "KR-SYN-004",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-004-M11",
+    "vesselId": "KR-SYN-004",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-004-M12",
+    "vesselId": "KR-SYN-004",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-004-M13",
+    "vesselId": "KR-SYN-004",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-004-M14",
+    "vesselId": "KR-SYN-004",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-004-M15",
+    "vesselId": "KR-SYN-004",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-004-M16",
+    "vesselId": "KR-SYN-004",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-005-M01",
+    "vesselId": "KR-SYN-005",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-005-M02",
+    "vesselId": "KR-SYN-005",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-005-M03",
+    "vesselId": "KR-SYN-005",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-005-M04",
+    "vesselId": "KR-SYN-005",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-005-M05",
+    "vesselId": "KR-SYN-005",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-005-M06",
+    "vesselId": "KR-SYN-005",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-005-M07",
+    "vesselId": "KR-SYN-005",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-005-M08",
+    "vesselId": "KR-SYN-005",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-005-M09",
+    "vesselId": "KR-SYN-005",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-005-M10",
+    "vesselId": "KR-SYN-005",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-005-M11",
+    "vesselId": "KR-SYN-005",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-005-M12",
+    "vesselId": "KR-SYN-005",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-005-M13",
+    "vesselId": "KR-SYN-005",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-005-M14",
+    "vesselId": "KR-SYN-005",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-005-M15",
+    "vesselId": "KR-SYN-005",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-005-M16",
+    "vesselId": "KR-SYN-005",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-006-M01",
+    "vesselId": "KR-SYN-006",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-006-M02",
+    "vesselId": "KR-SYN-006",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-006-M03",
+    "vesselId": "KR-SYN-006",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-006-M04",
+    "vesselId": "KR-SYN-006",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-006-M05",
+    "vesselId": "KR-SYN-006",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-006-M06",
+    "vesselId": "KR-SYN-006",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-006-M07",
+    "vesselId": "KR-SYN-006",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-006-M08",
+    "vesselId": "KR-SYN-006",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-006-M09",
+    "vesselId": "KR-SYN-006",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-006-M10",
+    "vesselId": "KR-SYN-006",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-006-M11",
+    "vesselId": "KR-SYN-006",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-006-M12",
+    "vesselId": "KR-SYN-006",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-006-M13",
+    "vesselId": "KR-SYN-006",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-006-M14",
+    "vesselId": "KR-SYN-006",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-006-M15",
+    "vesselId": "KR-SYN-006",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-006-M16",
+    "vesselId": "KR-SYN-006",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-007-M01",
+    "vesselId": "KR-SYN-007",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-007-M02",
+    "vesselId": "KR-SYN-007",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-007-M03",
+    "vesselId": "KR-SYN-007",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-007-M04",
+    "vesselId": "KR-SYN-007",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-007-M05",
+    "vesselId": "KR-SYN-007",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-007-M06",
+    "vesselId": "KR-SYN-007",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-007-M07",
+    "vesselId": "KR-SYN-007",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-007-M08",
+    "vesselId": "KR-SYN-007",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-007-M09",
+    "vesselId": "KR-SYN-007",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-007-M10",
+    "vesselId": "KR-SYN-007",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-007-M11",
+    "vesselId": "KR-SYN-007",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-007-M12",
+    "vesselId": "KR-SYN-007",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-007-M13",
+    "vesselId": "KR-SYN-007",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-007-M14",
+    "vesselId": "KR-SYN-007",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-007-M15",
+    "vesselId": "KR-SYN-007",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-007-M16",
+    "vesselId": "KR-SYN-007",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-008-M01",
+    "vesselId": "KR-SYN-008",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-008-M02",
+    "vesselId": "KR-SYN-008",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-008-M03",
+    "vesselId": "KR-SYN-008",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-008-M04",
+    "vesselId": "KR-SYN-008",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-008-M05",
+    "vesselId": "KR-SYN-008",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-008-M06",
+    "vesselId": "KR-SYN-008",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-008-M07",
+    "vesselId": "KR-SYN-008",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-008-M08",
+    "vesselId": "KR-SYN-008",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-008-M09",
+    "vesselId": "KR-SYN-008",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-008-M10",
+    "vesselId": "KR-SYN-008",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-008-M11",
+    "vesselId": "KR-SYN-008",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-008-M12",
+    "vesselId": "KR-SYN-008",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-008-M13",
+    "vesselId": "KR-SYN-008",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-008-M14",
+    "vesselId": "KR-SYN-008",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-008-M15",
+    "vesselId": "KR-SYN-008",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-008-M16",
+    "vesselId": "KR-SYN-008",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-009-M01",
+    "vesselId": "KR-SYN-009",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-009-M02",
+    "vesselId": "KR-SYN-009",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-009-M03",
+    "vesselId": "KR-SYN-009",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-009-M04",
+    "vesselId": "KR-SYN-009",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-009-M05",
+    "vesselId": "KR-SYN-009",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-009-M06",
+    "vesselId": "KR-SYN-009",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-009-M07",
+    "vesselId": "KR-SYN-009",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-009-M08",
+    "vesselId": "KR-SYN-009",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-009-M09",
+    "vesselId": "KR-SYN-009",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-009-M10",
+    "vesselId": "KR-SYN-009",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-009-M11",
+    "vesselId": "KR-SYN-009",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-009-M12",
+    "vesselId": "KR-SYN-009",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-009-M13",
+    "vesselId": "KR-SYN-009",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-009-M14",
+    "vesselId": "KR-SYN-009",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-009-M15",
+    "vesselId": "KR-SYN-009",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-009-M16",
+    "vesselId": "KR-SYN-009",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-010-M01",
+    "vesselId": "KR-SYN-010",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-010-M02",
+    "vesselId": "KR-SYN-010",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-010-M03",
+    "vesselId": "KR-SYN-010",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-010-M04",
+    "vesselId": "KR-SYN-010",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-010-M05",
+    "vesselId": "KR-SYN-010",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-010-M06",
+    "vesselId": "KR-SYN-010",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-010-M07",
+    "vesselId": "KR-SYN-010",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-010-M08",
+    "vesselId": "KR-SYN-010",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-010-M09",
+    "vesselId": "KR-SYN-010",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-010-M10",
+    "vesselId": "KR-SYN-010",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-010-M11",
+    "vesselId": "KR-SYN-010",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-010-M12",
+    "vesselId": "KR-SYN-010",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-010-M13",
+    "vesselId": "KR-SYN-010",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-010-M14",
+    "vesselId": "KR-SYN-010",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-010-M15",
+    "vesselId": "KR-SYN-010",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-010-M16",
+    "vesselId": "KR-SYN-010",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-011-M01",
+    "vesselId": "KR-SYN-011",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-011-M02",
+    "vesselId": "KR-SYN-011",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-011-M03",
+    "vesselId": "KR-SYN-011",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-011-M04",
+    "vesselId": "KR-SYN-011",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-011-M05",
+    "vesselId": "KR-SYN-011",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-011-M06",
+    "vesselId": "KR-SYN-011",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-011-M07",
+    "vesselId": "KR-SYN-011",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-011-M08",
+    "vesselId": "KR-SYN-011",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-011-M09",
+    "vesselId": "KR-SYN-011",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-011-M10",
+    "vesselId": "KR-SYN-011",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-011-M11",
+    "vesselId": "KR-SYN-011",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-011-M12",
+    "vesselId": "KR-SYN-011",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-011-M13",
+    "vesselId": "KR-SYN-011",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-011-M14",
+    "vesselId": "KR-SYN-011",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-011-M15",
+    "vesselId": "KR-SYN-011",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-011-M16",
+    "vesselId": "KR-SYN-011",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-012-M01",
+    "vesselId": "KR-SYN-012",
+    "zone": "선수부",
+    "memberType": "선측 외판",
+    "name": "선수 선측 외판(좌현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-012-M02",
+    "vesselId": "KR-SYN-012",
+    "zone": "선수부",
+    "memberType": "갑판",
+    "name": "선수루 갑판",
+    "originalThicknessMm": 12,
+    "criticality": 1,
+    "inspectionHours": 1.5
+  },
+  {
+    "memberId": "KR-SYN-012-M03",
+    "vesselId": "KR-SYN-012",
+    "zone": "No.1 화물창",
+    "memberType": "선저 외판",
+    "name": "No.1 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-012-M04",
+    "vesselId": "KR-SYN-012",
+    "zone": "No.1 화물창",
+    "memberType": "늑골",
+    "name": "No.1 화물창 늑골 F45",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-012-M05",
+    "vesselId": "KR-SYN-012",
+    "zone": "No.2 화물창",
+    "memberType": "선측 외판",
+    "name": "No.2 화물창 선측 외판(우현)",
+    "originalThicknessMm": 17,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-012-M06",
+    "vesselId": "KR-SYN-012",
+    "zone": "No.2 화물창",
+    "memberType": "종통재",
+    "name": "No.2 화물창 선저 종통재 L12",
+    "originalThicknessMm": 15,
+    "criticality": 3,
+    "inspectionHours": 3.5
+  },
+  {
+    "memberId": "KR-SYN-012-M07",
+    "vesselId": "KR-SYN-012",
+    "zone": "No.3 화물창",
+    "memberType": "횡격벽",
+    "name": "No.3 화물창 횡격벽",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-012-M08",
+    "vesselId": "KR-SYN-012",
+    "zone": "No.3 화물창",
+    "memberType": "늑골",
+    "name": "No.3 화물창 늑골 F102",
+    "originalThicknessMm": 13,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-012-M09",
+    "vesselId": "KR-SYN-012",
+    "zone": "No.4 화물창",
+    "memberType": "선저 외판",
+    "name": "No.4 화물창 선저 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-012-M10",
+    "vesselId": "KR-SYN-012",
+    "zone": "No.4 화물창",
+    "memberType": "해치 코밍",
+    "name": "No.4 화물창 해치 코밍",
+    "originalThicknessMm": 15,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-012-M11",
+    "vesselId": "KR-SYN-012",
+    "zone": "상갑판",
+    "memberType": "갑판",
+    "name": "상갑판 중앙부",
+    "originalThicknessMm": 20,
+    "criticality": 3,
+    "inspectionHours": 4
+  },
+  {
+    "memberId": "KR-SYN-012-M12",
+    "vesselId": "KR-SYN-012",
+    "zone": "상갑판",
+    "memberType": "종통재",
+    "name": "상갑판 종통재 L3",
+    "originalThicknessMm": 16,
+    "criticality": 3,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-012-M13",
+    "vesselId": "KR-SYN-012",
+    "zone": "기관실",
+    "memberType": "선저 외판",
+    "name": "기관실 선저 외판",
+    "originalThicknessMm": 17,
+    "criticality": 2,
+    "inspectionHours": 3
+  },
+  {
+    "memberId": "KR-SYN-012-M14",
+    "vesselId": "KR-SYN-012",
+    "zone": "기관실",
+    "memberType": "이중저 탱크",
+    "name": "기관실 이중저 탱크 상판",
+    "originalThicknessMm": 14,
+    "criticality": 2,
+    "inspectionHours": 2.5
+  },
+  {
+    "memberId": "KR-SYN-012-M15",
+    "vesselId": "KR-SYN-012",
+    "zone": "선미부",
+    "memberType": "선측 외판",
+    "name": "선미 선측 외판(우현)",
+    "originalThicknessMm": 16,
+    "criticality": 2,
+    "inspectionHours": 2
+  },
+  {
+    "memberId": "KR-SYN-012-M16",
+    "vesselId": "KR-SYN-012",
+    "zone": "선미부",
+    "memberType": "타두재 구역",
+    "name": "선미 타두재 구역 외판",
+    "originalThicknessMm": 18,
+    "criticality": 3,
+    "inspectionHours": 2.5
+  }
+]

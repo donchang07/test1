@@ -1,0 +1,4020 @@
+[
+  {
+    "measurementId": "KR-SYN-001-M01-T1",
+    "memberId": "KR-SYN-001-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M01-T2",
+    "memberId": "KR-SYN-001-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.13,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M01-T3",
+    "memberId": "KR-SYN-001-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.73,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M02-T1",
+    "memberId": "KR-SYN-001-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.14,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M02-T2",
+    "memberId": "KR-SYN-001-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 10.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M02-T3",
+    "memberId": "KR-SYN-001-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.54,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M03-T1",
+    "memberId": "KR-SYN-001-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.73,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M03-T2",
+    "memberId": "KR-SYN-001-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M03-T3",
+    "memberId": "KR-SYN-001-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.51,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M04-T1",
+    "memberId": "KR-SYN-001-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.23,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M04-T2",
+    "memberId": "KR-SYN-001-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M04-T3",
+    "memberId": "KR-SYN-001-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.63,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M05-T1",
+    "memberId": "KR-SYN-001-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.54,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M05-T2",
+    "memberId": "KR-SYN-001-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M05-T3",
+    "memberId": "KR-SYN-001-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.15,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M06-T1",
+    "memberId": "KR-SYN-001-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.88,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M06-T2",
+    "memberId": "KR-SYN-001-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.46,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M06-T3",
+    "memberId": "KR-SYN-001-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.1,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M07-T1",
+    "memberId": "KR-SYN-001-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M07-T2",
+    "memberId": "KR-SYN-001-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.46,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M07-T3",
+    "memberId": "KR-SYN-001-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M08-T1",
+    "memberId": "KR-SYN-001-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.53,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M08-T2",
+    "memberId": "KR-SYN-001-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.41,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M08-T3",
+    "memberId": "KR-SYN-001-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.27,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M09-T1",
+    "memberId": "KR-SYN-001-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M09-T2",
+    "memberId": "KR-SYN-001-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M09-T3",
+    "memberId": "KR-SYN-001-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.08,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M10-T1",
+    "memberId": "KR-SYN-001-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M10-T2",
+    "memberId": "KR-SYN-001-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.26,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M10-T3",
+    "memberId": "KR-SYN-001-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M11-T1",
+    "memberId": "KR-SYN-001-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 19.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M11-T2",
+    "memberId": "KR-SYN-001-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 19.41,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M11-T3",
+    "memberId": "KR-SYN-001-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 19.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M12-T1",
+    "memberId": "KR-SYN-001-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.11,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M12-T2",
+    "memberId": "KR-SYN-001-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.78,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M12-T3",
+    "memberId": "KR-SYN-001-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M13-T1",
+    "memberId": "KR-SYN-001-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.66,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M13-T2",
+    "memberId": "KR-SYN-001-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M13-T3",
+    "memberId": "KR-SYN-001-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.7,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M14-T1",
+    "memberId": "KR-SYN-001-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.37,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M14-T2",
+    "memberId": "KR-SYN-001-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.11,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M14-T3",
+    "memberId": "KR-SYN-001-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.94,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M15-T1",
+    "memberId": "KR-SYN-001-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M15-T2",
+    "memberId": "KR-SYN-001-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.42,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M15-T3",
+    "memberId": "KR-SYN-001-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.03,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M16-T1",
+    "memberId": "KR-SYN-001-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.02,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M16-T2",
+    "memberId": "KR-SYN-001-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.68,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-001-M16-T3",
+    "memberId": "KR-SYN-001-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.35,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M01-T1",
+    "memberId": "KR-SYN-002-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.55,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M01-T2",
+    "memberId": "KR-SYN-002-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.07,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M01-T3",
+    "memberId": "KR-SYN-002-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.68,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M02-T1",
+    "memberId": "KR-SYN-002-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M02-T2",
+    "memberId": "KR-SYN-002-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.49,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M02-T3",
+    "memberId": "KR-SYN-002-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.39,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M03-T1",
+    "memberId": "KR-SYN-002-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.92,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M03-T2",
+    "memberId": "KR-SYN-002-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.65,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M03-T3",
+    "memberId": "KR-SYN-002-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M04-T1",
+    "memberId": "KR-SYN-002-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M04-T2",
+    "memberId": "KR-SYN-002-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M04-T3",
+    "memberId": "KR-SYN-002-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.26,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M05-T1",
+    "memberId": "KR-SYN-002-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M05-T2",
+    "memberId": "KR-SYN-002-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M05-T3",
+    "memberId": "KR-SYN-002-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.26,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M06-T1",
+    "memberId": "KR-SYN-002-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.04,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M06-T2",
+    "memberId": "KR-SYN-002-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.71,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M06-T3",
+    "memberId": "KR-SYN-002-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.44,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M07-T1",
+    "memberId": "KR-SYN-002-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.31,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M07-T2",
+    "memberId": "KR-SYN-002-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.04,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M07-T3",
+    "memberId": "KR-SYN-002-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.88,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M08-T1",
+    "memberId": "KR-SYN-002-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M08-T2",
+    "memberId": "KR-SYN-002-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.14,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M08-T3",
+    "memberId": "KR-SYN-002-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M09-T1",
+    "memberId": "KR-SYN-002-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.26,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M09-T2",
+    "memberId": "KR-SYN-002-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.08,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M09-T3",
+    "memberId": "KR-SYN-002-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.85,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M10-T1",
+    "memberId": "KR-SYN-002-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.91,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M10-T2",
+    "memberId": "KR-SYN-002-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.62,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M10-T3",
+    "memberId": "KR-SYN-002-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.28,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M11-T1",
+    "memberId": "KR-SYN-002-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 19.35,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M11-T2",
+    "memberId": "KR-SYN-002-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 19.17,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M11-T3",
+    "memberId": "KR-SYN-002-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 19,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M12-T1",
+    "memberId": "KR-SYN-002-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.43,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M12-T2",
+    "memberId": "KR-SYN-002-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.97,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M12-T3",
+    "memberId": "KR-SYN-002-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M13-T1",
+    "memberId": "KR-SYN-002-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.17,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M13-T2",
+    "memberId": "KR-SYN-002-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.9,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M13-T3",
+    "memberId": "KR-SYN-002-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.67,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M14-T1",
+    "memberId": "KR-SYN-002-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M14-T2",
+    "memberId": "KR-SYN-002-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.41,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M14-T3",
+    "memberId": "KR-SYN-002-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.27,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M15-T1",
+    "memberId": "KR-SYN-002-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M15-T2",
+    "memberId": "KR-SYN-002-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.21,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M15-T3",
+    "memberId": "KR-SYN-002-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M16-T1",
+    "memberId": "KR-SYN-002-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M16-T2",
+    "memberId": "KR-SYN-002-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.04,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-002-M16-T3",
+    "memberId": "KR-SYN-002-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.65,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M01-T1",
+    "memberId": "KR-SYN-003-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.92,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M01-T2",
+    "memberId": "KR-SYN-003-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M01-T3",
+    "memberId": "KR-SYN-003-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.07,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M02-T1",
+    "memberId": "KR-SYN-003-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.5,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M02-T2",
+    "memberId": "KR-SYN-003-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.27,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M02-T3",
+    "memberId": "KR-SYN-003-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.13,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M03-T1",
+    "memberId": "KR-SYN-003-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M03-T2",
+    "memberId": "KR-SYN-003-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.34,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M03-T3",
+    "memberId": "KR-SYN-003-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M04-T1",
+    "memberId": "KR-SYN-003-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M04-T2",
+    "memberId": "KR-SYN-003-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M04-T3",
+    "memberId": "KR-SYN-003-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.69,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M05-T1",
+    "memberId": "KR-SYN-003-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.44,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M05-T2",
+    "memberId": "KR-SYN-003-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.27,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M05-T3",
+    "memberId": "KR-SYN-003-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.02,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M06-T1",
+    "memberId": "KR-SYN-003-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.76,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M06-T2",
+    "memberId": "KR-SYN-003-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M06-T3",
+    "memberId": "KR-SYN-003-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M07-T1",
+    "memberId": "KR-SYN-003-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.16,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M07-T2",
+    "memberId": "KR-SYN-003-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.89,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M07-T3",
+    "memberId": "KR-SYN-003-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M08-T1",
+    "memberId": "KR-SYN-003-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M08-T2",
+    "memberId": "KR-SYN-003-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M08-T3",
+    "memberId": "KR-SYN-003-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.91,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M09-T1",
+    "memberId": "KR-SYN-003-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M09-T2",
+    "memberId": "KR-SYN-003-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.46,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M09-T3",
+    "memberId": "KR-SYN-003-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.28,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M10-T1",
+    "memberId": "KR-SYN-003-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.43,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M10-T2",
+    "memberId": "KR-SYN-003-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.24,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M10-T3",
+    "memberId": "KR-SYN-003-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.01,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M11-T1",
+    "memberId": "KR-SYN-003-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 18.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M11-T2",
+    "memberId": "KR-SYN-003-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 18.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M11-T3",
+    "memberId": "KR-SYN-003-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.97,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M12-T1",
+    "memberId": "KR-SYN-003-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.89,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M12-T2",
+    "memberId": "KR-SYN-003-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.48,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M12-T3",
+    "memberId": "KR-SYN-003-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.98,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M13-T1",
+    "memberId": "KR-SYN-003-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.95,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M13-T2",
+    "memberId": "KR-SYN-003-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.51,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M13-T3",
+    "memberId": "KR-SYN-003-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M14-T1",
+    "memberId": "KR-SYN-003-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M14-T2",
+    "memberId": "KR-SYN-003-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.37,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M14-T3",
+    "memberId": "KR-SYN-003-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.17,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M15-T1",
+    "memberId": "KR-SYN-003-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.97,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M15-T2",
+    "memberId": "KR-SYN-003-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M15-T3",
+    "memberId": "KR-SYN-003-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.19,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M16-T1",
+    "memberId": "KR-SYN-003-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.1,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M16-T2",
+    "memberId": "KR-SYN-003-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.67,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-003-M16-T3",
+    "memberId": "KR-SYN-003-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.34,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M01-T1",
+    "memberId": "KR-SYN-004-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.27,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M01-T2",
+    "memberId": "KR-SYN-004-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M01-T3",
+    "memberId": "KR-SYN-004-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M02-T1",
+    "memberId": "KR-SYN-004-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M02-T2",
+    "memberId": "KR-SYN-004-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.03,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M02-T3",
+    "memberId": "KR-SYN-004-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.77,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M03-T1",
+    "memberId": "KR-SYN-004-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.89,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M03-T2",
+    "memberId": "KR-SYN-004-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.57,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M03-T3",
+    "memberId": "KR-SYN-004-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.23,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M04-T1",
+    "memberId": "KR-SYN-004-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.39,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M04-T2",
+    "memberId": "KR-SYN-004-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.25,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M04-T3",
+    "memberId": "KR-SYN-004-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.03,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M05-T1",
+    "memberId": "KR-SYN-004-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.51,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M05-T2",
+    "memberId": "KR-SYN-004-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.04,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M05-T3",
+    "memberId": "KR-SYN-004-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M06-T1",
+    "memberId": "KR-SYN-004-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.46,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M06-T2",
+    "memberId": "KR-SYN-004-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.04,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M06-T3",
+    "memberId": "KR-SYN-004-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.54,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M07-T1",
+    "memberId": "KR-SYN-004-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.4,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M07-T2",
+    "memberId": "KR-SYN-004-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.28,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M07-T3",
+    "memberId": "KR-SYN-004-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.09,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M08-T1",
+    "memberId": "KR-SYN-004-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M08-T2",
+    "memberId": "KR-SYN-004-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.31,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M08-T3",
+    "memberId": "KR-SYN-004-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.98,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M09-T1",
+    "memberId": "KR-SYN-004-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M09-T2",
+    "memberId": "KR-SYN-004-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.46,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M09-T3",
+    "memberId": "KR-SYN-004-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M10-T1",
+    "memberId": "KR-SYN-004-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.34,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M10-T2",
+    "memberId": "KR-SYN-004-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.19,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M10-T3",
+    "memberId": "KR-SYN-004-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M11-T1",
+    "memberId": "KR-SYN-004-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 18.57,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M11-T2",
+    "memberId": "KR-SYN-004-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 18.11,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M11-T3",
+    "memberId": "KR-SYN-004-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.71,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M12-T1",
+    "memberId": "KR-SYN-004-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M12-T2",
+    "memberId": "KR-SYN-004-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M12-T3",
+    "memberId": "KR-SYN-004-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.35,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M13-T1",
+    "memberId": "KR-SYN-004-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.31,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M13-T2",
+    "memberId": "KR-SYN-004-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.08,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M13-T3",
+    "memberId": "KR-SYN-004-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.9,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M14-T1",
+    "memberId": "KR-SYN-004-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M14-T2",
+    "memberId": "KR-SYN-004-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.25,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M14-T3",
+    "memberId": "KR-SYN-004-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M15-T1",
+    "memberId": "KR-SYN-004-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.37,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M15-T2",
+    "memberId": "KR-SYN-004-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.95,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M15-T3",
+    "memberId": "KR-SYN-004-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.42,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M16-T1",
+    "memberId": "KR-SYN-004-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.28,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M16-T2",
+    "memberId": "KR-SYN-004-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.06,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-004-M16-T3",
+    "memberId": "KR-SYN-004-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M01-T1",
+    "memberId": "KR-SYN-005-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.7,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M01-T2",
+    "memberId": "KR-SYN-005-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.28,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M01-T3",
+    "memberId": "KR-SYN-005-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M02-T1",
+    "memberId": "KR-SYN-005-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 10.57,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M02-T2",
+    "memberId": "KR-SYN-005-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 10.12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M02-T3",
+    "memberId": "KR-SYN-005-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 9.68,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M03-T1",
+    "memberId": "KR-SYN-005-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.38,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M03-T2",
+    "memberId": "KR-SYN-005-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.24,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M03-T3",
+    "memberId": "KR-SYN-005-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.11,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M04-T1",
+    "memberId": "KR-SYN-005-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.4,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M04-T2",
+    "memberId": "KR-SYN-005-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.18,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M04-T3",
+    "memberId": "KR-SYN-005-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M05-T1",
+    "memberId": "KR-SYN-005-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.14,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M05-T2",
+    "memberId": "KR-SYN-005-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.94,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M05-T3",
+    "memberId": "KR-SYN-005-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.72,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M06-T1",
+    "memberId": "KR-SYN-005-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.33,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M06-T2",
+    "memberId": "KR-SYN-005-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 10.17,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M06-T3",
+    "memberId": "KR-SYN-005-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 8.96,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M07-T1",
+    "memberId": "KR-SYN-005-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.03,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M07-T2",
+    "memberId": "KR-SYN-005-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.73,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M07-T3",
+    "memberId": "KR-SYN-005-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.42,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M08-T1",
+    "memberId": "KR-SYN-005-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.95,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M08-T2",
+    "memberId": "KR-SYN-005-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M08-T3",
+    "memberId": "KR-SYN-005-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.29,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M09-T1",
+    "memberId": "KR-SYN-005-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.26,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M09-T2",
+    "memberId": "KR-SYN-005-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.05,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M09-T3",
+    "memberId": "KR-SYN-005-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.91,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M10-T1",
+    "memberId": "KR-SYN-005-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.78,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M10-T2",
+    "memberId": "KR-SYN-005-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.34,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M10-T3",
+    "memberId": "KR-SYN-005-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M11-T1",
+    "memberId": "KR-SYN-005-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M11-T2",
+    "memberId": "KR-SYN-005-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M11-T3",
+    "memberId": "KR-SYN-005-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.63,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M12-T1",
+    "memberId": "KR-SYN-005-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.15,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M12-T2",
+    "memberId": "KR-SYN-005-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 10.9,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M12-T3",
+    "memberId": "KR-SYN-005-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 9.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M13-T1",
+    "memberId": "KR-SYN-005-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M13-T2",
+    "memberId": "KR-SYN-005-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.53,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M13-T3",
+    "memberId": "KR-SYN-005-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.48,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M14-T1",
+    "memberId": "KR-SYN-005-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.83,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M14-T2",
+    "memberId": "KR-SYN-005-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.44,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M14-T3",
+    "memberId": "KR-SYN-005-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.01,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M15-T1",
+    "memberId": "KR-SYN-005-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.48,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M15-T2",
+    "memberId": "KR-SYN-005-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.97,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M15-T3",
+    "memberId": "KR-SYN-005-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.51,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M16-T1",
+    "memberId": "KR-SYN-005-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.19,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M16-T2",
+    "memberId": "KR-SYN-005-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.97,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-005-M16-T3",
+    "memberId": "KR-SYN-005-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.77,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M01-T1",
+    "memberId": "KR-SYN-006-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.63,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M01-T2",
+    "memberId": "KR-SYN-006-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.38,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M01-T3",
+    "memberId": "KR-SYN-006-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M02-T1",
+    "memberId": "KR-SYN-006-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.51,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M02-T2",
+    "memberId": "KR-SYN-006-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.15,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M02-T3",
+    "memberId": "KR-SYN-006-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M03-T1",
+    "memberId": "KR-SYN-006-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.29,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M03-T2",
+    "memberId": "KR-SYN-006-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.8,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M03-T3",
+    "memberId": "KR-SYN-006-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M04-T1",
+    "memberId": "KR-SYN-006-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.79,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M04-T2",
+    "memberId": "KR-SYN-006-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.62,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M04-T3",
+    "memberId": "KR-SYN-006-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.4,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M05-T1",
+    "memberId": "KR-SYN-006-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M05-T2",
+    "memberId": "KR-SYN-006-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.91,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M05-T3",
+    "memberId": "KR-SYN-006-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.46,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M06-T1",
+    "memberId": "KR-SYN-006-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.53,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M06-T2",
+    "memberId": "KR-SYN-006-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M06-T3",
+    "memberId": "KR-SYN-006-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.96,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M07-T1",
+    "memberId": "KR-SYN-006-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.54,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M07-T2",
+    "memberId": "KR-SYN-006-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.26,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M07-T3",
+    "memberId": "KR-SYN-006-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M08-T1",
+    "memberId": "KR-SYN-006-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.33,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M08-T2",
+    "memberId": "KR-SYN-006-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.94,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M08-T3",
+    "memberId": "KR-SYN-006-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M09-T1",
+    "memberId": "KR-SYN-006-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.54,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M09-T2",
+    "memberId": "KR-SYN-006-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.27,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M09-T3",
+    "memberId": "KR-SYN-006-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.9,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M10-T1",
+    "memberId": "KR-SYN-006-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.76,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M10-T2",
+    "memberId": "KR-SYN-006-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M10-T3",
+    "memberId": "KR-SYN-006-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M11-T1",
+    "memberId": "KR-SYN-006-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 19.66,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M11-T2",
+    "memberId": "KR-SYN-006-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 19.44,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M11-T3",
+    "memberId": "KR-SYN-006-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 19.21,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M12-T1",
+    "memberId": "KR-SYN-006-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.63,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M12-T2",
+    "memberId": "KR-SYN-006-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.4,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M12-T3",
+    "memberId": "KR-SYN-006-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.14,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M13-T1",
+    "memberId": "KR-SYN-006-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.59,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M13-T2",
+    "memberId": "KR-SYN-006-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.22,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M13-T3",
+    "memberId": "KR-SYN-006-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.94,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M14-T1",
+    "memberId": "KR-SYN-006-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.72,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M14-T2",
+    "memberId": "KR-SYN-006-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M14-T3",
+    "memberId": "KR-SYN-006-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.45,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M15-T1",
+    "memberId": "KR-SYN-006-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.53,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M15-T2",
+    "memberId": "KR-SYN-006-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.25,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M15-T3",
+    "memberId": "KR-SYN-006-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.94,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M16-T1",
+    "memberId": "KR-SYN-006-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.35,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M16-T2",
+    "memberId": "KR-SYN-006-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.97,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-006-M16-T3",
+    "memberId": "KR-SYN-006-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M01-T1",
+    "memberId": "KR-SYN-007-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M01-T2",
+    "memberId": "KR-SYN-007-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M01-T3",
+    "memberId": "KR-SYN-007-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M02-T1",
+    "memberId": "KR-SYN-007-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M02-T2",
+    "memberId": "KR-SYN-007-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.33,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M02-T3",
+    "memberId": "KR-SYN-007-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.03,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M03-T1",
+    "memberId": "KR-SYN-007-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.42,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M03-T2",
+    "memberId": "KR-SYN-007-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M03-T3",
+    "memberId": "KR-SYN-007-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M04-T1",
+    "memberId": "KR-SYN-007-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.8,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M04-T2",
+    "memberId": "KR-SYN-007-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M04-T3",
+    "memberId": "KR-SYN-007-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.34,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M05-T1",
+    "memberId": "KR-SYN-007-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.65,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M05-T2",
+    "memberId": "KR-SYN-007-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M05-T3",
+    "memberId": "KR-SYN-007-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.05,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M06-T1",
+    "memberId": "KR-SYN-007-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.5,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M06-T2",
+    "memberId": "KR-SYN-007-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M06-T3",
+    "memberId": "KR-SYN-007-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.53,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M07-T1",
+    "memberId": "KR-SYN-007-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.75,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M07-T2",
+    "memberId": "KR-SYN-007-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.54,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M07-T3",
+    "memberId": "KR-SYN-007-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.34,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M08-T1",
+    "memberId": "KR-SYN-007-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.5,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M08-T2",
+    "memberId": "KR-SYN-007-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.09,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M08-T3",
+    "memberId": "KR-SYN-007-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M09-T1",
+    "memberId": "KR-SYN-007-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.75,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M09-T2",
+    "memberId": "KR-SYN-007-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.48,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M09-T3",
+    "memberId": "KR-SYN-007-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.29,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M10-T1",
+    "memberId": "KR-SYN-007-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.65,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M10-T2",
+    "memberId": "KR-SYN-007-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.33,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M10-T3",
+    "memberId": "KR-SYN-007-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.02,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M11-T1",
+    "memberId": "KR-SYN-007-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 19.85,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M11-T2",
+    "memberId": "KR-SYN-007-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 19.7,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M11-T3",
+    "memberId": "KR-SYN-007-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 19.57,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M12-T1",
+    "memberId": "KR-SYN-007-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.76,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M12-T2",
+    "memberId": "KR-SYN-007-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M12-T3",
+    "memberId": "KR-SYN-007-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.31,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M13-T1",
+    "memberId": "KR-SYN-007-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M13-T2",
+    "memberId": "KR-SYN-007-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.29,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M13-T3",
+    "memberId": "KR-SYN-007-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M14-T1",
+    "memberId": "KR-SYN-007-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M14-T2",
+    "memberId": "KR-SYN-007-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.23,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M14-T3",
+    "memberId": "KR-SYN-007-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.82,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M15-T1",
+    "memberId": "KR-SYN-007-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.7,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M15-T2",
+    "memberId": "KR-SYN-007-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.42,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M15-T3",
+    "memberId": "KR-SYN-007-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.15,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M16-T1",
+    "memberId": "KR-SYN-007-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.79,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M16-T2",
+    "memberId": "KR-SYN-007-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.63,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-007-M16-T3",
+    "memberId": "KR-SYN-007-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.5,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M01-T1",
+    "memberId": "KR-SYN-008-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.69,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M01-T2",
+    "memberId": "KR-SYN-008-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.55,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M01-T3",
+    "memberId": "KR-SYN-008-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.48,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M02-T1",
+    "memberId": "KR-SYN-008-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.16,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M02-T2",
+    "memberId": "KR-SYN-008-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 10.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M02-T3",
+    "memberId": "KR-SYN-008-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.53,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M03-T1",
+    "memberId": "KR-SYN-008-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.08,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M03-T2",
+    "memberId": "KR-SYN-008-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M03-T3",
+    "memberId": "KR-SYN-008-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.35,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M04-T1",
+    "memberId": "KR-SYN-008-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M04-T2",
+    "memberId": "KR-SYN-008-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.57,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M04-T3",
+    "memberId": "KR-SYN-008-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.15,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M05-T1",
+    "memberId": "KR-SYN-008-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.75,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M05-T2",
+    "memberId": "KR-SYN-008-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.69,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M05-T3",
+    "memberId": "KR-SYN-008-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M06-T1",
+    "memberId": "KR-SYN-008-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.19,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M06-T2",
+    "memberId": "KR-SYN-008-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M06-T3",
+    "memberId": "KR-SYN-008-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M07-T1",
+    "memberId": "KR-SYN-008-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.88,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M07-T2",
+    "memberId": "KR-SYN-008-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.43,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M07-T3",
+    "memberId": "KR-SYN-008-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M08-T1",
+    "memberId": "KR-SYN-008-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M08-T2",
+    "memberId": "KR-SYN-008-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.65,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M08-T3",
+    "memberId": "KR-SYN-008-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.48,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M09-T1",
+    "memberId": "KR-SYN-008-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.21,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M09-T2",
+    "memberId": "KR-SYN-008-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.94,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M09-T3",
+    "memberId": "KR-SYN-008-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.62,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M10-T1",
+    "memberId": "KR-SYN-008-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.92,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M10-T2",
+    "memberId": "KR-SYN-008-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M10-T3",
+    "memberId": "KR-SYN-008-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.08,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M11-T1",
+    "memberId": "KR-SYN-008-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 18.92,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M11-T2",
+    "memberId": "KR-SYN-008-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 18.5,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M11-T3",
+    "memberId": "KR-SYN-008-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 18.1,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M12-T1",
+    "memberId": "KR-SYN-008-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.03,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M12-T2",
+    "memberId": "KR-SYN-008-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.62,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M12-T3",
+    "memberId": "KR-SYN-008-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.26,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M13-T1",
+    "memberId": "KR-SYN-008-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.43,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M13-T2",
+    "memberId": "KR-SYN-008-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.14,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M13-T3",
+    "memberId": "KR-SYN-008-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M14-T1",
+    "memberId": "KR-SYN-008-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M14-T2",
+    "memberId": "KR-SYN-008-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.4,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M14-T3",
+    "memberId": "KR-SYN-008-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M15-T1",
+    "memberId": "KR-SYN-008-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M15-T2",
+    "memberId": "KR-SYN-008-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.35,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M15-T3",
+    "memberId": "KR-SYN-008-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.9,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M16-T1",
+    "memberId": "KR-SYN-008-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M16-T2",
+    "memberId": "KR-SYN-008-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.39,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-008-M16-T3",
+    "memberId": "KR-SYN-008-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M01-T1",
+    "memberId": "KR-SYN-009-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M01-T2",
+    "memberId": "KR-SYN-009-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.4,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M01-T3",
+    "memberId": "KR-SYN-009-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M02-T1",
+    "memberId": "KR-SYN-009-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M02-T2",
+    "memberId": "KR-SYN-009-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.38,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M02-T3",
+    "memberId": "KR-SYN-009-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.19,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M03-T1",
+    "memberId": "KR-SYN-009-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M03-T2",
+    "memberId": "KR-SYN-009-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.11,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M03-T3",
+    "memberId": "KR-SYN-009-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M04-T1",
+    "memberId": "KR-SYN-009-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M04-T2",
+    "memberId": "KR-SYN-009-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.36,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M04-T3",
+    "memberId": "KR-SYN-009-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.2,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M05-T1",
+    "memberId": "KR-SYN-009-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.59,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M05-T2",
+    "memberId": "KR-SYN-009-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.4,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M05-T3",
+    "memberId": "KR-SYN-009-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.24,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M06-T1",
+    "memberId": "KR-SYN-009-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M06-T2",
+    "memberId": "KR-SYN-009-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.43,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M06-T3",
+    "memberId": "KR-SYN-009-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.97,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M07-T1",
+    "memberId": "KR-SYN-009-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.48,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M07-T2",
+    "memberId": "KR-SYN-009-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.24,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M07-T3",
+    "memberId": "KR-SYN-009-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.98,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M08-T1",
+    "memberId": "KR-SYN-009-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.5,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M08-T2",
+    "memberId": "KR-SYN-009-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.23,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M08-T3",
+    "memberId": "KR-SYN-009-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.06,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M09-T1",
+    "memberId": "KR-SYN-009-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.25,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M09-T2",
+    "memberId": "KR-SYN-009-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.9,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M09-T3",
+    "memberId": "KR-SYN-009-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M10-T1",
+    "memberId": "KR-SYN-009-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M10-T2",
+    "memberId": "KR-SYN-009-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.45,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M10-T3",
+    "memberId": "KR-SYN-009-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M11-T1",
+    "memberId": "KR-SYN-009-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 19.75,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M11-T2",
+    "memberId": "KR-SYN-009-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 19.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M11-T3",
+    "memberId": "KR-SYN-009-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 19.52,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M12-T1",
+    "memberId": "KR-SYN-009-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.67,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M12-T2",
+    "memberId": "KR-SYN-009-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.55,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M12-T3",
+    "memberId": "KR-SYN-009-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M13-T1",
+    "memberId": "KR-SYN-009-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M13-T2",
+    "memberId": "KR-SYN-009-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.54,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M13-T3",
+    "memberId": "KR-SYN-009-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.11,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M14-T1",
+    "memberId": "KR-SYN-009-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.59,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M14-T2",
+    "memberId": "KR-SYN-009-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M14-T3",
+    "memberId": "KR-SYN-009-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.29,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M15-T1",
+    "memberId": "KR-SYN-009-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.72,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M15-T2",
+    "memberId": "KR-SYN-009-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M15-T3",
+    "memberId": "KR-SYN-009-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.43,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M16-T1",
+    "memberId": "KR-SYN-009-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M16-T2",
+    "memberId": "KR-SYN-009-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.98,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-009-M16-T3",
+    "memberId": "KR-SYN-009-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.73,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M01-T1",
+    "memberId": "KR-SYN-010-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M01-T2",
+    "memberId": "KR-SYN-010-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.24,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M01-T3",
+    "memberId": "KR-SYN-010-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.92,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M02-T1",
+    "memberId": "KR-SYN-010-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.68,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M02-T2",
+    "memberId": "KR-SYN-010-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.46,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M02-T3",
+    "memberId": "KR-SYN-010-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.29,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M03-T1",
+    "memberId": "KR-SYN-010-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.8,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M03-T2",
+    "memberId": "KR-SYN-010-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.71,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M03-T3",
+    "memberId": "KR-SYN-010-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.59,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M04-T1",
+    "memberId": "KR-SYN-010-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.41,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M04-T2",
+    "memberId": "KR-SYN-010-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.09,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M04-T3",
+    "memberId": "KR-SYN-010-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.7,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M05-T1",
+    "memberId": "KR-SYN-010-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.8,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M05-T2",
+    "memberId": "KR-SYN-010-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.57,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M05-T3",
+    "memberId": "KR-SYN-010-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.43,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M06-T1",
+    "memberId": "KR-SYN-010-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.67,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M06-T2",
+    "memberId": "KR-SYN-010-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.42,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M06-T3",
+    "memberId": "KR-SYN-010-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.17,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M07-T1",
+    "memberId": "KR-SYN-010-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M07-T2",
+    "memberId": "KR-SYN-010-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.31,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M07-T3",
+    "memberId": "KR-SYN-010-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M08-T1",
+    "memberId": "KR-SYN-010-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.34,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M08-T2",
+    "memberId": "KR-SYN-010-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.88,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M08-T3",
+    "memberId": "KR-SYN-010-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.38,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M09-T1",
+    "memberId": "KR-SYN-010-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.29,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M09-T2",
+    "memberId": "KR-SYN-010-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M09-T3",
+    "memberId": "KR-SYN-010-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.39,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M10-T1",
+    "memberId": "KR-SYN-010-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.4,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M10-T2",
+    "memberId": "KR-SYN-010-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.99,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M10-T3",
+    "memberId": "KR-SYN-010-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.55,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M11-T1",
+    "memberId": "KR-SYN-010-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 19.31,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M11-T2",
+    "memberId": "KR-SYN-010-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 18.88,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M11-T3",
+    "memberId": "KR-SYN-010-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 18.42,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M12-T1",
+    "memberId": "KR-SYN-010-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.44,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M12-T2",
+    "memberId": "KR-SYN-010-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.07,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M12-T3",
+    "memberId": "KR-SYN-010-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M13-T1",
+    "memberId": "KR-SYN-010-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.55,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M13-T2",
+    "memberId": "KR-SYN-010-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.25,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M13-T3",
+    "memberId": "KR-SYN-010-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.97,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M14-T1",
+    "memberId": "KR-SYN-010-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.73,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M14-T2",
+    "memberId": "KR-SYN-010-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.53,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M14-T3",
+    "memberId": "KR-SYN-010-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.37,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M15-T1",
+    "memberId": "KR-SYN-010-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.48,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M15-T2",
+    "memberId": "KR-SYN-010-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.18,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M15-T3",
+    "memberId": "KR-SYN-010-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.77,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M16-T1",
+    "memberId": "KR-SYN-010-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M16-T2",
+    "memberId": "KR-SYN-010-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-010-M16-T3",
+    "memberId": "KR-SYN-010-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M01-T1",
+    "memberId": "KR-SYN-011-M01",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.81,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M01-T2",
+    "memberId": "KR-SYN-011-M01",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.57,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M01-T3",
+    "memberId": "KR-SYN-011-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.33,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M02-T1",
+    "memberId": "KR-SYN-011-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.67,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M02-T2",
+    "memberId": "KR-SYN-011-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M02-T3",
+    "memberId": "KR-SYN-011-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.94,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M03-T1",
+    "memberId": "KR-SYN-011-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M03-T2",
+    "memberId": "KR-SYN-011-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M03-T3",
+    "memberId": "KR-SYN-011-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 17.24,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M04-T1",
+    "memberId": "KR-SYN-011-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.81,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M04-T2",
+    "memberId": "KR-SYN-011-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.53,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M04-T3",
+    "memberId": "KR-SYN-011-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M05-T1",
+    "memberId": "KR-SYN-011-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M05-T2",
+    "memberId": "KR-SYN-011-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.78,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M05-T3",
+    "memberId": "KR-SYN-011-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.65,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M06-T1",
+    "memberId": "KR-SYN-011-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.7,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M06-T2",
+    "memberId": "KR-SYN-011-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.33,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M06-T3",
+    "memberId": "KR-SYN-011-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.92,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M07-T1",
+    "memberId": "KR-SYN-011-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.62,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M07-T2",
+    "memberId": "KR-SYN-011-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.25,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M07-T3",
+    "memberId": "KR-SYN-011-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.8,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M08-T1",
+    "memberId": "KR-SYN-011-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.87,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M08-T2",
+    "memberId": "KR-SYN-011-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M08-T3",
+    "memberId": "KR-SYN-011-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.39,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M09-T1",
+    "memberId": "KR-SYN-011-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.69,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M09-T2",
+    "memberId": "KR-SYN-011-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.3,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M09-T3",
+    "memberId": "KR-SYN-011-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.88,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M10-T1",
+    "memberId": "KR-SYN-011-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.81,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M10-T2",
+    "memberId": "KR-SYN-011-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M10-T3",
+    "memberId": "KR-SYN-011-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.44,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M11-T1",
+    "memberId": "KR-SYN-011-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 19.78,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M11-T2",
+    "memberId": "KR-SYN-011-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 19.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M11-T3",
+    "memberId": "KR-SYN-011-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 19.15,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M12-T1",
+    "memberId": "KR-SYN-011-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.69,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M12-T2",
+    "memberId": "KR-SYN-011-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.32,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M12-T3",
+    "memberId": "KR-SYN-011-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.92,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M13-T1",
+    "memberId": "KR-SYN-011-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.64,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M13-T2",
+    "memberId": "KR-SYN-011-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.26,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M13-T3",
+    "memberId": "KR-SYN-011-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M14-T1",
+    "memberId": "KR-SYN-011-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.86,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M14-T2",
+    "memberId": "KR-SYN-011-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.74,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M14-T3",
+    "memberId": "KR-SYN-011-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.61,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M15-T1",
+    "memberId": "KR-SYN-011-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.82,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M15-T2",
+    "memberId": "KR-SYN-011-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.56,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M15-T3",
+    "memberId": "KR-SYN-011-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.37,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M16-T1",
+    "memberId": "KR-SYN-011-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.62,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M16-T2",
+    "memberId": "KR-SYN-011-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 17.12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-011-M16-T3",
+    "memberId": "KR-SYN-011-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.69,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M01-T1",
+    "memberId": "KR-SYN-012-M01",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M02-T1",
+    "memberId": "KR-SYN-012-M02",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.1,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M02-T2",
+    "memberId": "KR-SYN-012-M02",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 10.78,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M02-T3",
+    "memberId": "KR-SYN-012-M02",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.41,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M03-T1",
+    "memberId": "KR-SYN-012-M03",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.92,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M03-T2",
+    "memberId": "KR-SYN-012-M03",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.59,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M03-T3",
+    "memberId": "KR-SYN-012-M03",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.25,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M04-T1",
+    "memberId": "KR-SYN-012-M04",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 11.75,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M04-T2",
+    "memberId": "KR-SYN-012-M04",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.32,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M04-T3",
+    "memberId": "KR-SYN-012-M04",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 10.91,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M05-T1",
+    "memberId": "KR-SYN-012-M05",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.5,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M05-T2",
+    "memberId": "KR-SYN-012-M05",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.24,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M05-T3",
+    "memberId": "KR-SYN-012-M05",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.06,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M06-T1",
+    "memberId": "KR-SYN-012-M06",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 13.96,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M06-T2",
+    "memberId": "KR-SYN-012-M06",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.6,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M06-T3",
+    "memberId": "KR-SYN-012-M06",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.22,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M07-T1",
+    "memberId": "KR-SYN-012-M07",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.88,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M07-T2",
+    "memberId": "KR-SYN-012-M07",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.49,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M07-T3",
+    "memberId": "KR-SYN-012-M07",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12.1,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M08-T1",
+    "memberId": "KR-SYN-012-M08",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.17,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M08-T2",
+    "memberId": "KR-SYN-012-M08",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 11.95,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M08-T3",
+    "memberId": "KR-SYN-012-M08",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 11.67,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M09-T1",
+    "memberId": "KR-SYN-012-M09",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 17.21,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M09-T2",
+    "memberId": "KR-SYN-012-M09",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.89,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M09-T3",
+    "memberId": "KR-SYN-012-M09",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.66,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M10-T1",
+    "memberId": "KR-SYN-012-M10",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.01,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M10-T2",
+    "memberId": "KR-SYN-012-M10",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 13.67,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M10-T3",
+    "memberId": "KR-SYN-012-M10",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 13.34,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M11-T1",
+    "memberId": "KR-SYN-012-M11",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 18.93,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M11-T2",
+    "memberId": "KR-SYN-012-M11",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 18.51,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M11-T3",
+    "memberId": "KR-SYN-012-M11",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 18.07,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M12-T1",
+    "memberId": "KR-SYN-012-M12",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.42,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M12-T2",
+    "memberId": "KR-SYN-012-M12",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.25,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M12-T3",
+    "memberId": "KR-SYN-012-M12",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 15.05,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M13-T1",
+    "memberId": "KR-SYN-012-M13",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 15.67,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M13-T2",
+    "memberId": "KR-SYN-012-M13",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 15.24,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M13-T3",
+    "memberId": "KR-SYN-012-M13",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.78,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M14-T1",
+    "memberId": "KR-SYN-012-M14",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 12.85,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M14-T2",
+    "memberId": "KR-SYN-012-M14",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 12.41,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M14-T3",
+    "memberId": "KR-SYN-012-M14",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 12,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M15-T1",
+    "memberId": "KR-SYN-012-M15",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 14.84,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M15-T2",
+    "memberId": "KR-SYN-012-M15",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 14.47,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M15-T3",
+    "memberId": "KR-SYN-012-M15",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 14.03,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M16-T1",
+    "memberId": "KR-SYN-012-M16",
+    "surveyDate": "2018-07-01",
+    "thicknessMm": 16.89,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M16-T2",
+    "memberId": "KR-SYN-012-M16",
+    "surveyDate": "2021-07-01",
+    "thicknessMm": 16.58,
+    "source": "합성 두께 계측"
+  },
+  {
+    "measurementId": "KR-SYN-012-M16-T3",
+    "memberId": "KR-SYN-012-M16",
+    "surveyDate": "2024-07-01",
+    "thicknessMm": 16.19,
+    "source": "합성 두께 계측"
+  }
+]

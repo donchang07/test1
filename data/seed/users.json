@@ -1,0 +1,23 @@
+[
+  {
+    "userId": "inspector1",
+    "email": "inspector1@synthetic.example",
+    "displayName": "검사원 A",
+    "role": "inspector",
+    "passwordEnv": "SEED_INSPECTOR_PASSWORD"
+  },
+  {
+    "userId": "inspector2",
+    "email": "inspector2@synthetic.example",
+    "displayName": "검사원 B",
+    "role": "inspector",
+    "passwordEnv": "SEED_INSPECTOR_PASSWORD"
+  },
+  {
+    "userId": "admin1",
+    "email": "admin1@synthetic.example",
+    "displayName": "검사기획 관리자",
+    "role": "admin",
+    "passwordEnv": "SEED_ADMIN_PASSWORD"
+  }
+]

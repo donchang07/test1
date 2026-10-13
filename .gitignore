@@ -1,0 +1,13 @@
+node_modules/
+data/runtime/
+data/*.db
+data/*.db-*
+test-results/
+playwright-report/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+
+# bkit 훅이 세션마다 만드는 실행 로그·상태(커밋하지 않음)
+.bkit/
