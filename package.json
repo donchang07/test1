@@ -18,7 +18,8 @@
     "prd:check": "node scripts/check-prd.mjs",
     "prd:derive": "node scripts/derive-feature-prds.mjs",
     "prd:html": "node scripts/render-prd-html.mjs docs/PRD.md docs/PRD.html",
-    "prd:build": "npm run prd:check && npm run prd:derive && npm run prd:html"
+    "prd:build": "npm run prd:check && npm run prd:derive && npm run prd:html",
+    "test:sc": "node scripts/run-sc.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.10.2",

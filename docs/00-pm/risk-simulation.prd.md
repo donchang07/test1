@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 | `docs/PRD.md` v1.4 |
+| 정본 | `docs/PRD.md` v1.5 |
 | 성격 | 파생본 — 직접 편집 금지. 정본 수정 후 `node scripts/derive-feature-prds.mjs`로 재생성 |
 | 순서·의존 | 4 · degradation-forecast |
 | 규모 | M |

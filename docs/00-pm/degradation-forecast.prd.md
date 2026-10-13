@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 | `docs/PRD.md` v1.4 |
+| 정본 | `docs/PRD.md` v1.5 |
 | 성격 | 파생본 — 직접 편집 금지. 정본 수정 후 `node scripts/derive-feature-prds.mjs`로 재생성 |
 | 순서·의존 | 3 · inspection-review |
 | 규모 | S |
@@ -68,7 +68,7 @@
 
 | 순서 | feature 슬러그 | 포함 화면·메뉴 | FR | SC | 데이터 | 의존 | 규모 |
 |---|---|---|---|---|---|---|---|
-| 3 | `degradation-forecast` | SCR-005 | FR-020~023 | SC-019~022 | DATA-003, 004, 005, 008 | inspection-review | S |
+| 3 | `degradation-forecast` | SCR-005 | FR-020~023 | SC-004, SC-019~022 | DATA-003, 004, 005, 008 | inspection-review | S |
 
 ### 4.1 화면 인벤토리
 
@@ -174,6 +174,7 @@
 
 | ID | 기준 | 관련 FR·화면 | 측정 방법 | 현재 데이터로 검증 가능 |
 |---|---|---|---|---|
+| SC-004 | 미인증 `/vessels/KR-SYN-001/forecast` → `/login?next=…` → 로그인 → 원래 화면 | FR-003 · SCR-001, 005 | [E2E] 리다이렉트 왕복 | 예 |
 | SC-019 | KR-SYN-001 예측 16행의 `rate`·`factor`·`renewal`·`renewalYear` = 기준 모델, 첫 행 = 교체 도달 가장 빠른 부재, 행 클릭 시 EL-05 제목 변경 | FR-020, FR-022, FR-023 · SCR-005 | [E2E] 기준 모델 비교 | 예 |
 | SC-020 | KR-SYN-012-M01 `status` `데이터 부족`, `rate` `0.100` | FR-020 · SCR-005 | [E2E] 셀 확인 | 예 |
 | SC-021 | 미검토가 있는 KR-SYN-001에서 EL-01 수 = 미검토 수, EL-02 → SCR-004. KR-SYN-007은 EL-01 없음 | FR-021 · SCR-005 | [E2E] 경고 표시 | 예 |

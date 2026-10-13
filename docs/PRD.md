@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 개정 | v1.4 |
+| 정본 개정 | v1.5 |
 | PRD 스키마 | screen-first-v2 |
 | 작성일 | 2026-10-13 |
 | 작성 | to-prd(Claude Code) — 요청자: 장동인 교수 |
@@ -885,13 +885,15 @@ Blocker 없음: D-1~D-4 모두 fallback으로 P0 설계가 바뀌지 않는다.
 
 | 순서 | feature 슬러그 | 포함 화면·메뉴 | FR | SC | 데이터 | 의존 | 규모 |
 |---|---|---|---|---|---|---|---|
-| 1 | `auth-fleet` | SCR-001, SCR-002, SCR-009, NAV-01~06, 공통 레이아웃·footer, SQLite 연결·마이그레이션·시드(`db:seed`) | FR-001~010 | SC-001~011, SC-033, SC-034 | DATA-001, 002, 005, 009, 010 | 없음 | M |
-| 2 | `inspection-review` | SCR-003, SCR-004, NAV-11~15 | FR-011~019 | SC-012~018 | DATA-002~005, 011 | auth-fleet | M |
-| 3 | `degradation-forecast` | SCR-005 | FR-020~023 | SC-019~022 | DATA-003, 004, 005, 008 | inspection-review | S |
+| 1 | `auth-fleet` | SCR-001, SCR-002, SCR-009, NAV-01~06, 공통 레이아웃·footer, SQLite 연결·마이그레이션·시드(`db:seed`) | FR-001~010 | SC-001, SC-003, SC-005~010 | DATA-001, 002, 005, 009, 010 | 없음 | M |
+| 2 | `inspection-review` | SCR-003, SCR-004, NAV-11~15 | FR-011~019 | SC-011~018 | DATA-002~005, 011 | auth-fleet | M |
+| 3 | `degradation-forecast` | SCR-005 | FR-020~023 | SC-004, SC-019~022 | DATA-003, 004, 005, 008 | inspection-review | S |
 | 4 | `risk-simulation` | SCR-006 | FR-024~027 | SC-023~025 | DATA-003, 006, 008, 009 | degradation-forecast | M |
-| 5 | `inspection-plan` | SCR-007, SCR-008 | FR-028~035 | SC-026~032 | DATA-007, 008, 009, 010, 011 | risk-simulation | M |
+| 5 | `inspection-plan` | SCR-007, SCR-008 | FR-028~035 | SC-002, SC-026~034 | DATA-007, 008, 009, 010, 011 | risk-simulation | M |
 
 SQLite 마이그레이션은 feature마다 필요한 테이블만 추가한다(auth-fleet: users·sessions·vessels·findings·simulation_runs·inspection_plans·app_meta, 이후 feature가 나머지). FR-035(네트워크 오류)는 각 feature의 저장 화면에 적용하며 inspection-plan에서 최종 확인한다. SC-033·034는 마지막 feature 완료 후 전체 화면에 다시 실행한다.
+
+SC 배치 원칙(v1.5): 각 SC는 판정에 필요한 화면이 모두 갖춰지는 첫 feature의 Check에 둔다. 그래서 SC-011(판독 화면 필요)은 inspection-review, SC-004(예측 표 필요)는 degradation-forecast, SC-002(모델 설정 화면 필요)·SC-033·034(전 화면 필요)는 inspection-plan에서 판정한다. 각 feature의 Check는 그 시점까지 배치된 SC 전체(이전 feature 포함)를 다시 실행해 회귀를 막는다.
 
 ## 15. bkit 실행 계약
 
@@ -1075,6 +1077,7 @@ SQLite 마이그레이션은 feature마다 필요한 테이블만 추가한다(a
 
 | 개정 | 일자 | 내용 | 작성 |
 |---|---|---|---|
+| v1.5 | 2026-10-13 | 14장 SC 배치 조정: 다른 feature 화면이 있어야 판정 가능한 SC-002·004·011·033·034를 판정 가능한 첫 feature로 이동, Check마다 누적 회귀 실행 | to-prd |
 | v1.4 | 2026-10-13 | 사용자 결정: Check 통과 기준 95%(15장), bkit v2.1.40 프로젝트 범위 설치 | to-prd |
 | v1.3 | 2026-10-13 | 사용자 결정: Supabase·Vercel 대신 localhost + SQLite(D-2·D-3 재확정, D-5 해당 없음, NG-9 추가). 5.4 자체 인증, FR-009·010, NFR-02·05, 11장 스택·가정·11.3 환경 변수, 12장 I-2·I-6·I-7, 14장, 부록 A 저장 위치·DATA-001 | to-prd |
 | v1.2 | 2026-10-13 | 사용자 결정: 테스트 전용 Supabase 프로젝트 없이 운영용 1개(D-5 확정). 11장·11.3 환경 변수 계약(통합 변수명 `SUPABASE_URL`·`SUPABASE_PUBLISHABLE_KEY`·`SUPABASE_SECRET_KEY` 정본화, `E2E_ALLOW_SHARED_DB` 추가, Preview 대상 E2E 삭제), NFR-05 | to-prd |
