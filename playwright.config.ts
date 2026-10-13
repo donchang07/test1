@@ -1,4 +1,8 @@
+import { existsSync } from 'node:fs';
 import { defineConfig, devices } from '@playwright/test';
+
+// Next.js처럼 .env.local을 읽는다(PRD 11.3). 셸에 이미 있는 값이 우선한다.
+if (existsSync('.env.local')) process.loadEnvFile('.env.local');
 
 // PRD NFR-04·05: Chromium, 프로덕션 빌드, APP_TEST_MODE=1, E2E 전용 SQLite 파일 하나를 공유하므로 workers=1.
 const baseURL = process.env.E2E_BASE_URL || 'http://localhost:3000';

@@ -27,10 +27,23 @@ npm run test:e2e:list    # E2E 목록
 npm run test:e2e         # 앱 구현 후: SEED_* 환경 변수와 npm run start:e2e 필요
 ```
 
-## 로컬 실행·환경 변수
+## 로컬 실행
 
-`.env.example`을 `.env.local`로 복사해 `SEED_INSPECTOR_PASSWORD`·`SEED_ADMIN_PASSWORD`를 채운 뒤 `npm run dev` → `http://localhost:3000`(앱 구현 후).
-DB는 `data/app.db`(SQLite), E2E는 `data/e2e.db`를 따로 씁니다. 규칙은 `docs/PRD.md` 11.3.
+```bash
+npm install
+cp .env.example .env.local   # SEED_INSPECTOR_PASSWORD, SEED_ADMIN_PASSWORD 값을 채운다
+npm run db:seed              # data/app.db 생성 + 합성 데이터·시드 계정 (처음 한 번, 생략해도 첫 실행 때 자동 생성)
+npm run dev                  # http://localhost:3000
+```
+
+시드 계정: `inspector1@synthetic.example`(검사원), `admin1@synthetic.example`(관리자). 비밀번호는 `.env.local`에 넣은 값입니다.
+DB는 SQLite `data/app.db`, E2E(`npm run test:e2e`)는 `data/e2e.db`를 따로 씁니다. 환경 변수 규칙은 `docs/PRD.md` 11.3.
+
+### 뼈대 구현 범위
+
+| 구현됨 | 자리표시(다음 feature에서 구현) |
+|---|---|
+| 로그인·로그아웃·세션 만료·권한(SCR-001, SCR-009), 선대 현황(SCR-002), 선박 개요(SCR-003), 전역·선박 내비게이션, SQLite 스키마·시드, 테스트 API | ① 판독, ② 예측, ③ 시뮬레이션, ④ 계획, 모델 설정 화면 |
 
 ## bkit 진행 순서
 
