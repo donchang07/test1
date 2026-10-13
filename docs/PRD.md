@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 개정 | v1.2 |
+| 정본 개정 | v1.3 |
 | PRD 스키마 | screen-first-v2 |
 | 작성일 | 2026-10-13 |
 | 작성 | to-prd(Claude Code) — 요청자: 장동인 교수 |
@@ -35,7 +35,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | 서비스 이름 | KR Smart RBI |
 | 한 줄 정의 | 선체 검사 판독부터 검사 계획 승인까지 근거가 이어지는 위험도 기반 검사 도구 |
 | 플랫폼 | 웹(데스크톱 우선, 모바일 390px까지 반응형) |
-| 레벨 | Dynamic(풀스택) — Vercel 배포 + Supabase(Postgres·Auth), 11장 |
+| 레벨 | Dynamic(풀스택) — localhost 실행 + SQLite, 11장 |
 | 사용 언어 | 한국어 UI |
 
 ## 2. 배경
@@ -68,6 +68,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | NG-6 | 공식 검사 보고서·증서 발행 | 법적 효력 문서는 기존 시스템 소관. MVP는 보고서 초안 텍스트만 | 범위 밖 유지 |
 | NG-7 | KR SSO·외부 IdP 연동 | 13장 D-3 결정 전 | D-3 결정 후 |
 | NG-8 | 다국어 UI | 사용자 전원 한국어 | v1 이후 |
+| NG-9 | 클라우드 배포(Vercel 등)·관리형 DB(Supabase 등) | 사용자 결정(2026-10-13): MVP는 localhost에서만 실행 | 여러 사람이 원격으로 써야 할 때 |
 
 ---
 
@@ -149,8 +150,8 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 ### 5.4 인증
 
 - 인증 사용: **예** — 관리자 기능(승인·설정·초기화)과 보호 데이터(검사 결과)가 있다.
-- 방식: **Supabase Auth** 이메일·비밀번호 `[확정]`. 세션은 `@supabase/ssr` 쿠키(HttpOnly, SameSite=Lax)로 서버·미들웨어가 읽는다. 공개 회원가입은 끈다(시드 계정만). `[기본값]` 세션 유효 8시간 — 로그인 시각 기준으로 미들웨어가 판정하고 초과하면 로그아웃 처리한다.
-- 역할: `public.profiles.role`(`inspector`/`admin`). 화면 분기와 API 검사 모두 이 값을 쓰고, DB는 RLS로 한 번 더 막는다(NFR-02).
+- 방식: 자체 이메일·비밀번호 인증 `[확정]`. 비밀번호는 bcrypt 해시로 SQLite `users`에 저장, 로그인 시 무작위 세션 토큰(32바이트)을 발급해 해시만 `sessions`에 저장하고 원문은 HttpOnly·SameSite=Lax 쿠키로 준다. 공개 회원가입 없음(시드 계정만). `[기본값]` 세션 유효 8시간(`sessions.expires_at`).
+- 역할: `users.role`(`inspector`/`admin`). 화면 분기와 모든 API가 서버에서 이 값을 검사한다(NFR-02).
 - 보호 경로: `/fleet`, `/vessels/*`, `/admin/*`, `/forbidden`, `/api/*`(단 테스트 모드 API 제외).
 - 만료 판정: 인증 쿠키가 있는데 세션이 무효(만료·폐기)이면 `reason=expired`, 쿠키가 없으면 일반 미인증으로 본다.
 - 미인증 접근: `/login?next={원래 경로}`로 이동. `next`는 `/`로 시작하는 내부 경로만 허용하고 그 외에는 `/fleet`.
@@ -553,8 +554,8 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | FR-006 | 검사원이 관리자 화면에 접근하면 SCR-009, 관리자 API는 403을 반환한다. NAV-03·SCR-002-EL-10·SCR-007-EL-13/14는 관리자에게만 렌더링한다 | P0 (High) | US-08 | SCR-009, NAV-03 | DATA-001.role | SC-001, SC-006, SC-011, SC-030 | [E2E] 검사원 `/admin/settings` → 접근 거부 |
 | FR-007 | 선대 화면은 KPI 4개와 선박 12척 표를 데이터와 일치하게 표시한다 | P0 (High) | US-01 | SCR-002-EL-01~05, EL-08 | DATA-002, 005, 009, 010 | SC-008 | [E2E] KPI·행 수·미검토 셀이 시드와 일치 |
 | FR-008 | 검색어(부분 일치)와 선종 칩(AND)으로 표를 필터하고 0건이면 EL-09를 표시한다 | P0 (High) | US-01 | SCR-002-EL-06, 07, 09 | DATA-002 | SC-009, SC-010 | [E2E] 검색·칩 필터 결과 수 |
-| FR-009 | 관리자는 확인 모달을 거쳐 Supabase의 업무 테이블을 `data/seed` 내용으로 되돌릴 수 있다(서버에서 `SUPABASE_SECRET_KEY`로 실행, 사용자 계정은 유지) | P1 (Medium) | — | SCR-002-EL-10~12 | 전체 DATA | SC-011 | [E2E] 판독 확정 → 초기화 → 미검토 복귀 |
-| FR-010 | `APP_TEST_MODE=1`이고 `VERCEL_ENV`가 `production`이 아닐 때만 `POST /api/test/reset`(업무 테이블 시드 복원 + 시드 계정 비밀번호 재설정)과 `POST /api/test/expire-session`(현재 세션 폐기)을 제공하고, 그 외에는 404다 | P0 (High) | — | 해당 없음 — 테스트 상태 유도 API | 전체 DATA | SC-005, NFR-07 | [통합] 테스트 모드 on/off 응답 코드 |
+| FR-009 | 관리자는 확인 모달을 거쳐 SQLite의 업무 테이블을 `data/seed` 내용으로 되돌릴 수 있다(한 트랜잭션, 사용자·세션은 유지) | P1 (Medium) | — | SCR-002-EL-10~12 | 전체 DATA | SC-011 | [E2E] 판독 확정 → 초기화 → 미검토 복귀 |
+| FR-010 | `APP_TEST_MODE=1`일 때만 `POST /api/test/reset`(업무 테이블 시드 복원 + 시드 계정 비밀번호를 환경 변수 값으로 재설정)과 `POST /api/test/expire-session`(현재 세션의 `expires_at`을 과거로 변경)을 제공하고, 그 외에는 404다 | P0 (High) | — | 해당 없음 — 테스트 상태 유도 API | 전체 DATA | SC-005, NFR-07 | [통합] 테스트 모드 on/off 응답 코드 |
 | FR-011 | 선박 개요는 제원과 4단계 상태 카드, 5.5 규칙의 다음 단계 버튼을 표시하고 없는 선박은 404 + EL-08이다 | P0 (High) | US-01 | SCR-003-EL-01~08 | DATA-002, 005, 009, 010 | SC-012 | [E2E] 카드 문구·CTA 이동·404 |
 | FR-012 | 판독 화면은 선박의 판독을 카드로 표시하고 상태 칩으로 필터하며 요약 수를 표시한다 | P0 (High) | US-01 | SCR-004-EL-01~03, EL-20 | DATA-004, 005 | SC-013, SC-016 | [E2E] 요약 수가 시드와 일치 |
 | FR-013 | `확정`은 AI 라벨·심각도를 사람 판정값으로 복사해 `confirmed`로 저장한다 | P0 (High) | US-01 | SCR-004-EL-04, EL-15 | DATA-005 | SC-013 | [E2E] 확정 후 상태·미검토 수 |
@@ -586,10 +587,10 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | ID | 분류 | 요구사항 | 측정 방법 |
 |---|---|---|---|
 | NFR-01 | 성능 | 프로덕션 빌드에서 SCR-002~007 서버 응답 1초 이내, 시뮬레이션·최적화 API 500ms 이내(합성 12척 기준) | [E2E] 응답 시간 측정 |
-| NFR-02 | 보안 | 비밀번호는 Supabase Auth가 관리(앱은 저장하지 않음). 모든 public 테이블 RLS 활성: 로그인 사용자 읽기, 쓰기는 역할별 정책(모델 설정·승인·초기화는 admin). `SUPABASE_SECRET_KEY`는 서버 코드에서만 읽고 `NEXT_PUBLIC_` 접두사 금지·클라이언트 번들 포함 금지. 모든 변경 API는 서버에서 역할 재검사 | [통합] 검사원 세션으로 승인 API 403 · [단위] 빌드 산출물에 비밀 키 문자열 없음 |
+| NFR-02 | 보안 | 비밀번호 bcrypt(cost 10) 해시 저장, 세션 토큰은 해시만 저장, 쿠키 HttpOnly·SameSite=Lax, 모든 변경 API는 서버에서 역할 재검사. 서버는 `127.0.0.1`(localhost)에만 바인딩 | [통합] 검사원 세션으로 승인 API 403 |
 | NFR-03 | 접근성 | P0 화면에서 자동 접근성 검사 심각(critical·serious) 위반 0건, 키보드만으로 US-01·US-04 완료 | [E2E] `@axe-core/playwright` 검사 |
 | NFR-04 | 반응형 | 1280×800, 390×844 두 뷰포트에서 가로 스크롤 없음, 모바일에서 NAV-06 사용 | [E2E] `desktop` 프로젝트(1280×800)는 전체 스위트, `mobile` 프로젝트(390×844)는 `@mobile` 태그(SC-033) |
-| NFR-05 | 실행 검증 | E2E 공통 조건: Chromium, 프로덕션 빌드(로컬·CI `npm run start:e2e`), 운영 Supabase 프로젝트(합성 데이터 전용), `APP_TEST_MODE=1`(로컬·CI 서버만), `E2E_ALLOW_SHARED_DB=1`, `workers=1`(공유 DB), 각 테스트 전 `POST /api/test/reset` | [E2E] `playwright.config.ts` · global setup |
+| NFR-05 | 실행 검증 | E2E 공통 조건: Chromium, 프로덕션 빌드(`npm run start:e2e`), E2E 전용 DB 파일 `data/e2e.db`(개발 DB `data/app.db`와 분리), `APP_TEST_MODE=1`, `workers=1`(같은 SQLite 파일), 각 테스트 전 `POST /api/test/reset` | [E2E] `playwright.config.ts` |
 | NFR-06 | 테스트 식별자 | 요소 ID = `data-testid`. 반복 요소 `{요소 ID}-{레코드 ID}`, 셀 `{행 testid}-{열 키}`. E2E 셀렉터는 `getByTestId`만 사용 | [단위] `npm run prd:check`가 테스트의 testid가 PRD에 있는지 확인 |
 | NFR-07 | 상태 유도 | 시드: `data/seed` + `/api/test/reset`. 세션 만료: `/api/test/expire-session`. 저장 실패: `context.setOffline(true)`(그래서 저장 동작은 클라이언트 fetch로 구현하고 실패를 화면 알림으로 처리) | [E2E] 각 SC에서 사용 |
 | NFR-08 | 재현성 | 같은 시드·파라미터면 같은 계산 결과. 기준일은 시스템 시계가 아니라 `meta.asOfDate` | [단위] 생성기 결정성 테스트 + 기준 모델 일치 |
@@ -749,8 +750,9 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | 항목 | 값 |
 |---|---|
 | 레벨 | Dynamic(풀스택) `[기본값]` — 로그인·역할·서버 계산·저장이 필요 |
-| 스택 | Next.js(App Router) + TypeScript, Route Handlers API `[기본값]` · **호스팅 Vercel** `[확정]` · **DB·인증 Supabase**(Postgres + Auth, `@supabase/ssr`, `@supabase/supabase-js`) `[확정]`. 스키마는 `supabase/migrations/*.sql`로 관리, 시드는 `npm run db:seed`(`data/seed` → Supabase) |
-| Supabase 프로젝트 | **운영용 1개만** 사용 `[확정·사용자 결정 2026-10-13]` — 테스트 전용 프로젝트를 만들지 않는다. Vercel Production·Preview·로컬·CI가 같은 프로젝트를 쓴다. 근거: 저장 데이터가 전부 합성(NG-1)이라 시드로 되돌려도 잃을 실데이터가 없다. 대가: E2E·초기화를 실행하면 앱에서 한 판독·시뮬레이션·계획이 시드 상태로 돌아간다. 실데이터를 넣는 시점(v1)에는 테스트 프로젝트 분리가 선행 조건이다 |
+| 스택 | Next.js(App Router) + TypeScript, Route Handlers API `[기본값]` · **실행 환경 localhost**(`http://localhost:3000`) `[확정·사용자 결정 2026-10-13]` · **DB SQLite**(`better-sqlite3`, 파일 `data/app.db`) `[확정·사용자 결정 2026-10-13]`. 스키마는 `db/migrations/*.sql`, 시드는 `npm run db:seed`(`data/seed` → SQLite) |
+| DB 파일 | 개발·시연 `data/app.db`, E2E `data/e2e.db`(`DATABASE_PATH`로 지정). 둘 다 gitignore. 앱 시작 시 파일이 없으면 마이그레이션 후 시드를 자동 적용 `[기본값]` |
+| 실행 | `npm run dev`(개발) / `npm run build && npm run start`(시연) → 브라우저에서 `http://localhost:3000` |
 | 패키지 관리 | npm |
 
 ### 11.1 테스트
@@ -760,7 +762,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | 단위 테스트 | Node 내장 테스트 러너 — `npm run test:unit` (`tests/unit/**/*.test.mjs`) |
 | E2E | **Playwright** — `npm run test:e2e` (`tests/e2e/**/*.spec.ts`, 설정 `playwright.config.ts`) |
 | PRD 연결 검사 | `npm run prd:check` — E2E가 쓰는 testid가 모두 PRD에 정의되어 있는지 확인 |
-| E2E 서버 | 로컬·CI: `npm run start:e2e` = 프로덕션 빌드 후 `APP_TEST_MODE=1`로 3000번 포트 기동(구현 시 package.json에 추가), 운영 Supabase에 접속. 실행 전 `E2E_ALLOW_SHARED_DB=1`로 운영 DB 초기화에 동의해야 시작한다(global setup이 확인). 배포된 앱(Vercel)에는 테스트 API가 없으므로 E2E는 로컬·CI 서버를 대상으로만 돈다 |
+| E2E 서버 | `npm run start:e2e` = 프로덕션 빌드 후 `APP_TEST_MODE=1 DATABASE_PATH=data/e2e.db`로 3000번 포트 기동(구현 시 package.json에 추가). 개발 DB는 건드리지 않는다 |
 | 기준 모델 | `tests/reference/model.mjs` — 11.4 공식의 기준 구현(오라클). 앱 코드가 import하지 않는다 |
 | 합성 데이터 | `npm run seed:generate` → `data/seed/*.json`, `public/synthetic/inspection/*.svg` (seed 20261001) |
 
@@ -769,45 +771,36 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | 역할 | 계정 | 비밀번호 | 시드 방법 |
 |---|---|---|---|
 | 비로그인 | 해당 없음 | 해당 없음 | 쿠키 없는 브라우저 컨텍스트 |
-| 일반 사용자 | `inspector1@synthetic.example`(검사원 A), `inspector2@synthetic.example`(검사원 B) | 환경 변수 `SEED_INSPECTOR_PASSWORD` | `npm run db:seed`·`/api/test/reset`이 `data/seed/users.json`으로 Supabase Auth 사용자와 `profiles`를 만들거나 비밀번호를 재설정 |
+| 일반 사용자 | `inspector1@synthetic.example`(검사원 A), `inspector2@synthetic.example`(검사원 B) | 환경 변수 `SEED_INSPECTOR_PASSWORD` | `npm run db:seed`·`/api/test/reset`이 `data/seed/users.json`으로 `users` 행을 만들고 비밀번호 해시를 환경 변수 값으로 설정 |
 | 관리자 | `admin1@synthetic.example`(검사기획 관리자) | 환경 변수 `SEED_ADMIN_PASSWORD` | 같음 |
 
 ### 11.2 시스템 가정
 
 | # | 칸 | 상태 | 내용 |
 |---|---|---|---|
-| 1 | 데이터 저장 위치와 수명 | [확정] | Supabase Postgres(부록 A 테이블). 초기화 전까지 유지. 실데이터 저장 금지. 리전은 서울(ap-northeast-2) `[기본값]` |
+| 1 | 데이터 저장 위치와 수명 | [확정] | 로컬 SQLite 파일(`data/app.db`, 부록 A 테이블). 초기화 전까지 유지. 실데이터 저장 금지 |
 | 2 | 로그인·열람·편집 주체와 권한 | [확정] | 4.1 역할표 |
-| 3 | 호스팅·배포 환경 | [확정] | Vercel. Production = 기본 브랜치, Preview = 그 밖의 브랜치·PR. 함수 리전은 Supabase와 가까운 서울(icn1) `[기본값]` |
+| 3 | 호스팅·배포 환경 | [확정] | localhost 단일 Node 프로세스. 배포 없음(NG-9) |
 | 4 | 시간대·로케일 | [기본값] | Asia/Seoul, ko-KR. 계산 기준일은 `meta.asOfDate`(2026-10-01) |
 | 5 | 통화·환율·기준일 | [해당 없음] | 비용은 검사 시간(시간)으로만 다룸 |
 | 6 | 지원 언어 | [확정] | 한국어 |
 | 7 | 콘텐츠 출처와 권한 | [확정] | 검사 이미지는 생성기가 만든 SVG(저작권 문제 없음). 디자인 문서는 MIT(`docs/DESIGN.NOTICE.md`) |
-| 8 | 외부 서비스 실패 시 동작 | [기본값] | Supabase 응답 실패·시간 초과(5초) → 화면은 `ERROR-PAGE`, 저장 동작은 각 화면 오류 알림(FR-035). 재시도는 사용자가 수동. 폰트는 self-host |
+| 8 | 외부 서비스 실패 시 동작 | [해당 없음] | 외부 서비스 호출 없음. 폰트는 `pretendard` 패키지로 self-host. DB 오류는 `ERROR-PAGE`·각 화면 오류 알림(FR-035) |
 | 9 | 성능·용량·접근성 | [기본값] | NFR-01·03·04 |
 | 10 | 수치·외부 사실의 출처와 기준일 | [기본값] | 모델 수치(허용 쇠모율 20%, 보정계수 0.2 등)는 `[가설]` 시연값. 부록 B |
 
 ### 11.3 환경 변수 계약
 
-값은 어떤 파일·문서·채팅에도 적지 않는다. 저장소에는 이름만 있는 `.env.example`을 둔다. Supabase 프로젝트는 운영용 1개다(11장).
+localhost 실행이므로 외부 서비스 키는 없다. 값은 커밋·채팅·문서에 쓰지 않는다. 저장소에는 이름만 있는 `.env.example`을 두고, 실제 값은 프로젝트 루트의 `.env.local`(Next.js가 자동으로 읽음, gitignore)에 둔다.
 
-| 변수 | 비밀 여부 | 읽는 곳 | Vercel(Production·Preview) | 로컬 `.env.local`·CI·Claude 클라우드 세션 | 넣는 방법 |
-|---|---|---|---|---|---|
-| `SUPABASE_URL` | 공개 | 서버, 빌드 시 `NEXT_PUBLIC_SUPABASE_URL`로 노출 | 등록 | 등록 | Supabase Vercel 통합이 자동 등록 / 환경 설정 |
-| `SUPABASE_PUBLISHABLE_KEY` | 공개(RLS가 보호) | 서버, 빌드 시 `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`로 노출 | 등록 | 등록 | 같음 |
-| `SUPABASE_SECRET_KEY` | **비밀·서버 전용** | 서버(초기화·시드·관리 API) | 등록(Sensitive) | 등록 | 같음 |
-| `SEED_INSPECTOR_PASSWORD` · `SEED_ADMIN_PASSWORD` | 비밀 | `npm run db:seed`·`/api/test/reset`·E2E 로그인 | 등록하지 않음 | 등록 | 환경 설정·CI secret |
-| `APP_TEST_MODE` | 공개 | 서버 | **등록 금지**(Production·Preview 모두) | `1`(E2E 서버 기동 시) | `npm run start:e2e`가 설정 |
-| `E2E_ALLOW_SHARED_DB` | 공개 | Playwright global setup | — | `1`(운영 DB 초기화 동의) | 실행 시 지정 |
-| `E2E_BASE_URL` | 공개 | Playwright | — | 비움(로컬 서버) | — |
+| 변수 | 비밀 여부 | 읽는 곳 | 기본값 | 넣는 방법 |
+|---|---|---|---|---|
+| `DATABASE_PATH` | 공개 | 서버 | `data/app.db` | 보통 비워 둠. `npm run start:e2e`가 `data/e2e.db`로 지정 |
+| `SEED_INSPECTOR_PASSWORD` · `SEED_ADMIN_PASSWORD` | 비밀 | `npm run db:seed`·`/api/test/reset`·E2E 로그인 | 없음(필수) | `.env.local` 또는 셸 환경 변수. Claude 클라우드 세션은 환경 설정의 환경 변수 |
+| `APP_TEST_MODE` | 공개 | 서버 | 비어 있음(꺼짐) | `npm run start:e2e`만 `1`로 설정. 시연 서버에는 넣지 않음 |
+| `E2E_BASE_URL` | 공개 | Playwright | `http://localhost:3000` | 다른 포트로 띄웠을 때만 |
 
-이름 규칙
-
-- 공개 값은 Supabase Vercel 통합이 넣는 이름(`SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`)을 정본으로 쓰고, `next.config.ts`의 `env`에서 `NEXT_PUBLIC_SUPABASE_URL`·`NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`로 브라우저에 넘긴다. `NEXT_PUBLIC_*`가 이미 있으면 그 값을 우선한다.
-- 비밀 키는 `SUPABASE_SECRET_KEY`(`sb_secret_…`)만 쓴다. 구형 `SUPABASE_SERVICE_ROLE_KEY`·`SUPABASE_ANON_KEY`(JWT)는 읽지 않는다.
-- `SUPABASE_SECRET_KEY`는 `next.config.ts` `env`에 넣지 않는다(넣으면 브라우저 번들에 들어간다).
-
-넣는 경로: Vercel은 Supabase 통합 또는 `vercel env add`, 로컬은 `vercel link` → `vercel env pull .env.local`(`.env*`는 gitignore), Claude 클라우드 세션은 환경 설정의 환경 변수, CI는 저장소 secret. Claude 클라우드 세션에서 시드·E2E를 실행하려면 환경의 네트워크 허용 도메인에 Supabase 프로젝트 호스트(`*.supabase.co`)가 있어야 한다.
+`.env.local`은 Next.js가 읽지만 Playwright와 `npm run db:seed`는 읽지 않으므로, 두 명령은 `node --env-file-if-exists=.env.local`로 실행한다(구현 시 package.json 스크립트에 반영).
 
 ### 11.4 AI 판정 계약과 계산 공식
 
@@ -866,9 +859,10 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 
 | # | 이슈 | 기본값 | 담당 | 재확인 시점 |
 |---|---|---|---|---|
-| ~~I-1~~ | ~~비밀번호 해시 알고리즘~~ — v1.1 삭제: Supabase Auth가 관리 | — | — | — |
-| I-2 | 동시 쓰기 | Postgres 트랜잭션, 판독은 `version` 조건부 update로 409 처리, 초기화는 RPC 함수 1회 호출 | [구현자] | Design 단계 |
-| I-6 | Supabase 접근 계층 | 서버 컴포넌트·Route Handler에서만 DB 접근, 계산(11.4)은 서버 TypeScript 모듈 | [구현자] | Design 단계 |
+| ~~I-1~~ | ~~비밀번호 해시 알고리즘~~ — v1.1 삭제, v1.3에서 I-7로 대체 | — | — | — |
+| I-2 | 동시 쓰기 | SQLite WAL 모드 + 쓰기는 트랜잭션, 판독은 `version` 조건부 update로 409 처리 | [구현자] | Design 단계 |
+| I-6 | DB 접근 계층 | 서버 컴포넌트·Route Handler에서만 DB 접근(`better-sqlite3`는 서버 전용), 계산(11.4)은 서버 TypeScript 모듈. ORM(Drizzle 등) 사용은 선택 | [구현자] | Design 단계 |
+| I-7 | 비밀번호 해시 | bcrypt(cost 10), 라이브러리 `bcryptjs` | [구현자] | 보안 점검 시 |
 | I-3 | 차트 라이브러리 | 의존성 없는 SVG 직접 렌더링 또는 경량 라이브러리 | [구현자] | Design 단계 |
 | I-4 | Pretendard 로딩 | `pretendard` npm 패키지 self-host, `font-display: swap` | [구현자] | Design 단계 |
 | I-5 | 시뮬레이션 실행 ID 형식 | `SIM-{vesselId}-{yyyyMMddHHmmss}-{순번}` | [구현자] | — |
@@ -878,9 +872,9 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | # | 상태 | 결정 사항 | 선택지 | 추천값 | fallback(무응답 시) | 연쇄 영향 |
 |---|---|---|---|---|---|---|
 | D-1 | 미결 | 허용 쇠모율 기준 | ① 전 부재 단일 % ② 부재 유형별 KR 규칙값 | ② (실무 정합) | ① 20% `[가설]` 유지, 설정 화면에서 변경 가능 | DATA-003에 부재별 허용값 필드 추가 시 FR-020 수정 |
-| D-2 | **확정(v1.1)** | 저장소·호스팅 | Supabase + Vercel (사용자 결정 2026-10-13) | — | — | 11장, FR-009·010, NFR-02·05, 부록 A |
-| D-3 | **확정(v1.1)** | 인증 방식 | Supabase Auth 이메일·비밀번호 + 시드 계정. KR SSO는 NG-7 유지 | — | — | 5.4, NG-7 |
-| D-5 | **확정(v1.2)** | Supabase 프로젝트 구성 | 운영용 1개만, 테스트 전용 없음(사용자 결정 2026-10-13) | — | — | 11장, 11.3, NFR-05. 실데이터 도입 시 재결정 |
+| D-2 | **확정(v1.3)** | 저장소·실행 환경 | SQLite + localhost (사용자 결정 2026-10-13, v1.1의 Supabase+Vercel 대체) | — | — | 11장, FR-009·010, NFR-02·05, 부록 A, NG-9 |
+| D-3 | **확정(v1.3)** | 인증 방식 | 자체 이메일·비밀번호 + 시드 계정(SQLite). KR SSO는 NG-7 유지 | — | — | 5.4, NG-7 |
+| D-5 | 해당 없음(v1.3) | 원격 DB 프로젝트 구성 | 로컬 SQLite 파일로 대체(개발 `app.db`, E2E `e2e.db`) | — | — | 11장 |
 | D-4 | 미결 | MVP 목표일 | 날짜 지정 | — | 날짜 없이 feature 순서대로 진행 | 10장 |
 
 Blocker 없음: D-1~D-4 모두 fallback으로 P0 설계가 바뀌지 않는다.
@@ -891,13 +885,13 @@ Blocker 없음: D-1~D-4 모두 fallback으로 P0 설계가 바뀌지 않는다.
 
 | 순서 | feature 슬러그 | 포함 화면·메뉴 | FR | SC | 데이터 | 의존 | 규모 |
 |---|---|---|---|---|---|---|---|
-| 1 | `auth-fleet` | SCR-001, SCR-002, SCR-009, NAV-01~06, 공통 레이아웃·footer, Supabase 스키마·RLS·시드(`db:seed`)·Vercel 연결 | FR-001~010 | SC-001~011, SC-033, SC-034 | DATA-001, 002, 005, 009, 010 | 없음 | M |
+| 1 | `auth-fleet` | SCR-001, SCR-002, SCR-009, NAV-01~06, 공통 레이아웃·footer, SQLite 연결·마이그레이션·시드(`db:seed`) | FR-001~010 | SC-001~011, SC-033, SC-034 | DATA-001, 002, 005, 009, 010 | 없음 | M |
 | 2 | `inspection-review` | SCR-003, SCR-004, NAV-11~15 | FR-011~019 | SC-012~018 | DATA-002~005, 011 | auth-fleet | M |
 | 3 | `degradation-forecast` | SCR-005 | FR-020~023 | SC-019~022 | DATA-003, 004, 005, 008 | inspection-review | S |
 | 4 | `risk-simulation` | SCR-006 | FR-024~027 | SC-023~025 | DATA-003, 006, 008, 009 | degradation-forecast | M |
 | 5 | `inspection-plan` | SCR-007, SCR-008 | FR-028~035 | SC-026~032 | DATA-007, 008, 009, 010, 011 | risk-simulation | M |
 
-Supabase 마이그레이션은 feature마다 필요한 테이블만 추가한다(auth-fleet: profiles·vessels·findings 집계에 필요한 테이블과 app_meta, 이후 feature가 나머지). FR-035(네트워크 오류)는 각 feature의 저장 화면에 적용하며 inspection-plan에서 최종 확인한다. SC-033·034는 마지막 feature 완료 후 전체 화면에 다시 실행한다.
+SQLite 마이그레이션은 feature마다 필요한 테이블만 추가한다(auth-fleet: users·sessions·vessels·findings·simulation_runs·inspection_plans·app_meta, 이후 feature가 나머지). FR-035(네트워크 오류)는 각 feature의 저장 화면에 적용하며 inspection-plan에서 최종 확인한다. SC-033·034는 마지막 feature 완료 후 전체 화면에 다시 실행한다.
 
 ## 15. bkit 실행 계약
 
@@ -915,9 +909,9 @@ Supabase 마이그레이션은 feature마다 필요한 테이블만 추가한다
 
 ## 부록 A. 데이터 계약
 
-공통: 저장 위치는 Supabase Postgres `public` 스키마(테이블명은 각 제목의 괄호), 시드 원본은 `data/seed/{같은 이름}.json`, 수명은 초기화 전까지, 출처 라벨 `[가설]`(합성). 모든 테이블 RLS 활성(NFR-02). 테이블: `profiles`, `vessels`, `members`, `thickness_measurements`, `inspection_images`, `findings`, `fatigue_records`, `port_calls`, `model_parameters`(1행), `simulation_runs`(results·params는 jsonb), `inspection_plans`(items·excluded는 jsonb), `audit_log`, 메타는 `app_meta`(asOfDate 등 1행).
+공통: 저장 위치는 로컬 SQLite 파일(`DATABASE_PATH`, 기본 `data/app.db`), 테이블명은 각 제목의 괄호. 시드 원본은 `data/seed/{같은 이름}.json`, 수명은 초기화 전까지, 출처 라벨 `[가설]`(합성). 테이블: `users`, `sessions`, `vessels`, `members`, `thickness_measurements`, `inspection_images`, `findings`, `fatigue_records`, `port_calls`, `model_parameters`(1행), `simulation_runs`(results·params는 JSON 텍스트), `inspection_plans`(items·excluded는 JSON 텍스트), `audit_log`, `app_meta`(asOfDate 등 1행).
 
-### DATA-001 사용자·세션 (`auth.users` + `profiles`, 시드 `users.json`)
+### DATA-001 사용자·세션 (`users` + `sessions`, 시드 `users.json`)
 
 | 필드 | 타입 | 필수 | 기본값 | 검증·제약 | 읽기 화면·요소 | 쓰기 화면·요소 | 출처 |
 |---|---|---|---|---|---|---|---|
@@ -926,7 +920,9 @@ Supabase 마이그레이션은 feature마다 필요한 테이블만 추가한다
 | displayName | string | 예 | — | 1~30자 | NAV-04, SCR-008-EL-11 | 시드 | [가설] |
 | role | enum(inspector, admin) | 예 | — | — | NAV-03·04, 권한 검사 | 시드 | [확정·4.1] |
 | passwordEnv | string | 예 | — | 환경 변수 이름, 값 저장 금지 | 서버 | 시드 | [확정·11.1] |
-| ~~passwordHash~~ | — v1.1 삭제: Supabase Auth가 관리 | | | | | | |
+| ~~passwordHash~~ | — v1.1 삭제, v1.3에서 password_hash로 대체 | | | | | | |
+| password_hash | string | 예 | — | bcrypt 해시, 원문 저장 금지 | 서버 | `db:seed`·`/api/test/reset` | — |
+| session.token_hash | string | 예 | — | 토큰 SHA-256, 고유 | 서버 | SCR-001-EL-04 | — |
 | session.expiresAt | datetime | 예 | 로그인+8h | — | 서버 | SCR-001-EL-04, 테스트 API | [기본값] |
 
 ### DATA-002 선박 (`vessels.json`)
@@ -1071,14 +1067,15 @@ Supabase 마이그레이션은 feature마다 필요한 테이블만 추가한다
 | bkit 명령·경로·matchRateThreshold | `[검증 기준]` 스킬 reference 미동봉으로 설치본 확인 불가. bkit 공개 문서 기준 기억값 | 2026-10-13 | bkit 설치 직후 `bkit.config.json` 확인 |
 | 허용 쇠모율 20% 등 모델 수치 | 출처 없음 `[가설]` 시연값 | — | D-1 결정 시 KR 규칙 확인 |
 | Playwright 버전 | 실행 환경 `playwright 1.56.1` | 2026-10-13 | 구현 시 |
-| Supabase Vercel 통합이 등록하는 변수(`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`, `POSTGRES_*` 등) | [조사·2026-10-13] vercel.com/marketplace/supabase | 2026-10-13 | 구현 착수 시 |
-| Vercel 환경 3종(Production·Preview·Development)과 브랜치 매핑 | [조사·2026-10-13] supabase.com/docs/guides/troubleshooting/vercel-integration-environment-variables… | 2026-10-13 | 구현 착수 시 |
-| 보호된 배포 E2E: `x-vercel-protection-bypass` 헤더, `VERCEL_AUTOMATION_BYPASS_SECRET` 시스템 변수(v1.2부터 Preview 대상 E2E를 하지 않아 미사용) | [조사·2026-10-13] vercel.com/docs/deployment-protection/methods-to-bypass-deployment-protection/protection-bypass-automation | 2026-10-13 | 구현 착수 시 |
+| Supabase Vercel 통합이 등록하는 변수(`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`, `POSTGRES_*` 등) | [조사·2026-10-13] vercel.com/marketplace/supabase | 2026-10-13 | v1.3부터 미사용(NG-9) |
+| Vercel 환경 3종(Production·Preview·Development)과 브랜치 매핑 | [조사·2026-10-13] supabase.com/docs/guides/troubleshooting/vercel-integration-environment-variables… | 2026-10-13 | v1.3부터 미사용(NG-9) |
+| 보호된 배포 E2E: `x-vercel-protection-bypass` 헤더, `VERCEL_AUTOMATION_BYPASS_SECRET` 시스템 변수(v1.2부터 Preview 대상 E2E를 하지 않아 미사용) | [조사·2026-10-13] vercel.com/docs/deployment-protection/methods-to-bypass-deployment-protection/protection-bypass-automation | 2026-10-13 | v1.3부터 미사용(NG-9) |
 
 ## 개정 이력
 
 | 개정 | 일자 | 내용 | 작성 |
 |---|---|---|---|
+| v1.3 | 2026-10-13 | 사용자 결정: Supabase·Vercel 대신 localhost + SQLite(D-2·D-3 재확정, D-5 해당 없음, NG-9 추가). 5.4 자체 인증, FR-009·010, NFR-02·05, 11장 스택·가정·11.3 환경 변수, 12장 I-2·I-6·I-7, 14장, 부록 A 저장 위치·DATA-001 | to-prd |
 | v1.2 | 2026-10-13 | 사용자 결정: 테스트 전용 Supabase 프로젝트 없이 운영용 1개(D-5 확정). 11장·11.3 환경 변수 계약(통합 변수명 `SUPABASE_URL`·`SUPABASE_PUBLISHABLE_KEY`·`SUPABASE_SECRET_KEY` 정본화, `E2E_ALLOW_SHARED_DB` 추가, Preview 대상 E2E 삭제), NFR-05 | to-prd |
 | v1.1 | 2026-10-13 | 사용자 결정 반영: 호스팅 Vercel, DB·인증 Supabase(D-2·D-3 확정). 5.4 인증, FR-009·010, NFR-02·05, 11장 스택·가정, 11.3 환경 변수 계약 신설, 12장 I-1 삭제·I-6 추가, 13장 D-5 추가, 부록 A 저장 위치·DATA-001, 부록 B 출처 추가 | to-prd |
 | v1.0 | 2026-10-13 | 신규 작성. 대화의 GMSI 요구사항(A-1→P-2→S-1→O-3)을 Smart RBI 단일 체인으로 PRD화, 합성 데이터·기준 모델·E2E 계약 포함 | to-prd |

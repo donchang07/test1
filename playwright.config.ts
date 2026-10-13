@@ -1,11 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
 
-// PRD NFR-04·05: Chromium, 프로덕션 빌드, APP_TEST_MODE=1, 운영 Supabase DB를 공유하므로 workers=1.
+// PRD NFR-04·05: Chromium, 프로덕션 빌드, APP_TEST_MODE=1, E2E 전용 SQLite 파일 하나를 공유하므로 workers=1.
 const baseURL = process.env.E2E_BASE_URL || 'http://localhost:3000';
 
 export default defineConfig({
   testDir: 'tests/e2e',
-  // 운영 DB를 시드로 되돌리므로 명시적 동의가 있어야 시작한다(PRD 11.3 E2E_ALLOW_SHARED_DB).
+  // 시드 계정 비밀번호 등 필수 환경 변수를 먼저 확인한다(PRD 11.3).
   globalSetup: './tests/e2e/support/global-setup.ts',
   fullyParallel: false,
   workers: 1,
@@ -34,6 +34,6 @@ export default defineConfig({
     url: `${baseURL}/login`,
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,
-    env: { APP_TEST_MODE: '1' },
+    env: { APP_TEST_MODE: '1', DATABASE_PATH: 'data/e2e.db' },
   },
 });

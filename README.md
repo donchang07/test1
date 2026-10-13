@@ -2,7 +2,7 @@
 
 선체 구조 건전성 기반 지능형 위험도 기반 검사(Smart RBI) MVP의 **bkit 착수 패키지**입니다.
 검사 판독(자동화) → 열화 예측(예측) → 시나리오 시뮬레이션(시뮬레이션) → 검사 계획(최적화)을 하나의 흐름으로 구현합니다.
-앱 코드는 아직 없으며 bkit(`/pdca`)으로 구현합니다. 스택은 Next.js + **Vercel** + **Supabase**(Postgres·Auth)입니다. 모든 데이터는 합성 데이터입니다.
+앱 코드는 아직 없으며 bkit(`/pdca`)으로 구현합니다. 스택은 Next.js + **SQLite**이며 **localhost**에서 실행합니다. 모든 데이터는 합성 데이터입니다.
 
 ## 구성
 
@@ -27,10 +27,10 @@ npm run test:e2e:list    # E2E 목록
 npm run test:e2e         # 앱 구현 후: SEED_* 환경 변수와 npm run start:e2e 필요
 ```
 
-## 환경 변수
+## 로컬 실행·환경 변수
 
-이름과 환경별 규칙은 `docs/PRD.md` 11.3, 이름 목록은 `.env.example`. 로컬은 `vercel link` → `vercel env pull .env.local`.
-Supabase 프로젝트는 운영용 1개이며, E2E는 그 데이터를 시드로 초기화하므로 `E2E_ALLOW_SHARED_DB=1`로 동의해야 실행됩니다.
+`.env.example`을 `.env.local`로 복사해 `SEED_INSPECTOR_PASSWORD`·`SEED_ADMIN_PASSWORD`를 채운 뒤 `npm run dev` → `http://localhost:3000`(앱 구현 후).
+DB는 `data/app.db`(SQLite), E2E는 `data/e2e.db`를 따로 씁니다. 규칙은 `docs/PRD.md` 11.3.
 
 ## bkit 진행 순서
 

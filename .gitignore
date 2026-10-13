@@ -1,5 +1,7 @@
 node_modules/
 data/runtime/
+data/*.db
+data/*.db-*
 test-results/
 playwright-report/
 .next/
