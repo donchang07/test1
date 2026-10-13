@@ -9,9 +9,12 @@
 | Match Rate | 95% 이상 | **97.7%**(84/86) | 통과 |
 | `npm run test:unit` | 전체 통과 | 13/13 통과 | 통과 |
 | auth-fleet SC(게이트 범위) | SC-001, 003, 005~010 | 8/8 통과 | 통과 |
-| `npm run test:e2e`(전체) | 전체 통과 | 9/34 통과, 25 실패 | **미통과** — 실패 25건은 전부 이후 feature 배치 SC |
+| `npm run prd:check` | 오류 0 | 오류 0건 | 통과 |
+| `npm run test:e2e`(전체) | 실행·SC별 기록(통과 관문은 `inspection-plan`) | 9/34 통과, 25 실패 | 기록 완료 — 실패 25건은 전부 이후 feature 배치 SC(2.1) |
 
-CLAUDE.md 완료 규칙("위 테스트 전체 통과")은 전체 `npm run test:e2e`를 요구한다. 실패 25건은 아직 구현하지 않은 SCR-004~008 화면에 의존하므로 auth-fleet 단독으로는 통과시킬 수 없다. `docs/00-pm/auth-fleet.gate.md` 완료 조건(feature 범위 SC + `test:unit`, 전체 E2E는 마지막 feature 후)은 충족했다. **두 규칙이 다르므로 `/pdca report` 진행 여부는 사용자 판단이 필요하다.**
+PRD v1.6 15장·CLAUDE.md 완료 규칙 기준으로 **두 관문 모두 통과**했다. 전체 E2E 실패 25건은 아직 구현하지 않은 SCR-004~008 화면이 필요한 SC이며 auth-fleet 누적 SC 밖이다.
+
+> v1.0 작성 시점에는 CLAUDE.md(전체 E2E 통과)와 gate 문서(feature 범위)가 서로 달라 판정을 보류했다. 사용자 결정으로 PRD v1.6 15장과 CLAUDE.md를 feature 누적 SC 기준으로 통일했다.
 
 ## 2. 실행 기록
 
@@ -96,12 +99,12 @@ PRD 요구 항목 86개를 대조했다(화면 요소·문구·상태, NAV, foot
 
 | # | 내용 | 이유 | 제안 |
 |---|---|---|---|
-| G-1 | 없는 경로의 Next 기본 404에는 footer 고지가 없다(NFR-09 "모든 화면") | PRD에 루트 404 화면·요소 ID가 없다. ID 없는 UI를 만들면 CLAUDE.md 규칙 위반 | PRD에 공통 404 화면(예: `NOT-FOUND`)을 추가하는 갱신 요청 |
+| G-1 | 없는 경로의 Next 기본 404에는 footer 고지가 없다(NFR-09 "모든 화면") | v1.0 시점 PRD에 루트 404 화면·요소 ID가 없었다 | PRD v1.6 5.5에 `NOT-FOUND-PAGE`를 정의함(auth-fleet 범위). **구현 대기** |
 | G-2 | 레이아웃 보조 클래스 `modal-backdrop`, `kpi-grid`, `toolbar`, `login-card`, `login-main`이 9장 목록 밖 | 9.3 컴포넌트가 아니라 배치용 보조 클래스. React 컴포넌트 이름은 design 5.3에 있음 | 9장에 "보조 레이아웃 클래스 허용" 문구를 추가할지 결정 |
 
 ## 6. 결정·주의 사항
 
-- **ink-muted-48 사용 범위:** DESIGN.md는 fine-print에 `ink-muted-48`을 쓰도록 하지만, 흰 배경 대비가 4.29:1로 WCAG AA(4.5:1)와 SC-034를 통과하지 못한다. 같은 DESIGN 토큰인 `ink-muted-80`을 썼다. PRD 9.1에 이 예외를 적는 갱신을 권장한다.
+- **ink-muted-48 사용 범위:** DESIGN.md는 fine-print에 `ink-muted-48`을 쓰도록 하지만, 흰 배경 대비가 4.29:1로 WCAG AA(4.5:1)와 SC-034를 통과하지 못한다. 같은 DESIGN 토큰인 `ink-muted-80`을 썼고, PRD v1.6 9.1·9.2에 예외로 반영했다.
 - **E2E 환경 변수:** 실행 환경에 `SEED_*`가 이미 있으면 그 값이 `.env.local`보다 우선한다(playwright.config). 서버만 다른 값으로 띄우면 로그인 E2E가 전부 실패하므로, 서버와 Playwright는 같은 값을 써야 한다.
 
 ## Version History
@@ -109,3 +112,4 @@ PRD 요구 항목 86개를 대조했다(화면 요소·문구·상태, NAV, foot
 | 버전 | 날짜 | 내용 |
 |---|---|---|
 | 1.0 | 2026-10-13 | 최초 작성 |
+| 1.1 | 2026-10-13 | PRD v1.6 반영: 완료 판정을 feature 누적 SC 기준으로 갱신, G-1 PRD 정의 완료(구현 대기), 색 예외 PRD 반영 |

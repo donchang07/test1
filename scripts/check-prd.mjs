@@ -123,12 +123,12 @@ for (const line of scRows) {
   }
 }
 const usedIds = new Set();
-for (const m of specText.matchAll(/['"`/^]((?:SCR-\d{3}-EL-\d{2}|NAV-\d{2}|FOOTER-NOTICE|ERROR-PAGE)(?:-[A-Za-z]+)?)/g)) usedIds.add(m[1]);
+for (const m of specText.matchAll(/['"`/^]((?:SCR-\d{3}-EL-\d{2}|NAV-\d{2}|FOOTER-NOTICE|ERROR-PAGE|NOT-FOUND-PAGE)(?:-[A-Za-z]+)?)/g)) usedIds.add(m[1]);
 // tid(page, 'SCR-xxx-EL-yy', ..., 'suffix') 형태의 정적 접미사
 const suffixes = new Set();
 for (const m of specText.matchAll(/tid\([^)]*?'((?:SCR-\d{3}-EL-\d{2}|NAV-\d{2}))'(?:,[^)]*)?,\s*'([a-zA-Z]+)'\)/g)) suffixes.add(`${m[1]}::${m[2]}`);
 for (const id of usedIds) {
-  const base = id.match(/^(SCR-\d{3}-EL-\d{2}|NAV-\d{2}|FOOTER-NOTICE|ERROR-PAGE)/)[1];
+  const base = id.match(/^(SCR-\d{3}-EL-\d{2}|NAV-\d{2}|FOOTER-NOTICE|ERROR-PAGE|NOT-FOUND-PAGE)/)[1];
   if (base.startsWith('SCR-') && !defined.EL.has(base)) errors.push(`E2E testid ${id}: PRD에 요소 ${base} 정의 없음`);
   if (base.startsWith('NAV-') && !defined.NAV.has(base)) errors.push(`E2E testid ${id}: PRD에 메뉴 ${base} 정의 없음`);
   if (!base.startsWith('SCR-') && !base.startsWith('NAV-') && !prd.includes(base)) errors.push(`E2E testid ${id}: PRD에 없음`);

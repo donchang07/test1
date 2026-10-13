@@ -52,7 +52,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </thead>
 <tbody><tr>
 <td>정본 개정</td>
-<td>v1.5</td>
+<td>v1.6</td>
 </tr>
 <tr>
 <td>PRD 스키마</td>
@@ -610,6 +610,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <li>날짜는 <code>YYYY-MM-DD</code>, 시간대는 <code>Asia/Seoul</code>.</li>
 <li>모든 인증 화면 상단에 <code>global-nav</code>(NAV-01&#126;06), 선박 화면(SCR-003&#126;007) 은 그 아래 <code>sub-nav-frosted</code>(NAV-11&#126;15).</li>
 <li>하단 <code>footer</code>에 고지 문구 <code>모든 데이터는 합성 데이터이며 실제 선박·선급 기록이 아닙니다.</code>(SCR-001-EL-07과 같은 문구, testid <code>FOOTER-NOTICE</code>).</li>
+<li>공통 시스템 페이지(화면 인벤토리 밖, 전역 내비 없음, <code>footer</code> 있음): 시스템 오류는 <code>ERROR-PAGE</code>(8장), 정의되지 않은 경로는 HTTP 404 + <code>inline-alert</code>(error) <code>페이지를 찾을 수 없습니다.</code>(testid <code>NOT-FOUND-PAGE</code>) 안에 링크 <code>선대 현황으로</code>(testid <code>NOT-FOUND-PAGE-back</code>, → SCR-002. 미인증이면 5.4 규칙대로 로그인으로 이동). 없는 선박은 이 페이지가 아니라 SCR-003-EL-08을 쓴다.</li>
 </ul>
 <hr>
 <h4 id="SCR-001">SCR-001 로그인</h4>
@@ -3048,7 +3049,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <tr>
 <td id="NFR-09" class="id">NFR-09</td>
 <td>데이터 표기</td>
-<td>모든 화면 footer에 합성 데이터 고지</td>
+<td>모든 화면 footer에 합성 데이터 고지(<a href="#SCR-001">SCR-001</a>&#126;009와 공통 시스템 페이지 <code>ERROR-PAGE</code>·<code>NOT-FOUND-PAGE</code> 포함)</td>
 <td>[E2E] <code>FOOTER-NOTICE</code> 존재</td>
 </tr>
 </tbody></table>
@@ -3351,6 +3352,13 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <td>—</td>
 </tr>
 <tr>
+<td>정의되지 않은 경로</td>
+<td><code>NOT-FOUND-PAGE</code>(HTTP 404)</td>
+<td><code>페이지를 찾을 수 없습니다.</code></td>
+<td>선대 현황 링크</td>
+<td>—</td>
+</tr>
+<tr>
 <td>판독 이미지 없음</td>
 <td><a href="#SCR-004-EL-14">SCR-004-EL-14</a></td>
 <td><code>등록된 검사 이미지가 없습니다.</code></td>
@@ -3463,6 +3471,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <li>디자인 기준: <code>docs/DESIGN.md</code> — <code>[확정]</code> 사용자 지정 “Apple DESIGN.md”. 출처는 VoltAgent/awesome-design-md의 Apple 분석 문서(MIT, <code>docs/DESIGN.NOTICE.md</code>). Apple 공식 문서가 아니다.</li>
 <li>폰트: <strong>Pretendard</strong>. DESIGN.md의 SF Pro 지정은 따르지 않고 같은 크기·굵기·자간 계층을 Pretendard에 적용한다. 굵기 단계 300/400/600/700, 500 사용 금지(DESIGN.md 규칙 유지).</li>
 <li>단일 강조색 Action Blue <code>#0066cc</code>(어두운 타일 위 <code>#2997ff</code>). 상태 의미 색은 아래 9.3 확장 토큰으로만 쓰고 버튼·링크에는 쓰지 않는다.</li>
+<li>보조 텍스트 색(DESIGN.md 예외): <code>ink-muted-48</code>(#7a7a7a)은 흰 배경 대비 4.29:1로 WCAG AA(본문 4.5:1)와 NFR-03에 미달하므로 <strong>비활성 텍스트에만</strong> 쓴다. 읽어야 하는 보조 텍스트(caption, fine-print, KPI 라벨, footer)는 <code>ink-muted-80</code>(#333333)을 쓴다. DESIGN.md의 fine-print·footer 법적 문구 <code>ink-muted-48</code> 지정은 따르지 않는다.</li>
 <li>그림자는 쓰지 않는다(제품 사진 없음). 카드 구분은 <code>hairline</code> 1px 테두리.</li>
 <li>버튼 누름 상태는 <code>transform: scale(0.95)</code>.</li>
 </ul>
@@ -3514,6 +3523,21 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <td>typography.caption</td>
 <td>14px/400</td>
 <td>보조 정보</td>
+</tr>
+<tr>
+<td>typography.fine-print</td>
+<td>12px/400/-0.12px</td>
+<td>고지 문구(<a href="#SCR-001-EL-07">SCR-001-EL-07</a>, footer)</td>
+</tr>
+<tr>
+<td>colors.ink-muted-80</td>
+<td>#333333</td>
+<td>보조 텍스트(caption·fine-print·KPI 라벨·footer)</td>
+</tr>
+<tr>
+<td>colors.ink-muted-48</td>
+<td>#7a7a7a</td>
+<td>비활성 텍스트 전용(9.1 예외)</td>
 </tr>
 <tr>
 <td>rounded.pill / lg / sm</td>
@@ -4183,7 +4207,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <tbody><tr>
 <td>1</td>
 <td><code>auth-fleet</code></td>
-<td><a href="#SCR-001">SCR-001</a>, <a href="#SCR-002">SCR-002</a>, <a href="#SCR-009">SCR-009</a>, <a href="#NAV-01">NAV-01</a>&#126;06, 공통 레이아웃·footer, SQLite 연결·마이그레이션·시드(<code>db:seed</code>)</td>
+<td><a href="#SCR-001">SCR-001</a>, <a href="#SCR-002">SCR-002</a>, <a href="#SCR-009">SCR-009</a>, <a href="#NAV-01">NAV-01</a>&#126;06, 공통 레이아웃·footer·시스템 페이지(<code>ERROR-PAGE</code>·<code>NOT-FOUND-PAGE</code>), SQLite 연결·마이그레이션·시드(<code>db:seed</code>)</td>
 <td><a href="#FR-001">FR-001</a>&#126;010</td>
 <td><a href="#SC-001">SC-001</a>, <a href="#SC-003">SC-003</a>, <a href="#SC-005">SC-005</a>&#126;010</td>
 <td><a href="#DATA-001">DATA-001</a>, 002, 005, 009, 010</td>
@@ -4263,11 +4287,11 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 <tr>
 <td>Check 단계 테스트</td>
-<td><code>/pdca analyze</code>에서 <code>npm run test:unit</code> · <code>npm run test:e2e</code> · <code>npm run prd:check</code>를 실제로 실행하고 결과를 analysis 문서에 기록</td>
+<td><code>/pdca analyze</code>에서 <code>npm run test:unit</code> · <code>npm run prd:check</code> · <code>npm run test:sc {feature}</code> · <code>npm run test:e2e</code>를 실제로 실행하고 결과를 analysis 문서에 기록. <code>test:sc</code>는 14장에서 그 feature까지 배치된 SC를 누적 실행한다</td>
 </tr>
 <tr>
 <td>완료 조건</td>
-<td>두 관문 모두 통과: ① match rate 95% 이상 ② 11.1 테스트 명령 전체 통과(해당 feature 범위의 E2E 포함). gap-detector는 테스트를 실행하지 않으므로 match rate만으로 완료 판정하지 않는다</td>
+<td>두 관문 모두 통과: ① match rate 95% 이상 ② 테스트 — <code>npm run test:unit</code>·<code>npm run prd:check</code> 통과, <code>npm run test:sc {feature}</code>(누적 SC) 전체 통과. 전체 <code>npm run test:e2e</code>는 매 Check에서 실행·기록하되, 이후 feature 화면이 필요한 SC가 남아 있으므로 <strong>전체 통과는 마지막 feature(<code>inspection-plan</code>) Check의 관문</strong>이다. 그 전 feature에서 전체 E2E 실패가 누적 SC 밖 SC로만 이루어졌는지 analysis 문서에 SC별로 적는다. gap-detector는 테스트를 실행하지 않으므로 match rate만으로 완료 판정하지 않는다</td>
 </tr>
 </tbody></table>
 <hr>
@@ -5394,6 +5418,12 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 </thead>
 <tbody><tr>
+<td>v1.6</td>
+<td>2026-10-13</td>
+<td>auth-fleet Check 결과 반영: 5.5 공통 시스템 페이지(<code>NOT-FOUND-PAGE</code> 404 신설, <code>ERROR-PAGE</code> footer), 8장·<a href="#NFR-09">NFR-09</a>·14장 갱신, 9.1·9.2 보조 텍스트 색 예외(<code>ink-muted-48</code>은 비활성 전용, WCAG AA), 15장 완료 조건을 feature 누적 SC 기준으로 명확화(전체 E2E 통과는 마지막 feature 관문)</td>
+<td>to-prd</td>
+</tr>
+<tr>
 <td>v1.5</td>
 <td>2026-10-13</td>
 <td>14장 SC 배치 조정: 다른 feature 화면이 있어야 판정 가능한 <a href="#SC-002">SC-002</a>·004·011·033·034를 판정 가능한 첫 feature로 이동, Check마다 누적 회귀 실행</td>

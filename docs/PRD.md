@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 개정 | v1.5 |
+| 정본 개정 | v1.6 |
 | PRD 스키마 | screen-first-v2 |
 | 작성일 | 2026-10-13 |
 | 작성 | to-prd(Claude Code) — 요청자: 장동인 교수 |
@@ -168,6 +168,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 - 날짜는 `YYYY-MM-DD`, 시간대는 `Asia/Seoul`.
 - 모든 인증 화면 상단에 `global-nav`(NAV-01~06), 선박 화면(SCR-003~007) 은 그 아래 `sub-nav-frosted`(NAV-11~15).
 - 하단 `footer`에 고지 문구 `모든 데이터는 합성 데이터이며 실제 선박·선급 기록이 아닙니다.`(SCR-001-EL-07과 같은 문구, testid `FOOTER-NOTICE`).
+- 공통 시스템 페이지(화면 인벤토리 밖, 전역 내비 없음, `footer` 있음): 시스템 오류는 `ERROR-PAGE`(8장), 정의되지 않은 경로는 HTTP 404 + `inline-alert`(error) `페이지를 찾을 수 없습니다.`(testid `NOT-FOUND-PAGE`) 안에 링크 `선대 현황으로`(testid `NOT-FOUND-PAGE-back`, → SCR-002. 미인증이면 5.4 규칙대로 로그인으로 이동). 없는 선박은 이 페이지가 아니라 SCR-003-EL-08을 쓴다.
 
 ---
 
@@ -594,7 +595,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | NFR-06 | 테스트 식별자 | 요소 ID = `data-testid`. 반복 요소 `{요소 ID}-{레코드 ID}`, 셀 `{행 testid}-{열 키}`. E2E 셀렉터는 `getByTestId`만 사용 | [단위] `npm run prd:check`가 테스트의 testid가 PRD에 있는지 확인 |
 | NFR-07 | 상태 유도 | 시드: `data/seed` + `/api/test/reset`. 세션 만료: `/api/test/expire-session`. 저장 실패: `context.setOffline(true)`(그래서 저장 동작은 클라이언트 fetch로 구현하고 실패를 화면 알림으로 처리) | [E2E] 각 SC에서 사용 |
 | NFR-08 | 재현성 | 같은 시드·파라미터면 같은 계산 결과. 기준일은 시스템 시계가 아니라 `meta.asOfDate` | [단위] 생성기 결정성 테스트 + 기준 모델 일치 |
-| NFR-09 | 데이터 표기 | 모든 화면 footer에 합성 데이터 고지 | [E2E] `FOOTER-NOTICE` 존재 |
+| NFR-09 | 데이터 표기 | 모든 화면 footer에 합성 데이터 고지(SCR-001~009와 공통 시스템 페이지 `ERROR-PAGE`·`NOT-FOUND-PAGE` 포함) | [E2E] `FOOTER-NOTICE` 존재 |
 
 ---
 
@@ -648,6 +649,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | 권한 없음(화면) | SCR-009 | `이 화면에 접근할 권한이 없습니다.` | 선대 현황 복귀 | 서버 로그 |
 | 권한 없음(API) | 해당 없음 — API | JSON `{ "error": "forbidden" }` 403 | — | 서버 로그 |
 | 없는 선박 | SCR-003-EL-08 | `선박을 찾을 수 없습니다.` | 선대 현황 링크 | — |
+| 정의되지 않은 경로 | `NOT-FOUND-PAGE`(HTTP 404) | `페이지를 찾을 수 없습니다.` | 선대 현황 링크 | — |
 | 판독 이미지 없음 | SCR-004-EL-14 | `등록된 검사 이미지가 없습니다.` | 예측 화면은 실측만으로 계산 | — |
 | AI 판독 실패 | SCR-004-EL-13 | `AI 판독에 실패했습니다. 수동으로 판정하세요.` | 수정만 허용 | aiStatus=failed 유지 |
 | 판독 동시 수정(이미 다른 사용자가 결정) | SCR-004-EL-18 변형 | `다른 사용자가 이미 판정했습니다. 화면을 새로 고칩니다.` | 409 응답 후 카드 새로 고침 | 감사 로그 미기록 |
@@ -673,6 +675,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 - 디자인 기준: `docs/DESIGN.md` — `[확정]` 사용자 지정 “Apple DESIGN.md”. 출처는 VoltAgent/awesome-design-md의 Apple 분석 문서(MIT, `docs/DESIGN.NOTICE.md`). Apple 공식 문서가 아니다.
 - 폰트: **Pretendard**. DESIGN.md의 SF Pro 지정은 따르지 않고 같은 크기·굵기·자간 계층을 Pretendard에 적용한다. 굵기 단계 300/400/600/700, 500 사용 금지(DESIGN.md 규칙 유지).
 - 단일 강조색 Action Blue `#0066cc`(어두운 타일 위 `#2997ff`). 상태 의미 색은 아래 9.3 확장 토큰으로만 쓰고 버튼·링크에는 쓰지 않는다.
+- 보조 텍스트 색(DESIGN.md 예외): `ink-muted-48`(#7a7a7a)은 흰 배경 대비 4.29:1로 WCAG AA(본문 4.5:1)와 NFR-03에 미달하므로 **비활성 텍스트에만** 쓴다. 읽어야 하는 보조 텍스트(caption, fine-print, KPI 라벨, footer)는 `ink-muted-80`(#333333)을 쓴다. DESIGN.md의 fine-print·footer 법적 문구 `ink-muted-48` 지정은 따르지 않는다.
 - 그림자는 쓰지 않는다(제품 사진 없음). 카드 구분은 `hairline` 1px 테두리.
 - 버튼 누름 상태는 `transform: scale(0.95)`.
 
@@ -688,6 +691,9 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | typography.display-lg | 40px/600/1.1 | 화면 제목 |
 | typography.body | 17px/400/1.47/-0.374px | 본문·표 |
 | typography.caption | 14px/400 | 보조 정보 |
+| typography.fine-print | 12px/400/-0.12px | 고지 문구(SCR-001-EL-07, footer) |
+| colors.ink-muted-80 | #333333 | 보조 텍스트(caption·fine-print·KPI 라벨·footer) |
+| colors.ink-muted-48 | #7a7a7a | 비활성 텍스트 전용(9.1 예외) |
 | rounded.pill / lg / sm | 9999 / 18 / 8px | 버튼·칩 / 카드 / 유틸리티 |
 | spacing.section | 80px(모바일 48px) | 히어로 상하 여백 |
 
@@ -885,7 +891,7 @@ Blocker 없음: D-1~D-4 모두 fallback으로 P0 설계가 바뀌지 않는다.
 
 | 순서 | feature 슬러그 | 포함 화면·메뉴 | FR | SC | 데이터 | 의존 | 규모 |
 |---|---|---|---|---|---|---|---|
-| 1 | `auth-fleet` | SCR-001, SCR-002, SCR-009, NAV-01~06, 공통 레이아웃·footer, SQLite 연결·마이그레이션·시드(`db:seed`) | FR-001~010 | SC-001, SC-003, SC-005~010 | DATA-001, 002, 005, 009, 010 | 없음 | M |
+| 1 | `auth-fleet` | SCR-001, SCR-002, SCR-009, NAV-01~06, 공통 레이아웃·footer·시스템 페이지(`ERROR-PAGE`·`NOT-FOUND-PAGE`), SQLite 연결·마이그레이션·시드(`db:seed`) | FR-001~010 | SC-001, SC-003, SC-005~010 | DATA-001, 002, 005, 009, 010 | 없음 | M |
 | 2 | `inspection-review` | SCR-003, SCR-004, NAV-11~15 | FR-011~019 | SC-011~018 | DATA-002~005, 011 | auth-fleet | M |
 | 3 | `degradation-forecast` | SCR-005 | FR-020~023 | SC-004, SC-019~022 | DATA-003, 004, 005, 008 | inspection-review | S |
 | 4 | `risk-simulation` | SCR-006 | FR-024~027 | SC-023~025 | DATA-003, 006, 008, 009 | degradation-forecast | M |
@@ -904,8 +910,8 @@ SC 배치 원칙(v1.5): 각 SC는 판정에 필요한 화면이 모두 갖춰지
 | PM 단계 | `/pdca pm` 생략 — 이 PRD가 PM/PRD 역할을 대체 |
 | 명령 순서(feature마다) | `/pdca plan {feature}` → `/pdca design {feature}` → `/pdca do {feature}` → `/pdca analyze {feature}` → (미달 시 `/pdca iterate {feature}`) → `/pdca report {feature}` |
 | 첫 명령 | `/pdca plan auth-fleet` |
-| Check 단계 테스트 | `/pdca analyze`에서 `npm run test:unit` · `npm run test:e2e` · `npm run prd:check`를 실제로 실행하고 결과를 analysis 문서에 기록 |
-| 완료 조건 | 두 관문 모두 통과: ① match rate 95% 이상 ② 11.1 테스트 명령 전체 통과(해당 feature 범위의 E2E 포함). gap-detector는 테스트를 실행하지 않으므로 match rate만으로 완료 판정하지 않는다 |
+| Check 단계 테스트 | `/pdca analyze`에서 `npm run test:unit` · `npm run prd:check` · `npm run test:sc {feature}` · `npm run test:e2e`를 실제로 실행하고 결과를 analysis 문서에 기록. `test:sc`는 14장에서 그 feature까지 배치된 SC를 누적 실행한다 |
+| 완료 조건 | 두 관문 모두 통과: ① match rate 95% 이상 ② 테스트 — `npm run test:unit`·`npm run prd:check` 통과, `npm run test:sc {feature}`(누적 SC) 전체 통과. 전체 `npm run test:e2e`는 매 Check에서 실행·기록하되, 이후 feature 화면이 필요한 SC가 남아 있으므로 **전체 통과는 마지막 feature(`inspection-plan`) Check의 관문**이다. 그 전 feature에서 전체 E2E 실패가 누적 SC 밖 SC로만 이루어졌는지 analysis 문서에 SC별로 적는다. gap-detector는 테스트를 실행하지 않으므로 match rate만으로 완료 판정하지 않는다 |
 
 ---
 
@@ -1077,6 +1083,7 @@ SC 배치 원칙(v1.5): 각 SC는 판정에 필요한 화면이 모두 갖춰지
 
 | 개정 | 일자 | 내용 | 작성 |
 |---|---|---|---|
+| v1.6 | 2026-10-13 | auth-fleet Check 결과 반영: 5.5 공통 시스템 페이지(`NOT-FOUND-PAGE` 404 신설, `ERROR-PAGE` footer), 8장·NFR-09·14장 갱신, 9.1·9.2 보조 텍스트 색 예외(`ink-muted-48`은 비활성 전용, WCAG AA), 15장 완료 조건을 feature 누적 SC 기준으로 명확화(전체 E2E 통과는 마지막 feature 관문) | to-prd |
 | v1.5 | 2026-10-13 | 14장 SC 배치 조정: 다른 feature 화면이 있어야 판정 가능한 SC-002·004·011·033·034를 판정 가능한 첫 feature로 이동, Check마다 누적 회귀 실행 | to-prd |
 | v1.4 | 2026-10-13 | 사용자 결정: Check 통과 기준 95%(15장), bkit v2.1.40 프로젝트 범위 설치 | to-prd |
 | v1.3 | 2026-10-13 | 사용자 결정: Supabase·Vercel 대신 localhost + SQLite(D-2·D-3 재확정, D-5 해당 없음, NG-9 추가). 5.4 자체 인증, FR-009·010, NFR-02·05, 11장 스택·가정·11.3 환경 변수, 12장 I-2·I-6·I-7, 14장, 부록 A 저장 위치·DATA-001 | to-prd |
