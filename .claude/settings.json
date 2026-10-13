@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "bkit-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "ww-w-ai/bkit-claude-code"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "bkit@bkit-marketplace": true
+  }
+}

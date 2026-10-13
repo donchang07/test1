@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 대상 | `docs/PRD.md` v1.3 (screen-first-v2) |
+| 대상 | `docs/PRD.md` v1.4 (screen-first-v2) |
 | 검사일 | 2026-10-13 |
 | 판정 | **조건부 착수** — Blocker 0, Major 2, Minor 4, 보조 점수 86/100 |
 | 기계 검사 | `npm run prd:check` 통과(오류 0) · `npm run test:unit` 13/13 통과 · `npm run test:e2e:list` 34건 수집 |
@@ -18,19 +18,19 @@
 | 시스템 가정 10칸 | 통과 — 빈 칸 없음 |
 | 비목표 표(NG) | 통과 — 8건, 이유·재검토 시점 포함 |
 | AI 판정 계약 | 통과 — 11.4.5, AI값·사람값 필드 분리, 되돌리기 FR-016 |
-| 되돌릴 수 없는 미결 결정 | 없음 — D-2·D-3 확정(v1.3), D-1·D-4·D-5는 fallback 있음 |
+| 되돌릴 수 없는 미결 결정 | 없음 — D-2·D-3 확정(v1.4), D-1·D-4·D-5는 fallback 있음 |
 
 ## 결함
 
 | 등급 | # | 내용 | 조치 |
 |---|---|---|---|
-| Major | M-1 | bkit 계약 `[검증 기준]` — to-prd 스킬의 reference 파일(bkit-contract, gate-checklist, prd-template 등)이 이 환경에 동기화되지 않아 설치본과 대조하지 못함 | bkit 설치 직후 `bkit.config.json`의 `matchRateThreshold`, 문서 경로, 명령을 15장과 대조하고 다르면 정본 v1.3로 갱신 |
+| Major | M-1 | bkit 계약 `[검증 기준]` — to-prd 스킬의 reference 파일(bkit-contract, gate-checklist, prd-template 등)이 이 환경에 동기화되지 않아 설치본과 대조하지 못함 | bkit 설치 직후 `bkit.config.json`의 `matchRateThreshold`, 문서 경로, 명령을 15장과 대조하고 다르면 정본 v1.4로 갱신 |
 | Major | M-2 | E2E 스위트는 앱이 없어 실행 검증 전 — 수집(`--list`)과 testid-PRD 대조만 완료 | 첫 feature(`auth-fleet`) Do 직후 해당 SC 실행, 테스트 쪽 결함은 PRD 문구 기준으로 고침 |
 | Minor | m-1 | 해상 배수(0.8/1.0/1.3)는 설정 화면에서 바꿀 수 없음 | 의도된 범위. 필요 시 SCR-008에 요소 추가 |
 | Minor | m-2 | 저장 실패 E2E를 오프라인 전환으로 유도 → 저장 동작을 클라이언트 fetch로 구현해야 함(NFR-07) | Design 단계에서 확정 |
 | Minor | m-3 | 모델 수치 전부 `[가설]` 시연값 | D-1 결정 시 KR 규칙값으로 대체 |
-| ~~Minor~~ | ~~m-5~~ | v1.3 해소: 세션 만료를 SQLite `sessions.expires_at`으로 직접 판정 | — |
-| ~~Minor~~ | ~~m-6~~ | v1.3 해소: E2E는 별도 파일 `data/e2e.db` 사용 | — |
+| ~~Minor~~ | ~~m-5~~ | v1.4 해소: 세션 만료를 SQLite `sessions.expires_at`으로 직접 판정 | — |
+| ~~Minor~~ | ~~m-6~~ | v1.4 해소: E2E는 별도 파일 `data/e2e.db` 사용 | — |
 | Minor | m-4 | `PRD.html`은 Pretendard를 CDN에서 읽음(읽기용 사본 한정) | 오프라인 열람 시 시스템 폰트로 대체됨 |
 
 ## 보조 점수

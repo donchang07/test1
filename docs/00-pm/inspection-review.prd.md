@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 | `docs/PRD.md` v1.3 |
+| 정본 | `docs/PRD.md` v1.4 |
 | 성격 | 파생본 — 직접 편집 금지. 정본 수정 후 `node scripts/derive-feature-prds.mjs`로 재생성 |
 | 순서·의존 | 2 · auth-fleet |
 | 규모 | M |
@@ -459,13 +459,13 @@ Blocker 없음: D-1~D-4 모두 fallback으로 P0 설계가 바뀌지 않는다.
 
 | 항목 | 값 |
 |---|---|
-| bkit 버전 | `[검증 기준]` 설치본·`bkit.config.json` 미확인. 설치 후 로컬 계약을 우선하고 차이를 부록 B에 기록 |
-| 설정 | `bkit.config.json`의 `matchRateThreshold` 90 `[검증 기준]` |
+| bkit 버전 | bkit v2.1.40 — 프로젝트 범위 설치(`.claude/settings.json`의 `bkit@bkit-marketplace`), Claude Code 2.1.296 |
+| 설정 | `bkit.config.json`의 `pdca.matchRateThreshold` **95** `[확정·사용자 결정 2026-10-13]` (bkit 기본값 90에서 상향) |
 | PM 단계 | `/pdca pm` 생략 — 이 PRD가 PM/PRD 역할을 대체 |
 | 명령 순서(feature마다) | `/pdca plan {feature}` → `/pdca design {feature}` → `/pdca do {feature}` → `/pdca analyze {feature}` → (미달 시 `/pdca iterate {feature}`) → `/pdca report {feature}` |
 | 첫 명령 | `/pdca plan auth-fleet` |
 | Check 단계 테스트 | `/pdca analyze`에서 `npm run test:unit` · `npm run test:e2e` · `npm run prd:check`를 실제로 실행하고 결과를 analysis 문서에 기록 |
-| 완료 조건 | 두 관문 모두 통과: ① match rate 90% 이상 ② 11.1 테스트 명령 전체 통과(해당 feature 범위의 E2E 포함). gap-detector는 테스트를 실행하지 않으므로 match rate만으로 완료 판정하지 않는다 |
+| 완료 조건 | 두 관문 모두 통과: ① match rate 95% 이상 ② 11.1 테스트 명령 전체 통과(해당 feature 범위의 E2E 포함). gap-detector는 테스트를 실행하지 않으므로 match rate만으로 완료 판정하지 않는다 |
 
 ---
 

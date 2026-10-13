@@ -2,12 +2,12 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 개정 | v1.3 |
+| 정본 개정 | v1.4 |
 | PRD 스키마 | screen-first-v2 |
 | 작성일 | 2026-10-13 |
 | 작성 | to-prd(Claude Code) — 요청자: 장동인 교수 |
 | 입력 | 대화 기록(GMSI 사용자 요구사항 20개 → Smart RBI 체인 선정), `docs/DESIGN.md`(Apple), 합성 데이터 생성기 |
-| bkit 계약 | `[검증 기준]` 설치본 미확인. 15장 참조 |
+| bkit 계약 | bkit v2.1.40 설치본 기준. 15장 참조 |
 | 데이터 | 전부 합성 데이터. 실제 선박·선급·인물 기록 없음 |
 
 ---
@@ -897,13 +897,13 @@ SQLite 마이그레이션은 feature마다 필요한 테이블만 추가한다(a
 
 | 항목 | 값 |
 |---|---|
-| bkit 버전 | `[검증 기준]` 설치본·`bkit.config.json` 미확인. 설치 후 로컬 계약을 우선하고 차이를 부록 B에 기록 |
-| 설정 | `bkit.config.json`의 `matchRateThreshold` 90 `[검증 기준]` |
+| bkit 버전 | bkit v2.1.40 — 프로젝트 범위 설치(`.claude/settings.json`의 `bkit@bkit-marketplace`), Claude Code 2.1.296 |
+| 설정 | `bkit.config.json`의 `pdca.matchRateThreshold` **95** `[확정·사용자 결정 2026-10-13]` (bkit 기본값 90에서 상향) |
 | PM 단계 | `/pdca pm` 생략 — 이 PRD가 PM/PRD 역할을 대체 |
 | 명령 순서(feature마다) | `/pdca plan {feature}` → `/pdca design {feature}` → `/pdca do {feature}` → `/pdca analyze {feature}` → (미달 시 `/pdca iterate {feature}`) → `/pdca report {feature}` |
 | 첫 명령 | `/pdca plan auth-fleet` |
 | Check 단계 테스트 | `/pdca analyze`에서 `npm run test:unit` · `npm run test:e2e` · `npm run prd:check`를 실제로 실행하고 결과를 analysis 문서에 기록 |
-| 완료 조건 | 두 관문 모두 통과: ① match rate 90% 이상 ② 11.1 테스트 명령 전체 통과(해당 feature 범위의 E2E 포함). gap-detector는 테스트를 실행하지 않으므로 match rate만으로 완료 판정하지 않는다 |
+| 완료 조건 | 두 관문 모두 통과: ① match rate 95% 이상 ② 11.1 테스트 명령 전체 통과(해당 feature 범위의 E2E 포함). gap-detector는 테스트를 실행하지 않으므로 match rate만으로 완료 판정하지 않는다 |
 
 ---
 
@@ -1064,7 +1064,7 @@ SQLite 마이그레이션은 feature마다 필요한 테이블만 추가한다(a
 | 사실 | 출처 | 기준일 | 재확인 시점 |
 |---|---|---|---|
 | Apple 스타일 디자인 토큰·컴포넌트 | VoltAgent/awesome-design-md `design-md/apple/DESIGN.md` (MIT) | 2026-10-13 취득 | 디자인 갱신 시 |
-| bkit 명령·경로·matchRateThreshold | `[검증 기준]` 스킬 reference 미동봉으로 설치본 확인 불가. bkit 공개 문서 기준 기억값 | 2026-10-13 | bkit 설치 직후 `bkit.config.json` 확인 |
+| bkit 명령(`/pdca plan·design·do·analyze·iterate·report`)·문서 경로(`docs/01-plan/features`, `docs/02-design/features`, `docs/03-analysis`, `docs/04-report`)·match rate 공식 | [확정·bkit v2.1.40 `skills/pdca/SKILL.md`, `bkit.config.json`] | 2026-10-13 | bkit 업데이트 시 |
 | 허용 쇠모율 20% 등 모델 수치 | 출처 없음 `[가설]` 시연값 | — | D-1 결정 시 KR 규칙 확인 |
 | Playwright 버전 | 실행 환경 `playwright 1.56.1` | 2026-10-13 | 구현 시 |
 | Supabase Vercel 통합이 등록하는 변수(`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`, `POSTGRES_*` 등) | [조사·2026-10-13] vercel.com/marketplace/supabase | 2026-10-13 | v1.3부터 미사용(NG-9) |
@@ -1075,6 +1075,7 @@ SQLite 마이그레이션은 feature마다 필요한 테이블만 추가한다(a
 
 | 개정 | 일자 | 내용 | 작성 |
 |---|---|---|---|
+| v1.4 | 2026-10-13 | 사용자 결정: Check 통과 기준 95%(15장), bkit v2.1.40 프로젝트 범위 설치 | to-prd |
 | v1.3 | 2026-10-13 | 사용자 결정: Supabase·Vercel 대신 localhost + SQLite(D-2·D-3 재확정, D-5 해당 없음, NG-9 추가). 5.4 자체 인증, FR-009·010, NFR-02·05, 11장 스택·가정·11.3 환경 변수, 12장 I-2·I-6·I-7, 14장, 부록 A 저장 위치·DATA-001 | to-prd |
 | v1.2 | 2026-10-13 | 사용자 결정: 테스트 전용 Supabase 프로젝트 없이 운영용 1개(D-5 확정). 11장·11.3 환경 변수 계약(통합 변수명 `SUPABASE_URL`·`SUPABASE_PUBLISHABLE_KEY`·`SUPABASE_SECRET_KEY` 정본화, `E2E_ALLOW_SHARED_DB` 추가, Preview 대상 E2E 삭제), NFR-05 | to-prd |
 | v1.1 | 2026-10-13 | 사용자 결정 반영: 호스팅 Vercel, DB·인증 Supabase(D-2·D-3 확정). 5.4 인증, FR-009·010, NFR-02·05, 11장 스택·가정, 11.3 환경 변수 계약 신설, 12장 I-1 삭제·I-6 추가, 13장 D-5 추가, 부록 A 저장 위치·DATA-001, 부록 B 출처 추가 | to-prd |
