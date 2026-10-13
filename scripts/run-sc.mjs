@@ -21,7 +21,8 @@ const cumulative = rows.slice(0, order.indexOf(feature) + 1).flatMap((c) => expa
 
 mkdirSync('test-results', { recursive: true });
 const out = `test-results/pw-${feature}.json`;
-const grep = `^(${cumulative.join('|')}) `;
+// Playwright grep은 '프로젝트 파일 제목' 전체 문자열에 매칭하므로 줄 시작(^) 대신 공백 경계를 쓴다.
+const grep = `(^| )(${cumulative.join('|')}) `;
 try {
   execSync(`npx playwright test --grep "${grep}" --reporter=json`, {
     stdio: ['ignore', 'ignore', 'inherit'], env: { ...process.env, PLAYWRIGHT_JSON_OUTPUT_NAME: out },
