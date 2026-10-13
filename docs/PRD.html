@@ -52,7 +52,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </thead>
 <tbody><tr>
 <td>정본 개정</td>
-<td>v1.1</td>
+<td>v1.2</td>
 </tr>
 <tr>
 <td>PRD 스키마</td>
@@ -3018,8 +3018,8 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <tr>
 <td id="NFR-05" class="id">NFR-05</td>
 <td>실행 검증</td>
-<td>E2E 공통 조건: Chromium, 프로덕션 빌드(로컬 <code>npm run start:e2e</code> 또는 Vercel Preview URL), 테스트용 Supabase 프로젝트, <code>APP_TEST_MODE=1</code>, <code>workers=1</code>(공유 DB), 각 테스트 전 <code>POST /api/test/reset</code>. Preview 대상이면 <code>x-vercel-protection-bypass</code> 헤더</td>
-<td>[E2E] <code>playwright.config.ts</code></td>
+<td>E2E 공통 조건: Chromium, 프로덕션 빌드(로컬·CI <code>npm run start:e2e</code>), 운영 Supabase 프로젝트(합성 데이터 전용), <code>APP_TEST_MODE=1</code>(로컬·CI 서버만), <code>E2E_ALLOW_SHARED_DB=1</code>, <code>workers=1</code>(공유 DB), 각 테스트 전 <code>POST /api/test/reset</code></td>
+<td>[E2E] <code>playwright.config.ts</code> · global setup</td>
 </tr>
 <tr>
 <td id="NFR-06" class="id">NFR-06</td>
@@ -3741,7 +3741,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 <tr>
 <td>Supabase 프로젝트</td>
-<td>운영용 1개(Vercel Production) + 테스트용 1개(Vercel Preview·로컬·CI E2E) <code>[기본값]</code>. E2E 초기화가 데이터를 지우므로 운영 DB에서 E2E를 돌리지 않는다</td>
+<td><strong>운영용 1개만</strong> 사용 <code>[확정·사용자 결정 2026-10-13]</code> — 테스트 전용 프로젝트를 만들지 않는다. Vercel Production·Preview·로컬·CI가 같은 프로젝트를 쓴다. 근거: 저장 데이터가 전부 합성(<a href="#NG-1">NG-1</a>)이라 시드로 되돌려도 잃을 실데이터가 없다. 대가: E2E·초기화를 실행하면 앱에서 한 판독·시뮬레이션·계획이 시드 상태로 돌아간다. 실데이터를 넣는 시점(v1)에는 테스트 프로젝트 분리가 선행 조건이다</td>
 </tr>
 <tr>
 <td>패키지 관리</td>
@@ -3770,7 +3770,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 <tr>
 <td>E2E 서버</td>
-<td>로컬: <code>npm run start:e2e</code> = 프로덕션 빌드 후 <code>APP_TEST_MODE=1</code>로 3000번 포트 기동(구현 시 package.json에 추가), <code>.env.local</code>은 테스트용 Supabase. 배포 확인: <code>E2E_BASE_URL</code>=Vercel Preview URL + <code>VERCEL_AUTOMATION_BYPASS_SECRET</code></td>
+<td>로컬·CI: <code>npm run start:e2e</code> = 프로덕션 빌드 후 <code>APP_TEST_MODE=1</code>로 3000번 포트 기동(구현 시 package.json에 추가), 운영 Supabase에 접속. 실행 전 <code>E2E_ALLOW_SHARED_DB=1</code>로 운영 DB 초기화에 동의해야 시작한다(global setup이 확인). 배포된 앱(Vercel)에는 테스트 API가 없으므로 E2E는 로컬·CI 서버를 대상으로만 돈다</td>
 </tr>
 <tr>
 <td>기준 모델</td>
@@ -3882,92 +3882,82 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 </tbody></table>
 <h3 id="11-3-환경-변수-계약">11.3 환경 변수 계약</h3>
-<p>값은 어떤 파일·문서·채팅에도 적지 않는다. 저장소에는 이름만 있는 <code>.env.example</code>을 둔다.</p>
+<p>값은 어떤 파일·문서·채팅에도 적지 않는다. 저장소에는 이름만 있는 <code>.env.example</code>을 둔다. Supabase 프로젝트는 운영용 1개다(11장).</p>
 <table>
 <thead>
 <tr>
 <th>변수</th>
 <th>비밀 여부</th>
 <th>읽는 곳</th>
-<th>Vercel Production</th>
-<th>Vercel Preview</th>
-<th>로컬 <code>.env.local</code></th>
-<th>CI·Claude 세션</th>
+<th>Vercel(Production·Preview)</th>
+<th>로컬 <code>.env.local</code>·CI·Claude 클라우드 세션</th>
 <th>넣는 방법</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>NEXT_PUBLIC_SUPABASE_URL</code></td>
+<td><code>SUPABASE_URL</code></td>
 <td>공개</td>
-<td>브라우저·서버</td>
-<td>운영 프로젝트</td>
-<td>테스트 프로젝트</td>
-<td>테스트 프로젝트</td>
-<td>테스트 프로젝트</td>
-<td>Supabase Vercel 통합이 자동 등록, 또는 <code>vercel env add</code></td>
+<td>서버, 빌드 시 <code>NEXT_PUBLIC_SUPABASE_URL</code>로 노출</td>
+<td>등록</td>
+<td>등록</td>
+<td>Supabase Vercel 통합이 자동 등록 / 환경 설정</td>
 </tr>
 <tr>
-<td><code>NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY</code></td>
+<td><code>SUPABASE_PUBLISHABLE_KEY</code></td>
 <td>공개(RLS가 보호)</td>
-<td>브라우저·서버</td>
-<td>운영</td>
-<td>테스트</td>
-<td>테스트</td>
-<td>테스트</td>
-<td>같음. 구형 대시보드의 anon 키 값도 사용 가능</td>
+<td>서버, 빌드 시 <code>NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY</code>로 노출</td>
+<td>등록</td>
+<td>등록</td>
+<td>같음</td>
 </tr>
 <tr>
 <td><code>SUPABASE_SECRET_KEY</code></td>
 <td><strong>비밀·서버 전용</strong></td>
 <td>서버(초기화·시드·관리 API)</td>
-<td>운영</td>
-<td>테스트</td>
-<td>테스트</td>
-<td>테스트(시드 실행 시)</td>
-<td>같음. Sensitive로 등록</td>
+<td>등록(Sensitive)</td>
+<td>등록</td>
+<td>같음</td>
 </tr>
 <tr>
 <td><code>SEED_INSPECTOR_PASSWORD</code> · <code>SEED_ADMIN_PASSWORD</code></td>
 <td>비밀</td>
-<td>시드 스크립트·<code>/api/test/reset</code>·E2E</td>
-<td>등록하지 않음(운영 시드는 1회 수동 실행)</td>
+<td><code>npm run db:seed</code>·<code>/api/test/reset</code>·E2E 로그인</td>
+<td>등록하지 않음</td>
 <td>등록</td>
-<td>등록</td>
-<td>등록</td>
-<td><code>vercel env add … preview</code> / 환경 설정</td>
+<td>환경 설정·CI secret</td>
 </tr>
 <tr>
 <td><code>APP_TEST_MODE</code></td>
 <td>공개</td>
 <td>서버</td>
-<td><strong>등록 금지</strong></td>
-<td><code>1</code></td>
-<td><code>1</code>(E2E 시)</td>
-<td><code>1</code></td>
-<td>같음. 코드도 <code>VERCEL_ENV=production</code>이면 무시(<a href="#FR-010">FR-010</a>)</td>
+<td><strong>등록 금지</strong>(Production·Preview 모두)</td>
+<td><code>1</code>(E2E 서버 기동 시)</td>
+<td><code>npm run start:e2e</code>가 설정</td>
+</tr>
+<tr>
+<td><code>E2E_ALLOW_SHARED_DB</code></td>
+<td>공개</td>
+<td>Playwright global setup</td>
+<td>—</td>
+<td><code>1</code>(운영 DB 초기화 동의)</td>
+<td>실행 시 지정</td>
 </tr>
 <tr>
 <td><code>E2E_BASE_URL</code></td>
 <td>공개</td>
 <td>Playwright</td>
 <td>—</td>
-<td>—</td>
 <td>비움(로컬 서버)</td>
-<td>Preview URL</td>
-<td>CI 변수</td>
-</tr>
-<tr>
-<td><code>VERCEL_AUTOMATION_BYPASS_SECRET</code></td>
-<td>비밀</td>
-<td>Playwright 요청 헤더</td>
-<td>Vercel 시스템 변수</td>
-<td>Vercel 시스템 변수</td>
 <td>—</td>
-<td>Preview 대상 E2E 시</td>
-<td>Vercel Deployment Protection에서 생성 → CI secret</td>
 </tr>
 </tbody></table>
-<p>로컬은 <code>vercel link</code> 후 <code>vercel env pull .env.local</code>로 Development 값을 받는다(<code>.env*</code>는 gitignore). Supabase 통합은 연결한 한 프로젝트 값을 등록하므로, Preview를 테스트 프로젝트로 돌리려면 Preview 값을 수동으로 덮어쓴다. Supabase 통합이 함께 넣는 <code>POSTGRES_*</code>·<code>SUPABASE_URL</code> 등은 이 앱이 쓰지 않는다.</p>
+<p>이름 규칙</p>
+<ul>
+<li>공개 값은 Supabase Vercel 통합이 넣는 이름(<code>SUPABASE_URL</code>, <code>SUPABASE_PUBLISHABLE_KEY</code>)을 정본으로 쓰고, <code>next.config.ts</code>의 <code>env</code>에서 <code>NEXT_PUBLIC_SUPABASE_URL</code>·<code>NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY</code>로 브라우저에 넘긴다. <code>NEXT_PUBLIC_*</code>가 이미 있으면 그 값을 우선한다.</li>
+<li>비밀 키는 <code>SUPABASE_SECRET_KEY</code>(<code>sb_secret_…</code>)만 쓴다. 구형 <code>SUPABASE_SERVICE_ROLE_KEY</code>·<code>SUPABASE_ANON_KEY</code>(JWT)는 읽지 않는다.</li>
+<li><code>SUPABASE_SECRET_KEY</code>는 <code>next.config.ts</code> <code>env</code>에 넣지 않는다(넣으면 브라우저 번들에 들어간다).</li>
+</ul>
+<p>넣는 경로: Vercel은 Supabase 통합 또는 <code>vercel env add</code>, 로컬은 <code>vercel link</code> → <code>vercel env pull .env.local</code>(<code>.env*</code>는 gitignore), Claude 클라우드 세션은 환경 설정의 환경 변수, CI는 저장소 secret. Claude 클라우드 세션에서 시드·E2E를 실행하려면 환경의 네트워크 허용 도메인에 Supabase 프로젝트 호스트(<code>*.supabase.co</code>)가 있어야 한다.</p>
 <h3 id="11-4-ai-판정-계약과-계산-공식">11.4 AI 판정 계약과 계산 공식</h3>
 <h4 id="11-4-1-파라미터-기본값-data-008">11.4.1 파라미터 기본값(DATA-008)</h4>
 <table>
@@ -4175,12 +4165,12 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 <tr>
 <td>D-5</td>
-<td>미결</td>
-<td>Preview용 DB</td>
-<td>① 테스트 전용 Supabase 프로젝트 ② Supabase Branching(유료)</td>
-<td>①</td>
-<td>①</td>
-<td>11.3</td>
+<td><strong>확정(v1.2)</strong></td>
+<td>Supabase 프로젝트 구성</td>
+<td>운영용 1개만, 테스트 전용 없음(사용자 결정 2026-10-13)</td>
+<td>—</td>
+<td>—</td>
+<td>11장, 11.3, <a href="#NFR-05">NFR-05</a>. 실데이터 도입 시 재결정</td>
 </tr>
 <tr>
 <td>D-4</td>
@@ -5384,7 +5374,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <td>구현 착수 시</td>
 </tr>
 <tr>
-<td>보호된 배포 E2E: <code>x-vercel-protection-bypass</code> 헤더, <code>VERCEL_AUTOMATION_BYPASS_SECRET</code> 시스템 변수</td>
+<td>보호된 배포 E2E: <code>x-vercel-protection-bypass</code> 헤더, <code>VERCEL_AUTOMATION_BYPASS_SECRET</code> 시스템 변수(v1.2부터 Preview 대상 E2E를 하지 않아 미사용)</td>
 <td>[조사·2026-10-13] vercel.com/docs/deployment-protection/methods-to-bypass-deployment-protection/protection-bypass-automation</td>
 <td>2026-10-13</td>
 <td>구현 착수 시</td>
@@ -5401,6 +5391,12 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 </thead>
 <tbody><tr>
+<td>v1.2</td>
+<td>2026-10-13</td>
+<td>사용자 결정: 테스트 전용 Supabase 프로젝트 없이 운영용 1개(D-5 확정). 11장·11.3 환경 변수 계약(통합 변수명 <code>SUPABASE_URL</code>·<code>SUPABASE_PUBLISHABLE_KEY</code>·<code>SUPABASE_SECRET_KEY</code> 정본화, <code>E2E_ALLOW_SHARED_DB</code> 추가, Preview 대상 E2E 삭제), <a href="#NFR-05">NFR-05</a></td>
+<td>to-prd</td>
+</tr>
+<tr>
 <td>v1.1</td>
 <td>2026-10-13</td>
 <td>사용자 결정 반영: 호스팅 Vercel, DB·인증 Supabase(D-2·D-3 확정). 5.4 인증, <a href="#FR-009">FR-009</a>·010, <a href="#NFR-02">NFR-02</a>·05, 11장 스택·가정, 11.3 환경 변수 계약 신설, 12장 I-1 삭제·I-6 추가, 13장 D-5 추가, 부록 A 저장 위치·<a href="#DATA-001">DATA-001</a>, 부록 B 출처 추가</td>

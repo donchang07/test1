@@ -30,7 +30,7 @@ npm run test:e2e         # 앱 구현 후: SEED_* 환경 변수와 npm run start
 ## 환경 변수
 
 이름과 환경별 규칙은 `docs/PRD.md` 11.3, 이름 목록은 `.env.example`. 로컬은 `vercel link` → `vercel env pull .env.local`.
-E2E·초기화는 테스트용 Supabase 프로젝트에서만 실행합니다.
+Supabase 프로젝트는 운영용 1개이며, E2E는 그 데이터를 시드로 초기화하므로 `E2E_ALLOW_SHARED_DB=1`로 동의해야 실행됩니다.
 
 ## bkit 진행 순서
 

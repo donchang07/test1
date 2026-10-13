@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 | `docs/PRD.md` v1.1 |
+| 정본 | `docs/PRD.md` v1.2 |
 | 성격 | 파생본 — 직접 편집 금지. 정본 수정 후 `node scripts/derive-feature-prds.mjs`로 재생성 |
 | 순서·의존 | 1 · 없음 |
 | 규모 | M |
@@ -250,7 +250,7 @@
 | NFR-02 | 보안 | 비밀번호는 Supabase Auth가 관리(앱은 저장하지 않음). 모든 public 테이블 RLS 활성: 로그인 사용자 읽기, 쓰기는 역할별 정책(모델 설정·승인·초기화는 admin). `SUPABASE_SECRET_KEY`는 서버 코드에서만 읽고 `NEXT_PUBLIC_` 접두사 금지·클라이언트 번들 포함 금지. 모든 변경 API는 서버에서 역할 재검사 | [통합] 검사원 세션으로 승인 API 403 · [단위] 빌드 산출물에 비밀 키 문자열 없음 |
 | NFR-03 | 접근성 | P0 화면에서 자동 접근성 검사 심각(critical·serious) 위반 0건, 키보드만으로 US-01·US-04 완료 | [E2E] `@axe-core/playwright` 검사 |
 | NFR-04 | 반응형 | 1280×800, 390×844 두 뷰포트에서 가로 스크롤 없음, 모바일에서 NAV-06 사용 | [E2E] `desktop` 프로젝트(1280×800)는 전체 스위트, `mobile` 프로젝트(390×844)는 `@mobile` 태그(SC-033) |
-| NFR-05 | 실행 검증 | E2E 공통 조건: Chromium, 프로덕션 빌드(로컬 `npm run start:e2e` 또는 Vercel Preview URL), 테스트용 Supabase 프로젝트, `APP_TEST_MODE=1`, `workers=1`(공유 DB), 각 테스트 전 `POST /api/test/reset`. Preview 대상이면 `x-vercel-protection-bypass` 헤더 | [E2E] `playwright.config.ts` |
+| NFR-05 | 실행 검증 | E2E 공통 조건: Chromium, 프로덕션 빌드(로컬·CI `npm run start:e2e`), 운영 Supabase 프로젝트(합성 데이터 전용), `APP_TEST_MODE=1`(로컬·CI 서버만), `E2E_ALLOW_SHARED_DB=1`, `workers=1`(공유 DB), 각 테스트 전 `POST /api/test/reset` | [E2E] `playwright.config.ts` · global setup |
 | NFR-06 | 테스트 식별자 | 요소 ID = `data-testid`. 반복 요소 `{요소 ID}-{레코드 ID}`, 셀 `{행 testid}-{열 키}`. E2E 셀렉터는 `getByTestId`만 사용 | [단위] `npm run prd:check`가 테스트의 testid가 PRD에 있는지 확인 |
 | NFR-07 | 상태 유도 | 시드: `data/seed` + `/api/test/reset`. 세션 만료: `/api/test/expire-session`. 저장 실패: `context.setOffline(true)`(그래서 저장 동작은 클라이언트 fetch로 구현하고 실패를 화면 알림으로 처리) | [E2E] 각 SC에서 사용 |
 | NFR-08 | 재현성 | 같은 시드·파라미터면 같은 계산 결과. 기준일은 시스템 시계가 아니라 `meta.asOfDate` | [단위] 생성기 결정성 테스트 + 기준 모델 일치 |
@@ -364,7 +364,7 @@
 |---|---|
 | 레벨 | Dynamic(풀스택) `[기본값]` — 로그인·역할·서버 계산·저장이 필요 |
 | 스택 | Next.js(App Router) + TypeScript, Route Handlers API `[기본값]` · **호스팅 Vercel** `[확정]` · **DB·인증 Supabase**(Postgres + Auth, `@supabase/ssr`, `@supabase/supabase-js`) `[확정]`. 스키마는 `supabase/migrations/*.sql`로 관리, 시드는 `npm run db:seed`(`data/seed` → Supabase) |
-| Supabase 프로젝트 | 운영용 1개(Vercel Production) + 테스트용 1개(Vercel Preview·로컬·CI E2E) `[기본값]`. E2E 초기화가 데이터를 지우므로 운영 DB에서 E2E를 돌리지 않는다 |
+| Supabase 프로젝트 | **운영용 1개만** 사용 `[확정·사용자 결정 2026-10-13]` — 테스트 전용 프로젝트를 만들지 않는다. Vercel Production·Preview·로컬·CI가 같은 프로젝트를 쓴다. 근거: 저장 데이터가 전부 합성(NG-1)이라 시드로 되돌려도 잃을 실데이터가 없다. 대가: E2E·초기화를 실행하면 앱에서 한 판독·시뮬레이션·계획이 시드 상태로 돌아간다. 실데이터를 넣는 시점(v1)에는 테스트 프로젝트 분리가 선행 조건이다 |
 | 패키지 관리 | npm |
 
 ### 11.1 테스트
@@ -374,7 +374,7 @@
 | 단위 테스트 | Node 내장 테스트 러너 — `npm run test:unit` (`tests/unit/**/*.test.mjs`) |
 | E2E | **Playwright** — `npm run test:e2e` (`tests/e2e/**/*.spec.ts`, 설정 `playwright.config.ts`) |
 | PRD 연결 검사 | `npm run prd:check` — E2E가 쓰는 testid가 모두 PRD에 정의되어 있는지 확인 |
-| E2E 서버 | 로컬: `npm run start:e2e` = 프로덕션 빌드 후 `APP_TEST_MODE=1`로 3000번 포트 기동(구현 시 package.json에 추가), `.env.local`은 테스트용 Supabase. 배포 확인: `E2E_BASE_URL`=Vercel Preview URL + `VERCEL_AUTOMATION_BYPASS_SECRET` |
+| E2E 서버 | 로컬·CI: `npm run start:e2e` = 프로덕션 빌드 후 `APP_TEST_MODE=1`로 3000번 포트 기동(구현 시 package.json에 추가), 운영 Supabase에 접속. 실행 전 `E2E_ALLOW_SHARED_DB=1`로 운영 DB 초기화에 동의해야 시작한다(global setup이 확인). 배포된 앱(Vercel)에는 테스트 API가 없으므로 E2E는 로컬·CI 서버를 대상으로만 돈다 |
 | 기준 모델 | `tests/reference/model.mjs` — 11.4 공식의 기준 구현(오라클). 앱 코드가 import하지 않는다 |
 | 합성 데이터 | `npm run seed:generate` → `data/seed/*.json`, `public/synthetic/inspection/*.svg` (seed 20261001) |
 
@@ -403,19 +403,25 @@
 
 ### 11.3 환경 변수 계약
 
-값은 어떤 파일·문서·채팅에도 적지 않는다. 저장소에는 이름만 있는 `.env.example`을 둔다.
+값은 어떤 파일·문서·채팅에도 적지 않는다. 저장소에는 이름만 있는 `.env.example`을 둔다. Supabase 프로젝트는 운영용 1개다(11장).
 
-| 변수 | 비밀 여부 | 읽는 곳 | Vercel Production | Vercel Preview | 로컬 `.env.local` | CI·Claude 세션 | 넣는 방법 |
-|---|---|---|---|---|---|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` | 공개 | 브라우저·서버 | 운영 프로젝트 | 테스트 프로젝트 | 테스트 프로젝트 | 테스트 프로젝트 | Supabase Vercel 통합이 자동 등록, 또는 `vercel env add` |
-| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | 공개(RLS가 보호) | 브라우저·서버 | 운영 | 테스트 | 테스트 | 테스트 | 같음. 구형 대시보드의 anon 키 값도 사용 가능 |
-| `SUPABASE_SECRET_KEY` | **비밀·서버 전용** | 서버(초기화·시드·관리 API) | 운영 | 테스트 | 테스트 | 테스트(시드 실행 시) | 같음. Sensitive로 등록 |
-| `SEED_INSPECTOR_PASSWORD` · `SEED_ADMIN_PASSWORD` | 비밀 | 시드 스크립트·`/api/test/reset`·E2E | 등록하지 않음(운영 시드는 1회 수동 실행) | 등록 | 등록 | 등록 | `vercel env add … preview` / 환경 설정 |
-| `APP_TEST_MODE` | 공개 | 서버 | **등록 금지** | `1` | `1`(E2E 시) | `1` | 같음. 코드도 `VERCEL_ENV=production`이면 무시(FR-010) |
-| `E2E_BASE_URL` | 공개 | Playwright | — | — | 비움(로컬 서버) | Preview URL | CI 변수 |
-| `VERCEL_AUTOMATION_BYPASS_SECRET` | 비밀 | Playwright 요청 헤더 | Vercel 시스템 변수 | Vercel 시스템 변수 | — | Preview 대상 E2E 시 | Vercel Deployment Protection에서 생성 → CI secret |
+| 변수 | 비밀 여부 | 읽는 곳 | Vercel(Production·Preview) | 로컬 `.env.local`·CI·Claude 클라우드 세션 | 넣는 방법 |
+|---|---|---|---|---|---|
+| `SUPABASE_URL` | 공개 | 서버, 빌드 시 `NEXT_PUBLIC_SUPABASE_URL`로 노출 | 등록 | 등록 | Supabase Vercel 통합이 자동 등록 / 환경 설정 |
+| `SUPABASE_PUBLISHABLE_KEY` | 공개(RLS가 보호) | 서버, 빌드 시 `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`로 노출 | 등록 | 등록 | 같음 |
+| `SUPABASE_SECRET_KEY` | **비밀·서버 전용** | 서버(초기화·시드·관리 API) | 등록(Sensitive) | 등록 | 같음 |
+| `SEED_INSPECTOR_PASSWORD` · `SEED_ADMIN_PASSWORD` | 비밀 | `npm run db:seed`·`/api/test/reset`·E2E 로그인 | 등록하지 않음 | 등록 | 환경 설정·CI secret |
+| `APP_TEST_MODE` | 공개 | 서버 | **등록 금지**(Production·Preview 모두) | `1`(E2E 서버 기동 시) | `npm run start:e2e`가 설정 |
+| `E2E_ALLOW_SHARED_DB` | 공개 | Playwright global setup | — | `1`(운영 DB 초기화 동의) | 실행 시 지정 |
+| `E2E_BASE_URL` | 공개 | Playwright | — | 비움(로컬 서버) | — |
 
-로컬은 `vercel link` 후 `vercel env pull .env.local`로 Development 값을 받는다(`.env*`는 gitignore). Supabase 통합은 연결한 한 프로젝트 값을 등록하므로, Preview를 테스트 프로젝트로 돌리려면 Preview 값을 수동으로 덮어쓴다. Supabase 통합이 함께 넣는 `POSTGRES_*`·`SUPABASE_URL` 등은 이 앱이 쓰지 않는다.
+이름 규칙
+
+- 공개 값은 Supabase Vercel 통합이 넣는 이름(`SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`)을 정본으로 쓰고, `next.config.ts`의 `env`에서 `NEXT_PUBLIC_SUPABASE_URL`·`NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`로 브라우저에 넘긴다. `NEXT_PUBLIC_*`가 이미 있으면 그 값을 우선한다.
+- 비밀 키는 `SUPABASE_SECRET_KEY`(`sb_secret_…`)만 쓴다. 구형 `SUPABASE_SERVICE_ROLE_KEY`·`SUPABASE_ANON_KEY`(JWT)는 읽지 않는다.
+- `SUPABASE_SECRET_KEY`는 `next.config.ts` `env`에 넣지 않는다(넣으면 브라우저 번들에 들어간다).
+
+넣는 경로: Vercel은 Supabase 통합 또는 `vercel env add`, 로컬은 `vercel link` → `vercel env pull .env.local`(`.env*`는 gitignore), Claude 클라우드 세션은 환경 설정의 환경 변수, CI는 저장소 secret. Claude 클라우드 세션에서 시드·E2E를 실행하려면 환경의 네트워크 허용 도메인에 Supabase 프로젝트 호스트(`*.supabase.co`)가 있어야 한다.
 
 ### 11.4 AI 판정 계약과 계산 공식
 
@@ -477,7 +483,7 @@
 | D-1 | 미결 | 허용 쇠모율 기준 | ① 전 부재 단일 % ② 부재 유형별 KR 규칙값 | ② (실무 정합) | ① 20% `[가설]` 유지, 설정 화면에서 변경 가능 | DATA-003에 부재별 허용값 필드 추가 시 FR-020 수정 |
 | D-2 | **확정(v1.1)** | 저장소·호스팅 | Supabase + Vercel (사용자 결정 2026-10-13) | — | — | 11장, FR-009·010, NFR-02·05, 부록 A |
 | D-3 | **확정(v1.1)** | 인증 방식 | Supabase Auth 이메일·비밀번호 + 시드 계정. KR SSO는 NG-7 유지 | — | — | 5.4, NG-7 |
-| D-5 | 미결 | Preview용 DB | ① 테스트 전용 Supabase 프로젝트 ② Supabase Branching(유료) | ① | ① | 11.3 |
+| D-5 | **확정(v1.2)** | Supabase 프로젝트 구성 | 운영용 1개만, 테스트 전용 없음(사용자 결정 2026-10-13) | — | — | 11장, 11.3, NFR-05. 실데이터 도입 시 재결정 |
 | D-4 | 미결 | MVP 목표일 | 날짜 지정 | — | 날짜 없이 feature 순서대로 진행 | 10장 |
 
 Blocker 없음: D-1~D-4 모두 fallback으로 P0 설계가 바뀌지 않는다.
