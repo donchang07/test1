@@ -48,7 +48,12 @@ export async function currentSession(): Promise<SessionState> {
     FROM sessions s JOIN users u ON u.user_id = s.user_id WHERE s.token_hash = ?`).get(hashToken(token)) as
     | { token_hash: string; expires_at: string; user_id: string; email: string; display_name: string; role: Role }
     | undefined;
-  if (!row || new Date(row.expires_at) <= new Date()) return { state: 'expired' };
+  if (!row) return { state: 'expired' };
+  if (new Date(row.expires_at) <= new Date()) {
+    // 7장 세션 만료: 만료된 세션 행은 지운다(쿠키는 다음 로그인 때 덮어쓴다).
+    db().prepare('DELETE FROM sessions WHERE token_hash = ?').run(row.token_hash);
+    return { state: 'expired' };
+  }
   return {
     state: 'ok',
     tokenHash: row.token_hash,
@@ -61,15 +66,21 @@ export async function requireUser(path: string, options: { admin?: boolean } = {
   const session = await currentSession();
   if (session.state === 'anonymous') redirect(`/login?next=${encodeURIComponent(path)}`);
   if (session.state === 'expired') redirect('/login?reason=expired');
-  if (options.admin && session.user.role !== 'admin') redirect('/forbidden');
+  if (options.admin && session.user.role !== 'admin') {
+    logForbidden(session.user, path);
+    redirect('/forbidden');
+  }
   return session.user;
 }
 
 /** API 보호: 실패 시 Response를 돌려준다. */
-export async function apiUser(options: { admin?: boolean } = {}): Promise<User | Response> {
+export async function apiUser(options: { admin?: boolean; target?: string } = {}): Promise<User | Response> {
   const session = await currentSession();
   if (session.state !== 'ok') return Response.json({ error: 'unauthorized' }, { status: 401 });
-  if (options.admin && session.user.role !== 'admin') return Response.json({ error: 'forbidden' }, { status: 403 });
+  if (options.admin && session.user.role !== 'admin') {
+    logForbidden(session.user, options.target ?? 'api');
+    return Response.json({ error: 'forbidden' }, { status: 403 });
+  }
   return session.user;
 }
 
@@ -80,7 +91,29 @@ export function writeAudit(actor: string, action: string, target: string, before
 
 export const testModeEnabled = () => process.env.APP_TEST_MODE === '1';
 
-/** 내부 경로만 허용한다(오픈 리다이렉트 방지). */
+/** 7장 권한 없음: 서버 로그만 남긴다(화면·API 공통). */
+function logForbidden(user: User, target: string) {
+  console.warn(JSON.stringify({ event: 'forbidden', userId: user.userId, role: user.role, target, at: new Date().toISOString() }));
+}
+
+const emailHash = (email: string) => createHash('sha256').update(email.trim().toLowerCase()).digest('hex').slice(0, 16);
+const failedLogins = new Map<string, number>();
+
+/** 7장 인증 실패: 이메일 원문 대신 해시와 누적 실패 횟수를 서버 로그에 남긴다. */
+export function logLoginFailure(email: string) {
+  const key = emailHash(email);
+  const count = (failedLogins.get(key) ?? 0) + 1;
+  failedLogins.set(key, count);
+  console.warn(JSON.stringify({ event: 'login_failed', emailHash: key, count, at: new Date().toISOString() }));
+}
+
+/** 내부 경로만 허용한다(오픈 리다이렉트 방지). `/\\host`처럼 브라우저가 `//host`로 바꾸는 값과 제어 문자도 막는다. */
 export function safeNext(next: string | null | undefined): string {
-  return next && next.startsWith('/') && !next.startsWith('//') ? next : '/fleet';
+  if (!next || !next.startsWith('/') || next.startsWith('//') || /[\\\u0000-\u001f]/.test(next)) return '/fleet';
+  try {
+    const url = new URL(next, 'http://localhost');
+    return url.origin === 'http://localhost' ? next : '/fleet';
+  } catch {
+    return '/fleet';
+  }
 }

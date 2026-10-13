@@ -4,7 +4,7 @@ import { requireUser } from '@/lib/auth';
 
 export const dynamic = 'force-dynamic';
 
-// SCR-009 접근 거부 (HTTP 상태는 리다이렉트 대상 화면이라 200, 의미는 403)
+// SCR-009 접근 거부 (HTTP 403은 middleware.ts에서 설정)
 export default async function ForbiddenPage() {
   const user = await requireUser('/forbidden');
   return (

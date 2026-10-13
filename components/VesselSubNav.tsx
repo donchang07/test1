@@ -13,7 +13,7 @@ export default function VesselSubNav({ vesselId, name, active, pending }: {
   vesselId: string; name: string; active: (typeof STEPS)[number]['path']; pending: number;
 }) {
   return (
-    <div className="sub-nav">
+    <div className="sub-nav-frosted">
       <div className="inner">
         <span className="title">{name}</span>
         <nav aria-label="선박 단계">
