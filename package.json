@@ -1,0 +1,22 @@
+{
+  "name": "kr-smart-rbi",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "KR Smart RBI — 합성 데이터 기반 위험도 기반 검사 MVP (bkit 구현 대상)",
+  "scripts": {
+    "seed:generate": "node scripts/generate-synthetic-data.mjs",
+    "test:unit": "node --test tests/unit/*.test.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:list": "playwright test --list",
+    "prd:check": "node scripts/check-prd.mjs",
+    "prd:html": "node scripts/render-prd-html.mjs docs/PRD.md docs/PRD.html",
+    "prd:derive": "node scripts/derive-feature-prds.mjs",
+    "prd:build": "npm run prd:check && npm run prd:derive && npm run prd:html"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
+    "@playwright/test": "1.56.1",
+    "marked": "15.0.12"
+  }
+}

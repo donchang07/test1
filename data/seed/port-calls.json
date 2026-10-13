@@ -1,0 +1,290 @@
+[
+  {
+    "portCallId": "KR-SYN-001-PC1",
+    "vesselId": "KR-SYN-001",
+    "port": "상하이",
+    "eta": "2026-10-08",
+    "dwellHours": 38,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-001-PC2",
+    "vesselId": "KR-SYN-001",
+    "port": "휴스턴",
+    "eta": "2026-10-18",
+    "dwellHours": 21,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-001-PC3",
+    "vesselId": "KR-SYN-001",
+    "port": "싱가포르",
+    "eta": "2026-10-26",
+    "dwellHours": 32,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-002-PC1",
+    "vesselId": "KR-SYN-002",
+    "port": "싱가포르",
+    "eta": "2026-10-14",
+    "dwellHours": 22,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-002-PC2",
+    "vesselId": "KR-SYN-002",
+    "port": "싱가포르",
+    "eta": "2026-10-16",
+    "dwellHours": 46,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-002-PC3",
+    "vesselId": "KR-SYN-002",
+    "port": "휴스턴",
+    "eta": "2026-10-25",
+    "dwellHours": 61,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-003-PC1",
+    "vesselId": "KR-SYN-003",
+    "port": "휴스턴",
+    "eta": "2026-10-11",
+    "dwellHours": 21,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-003-PC2",
+    "vesselId": "KR-SYN-003",
+    "port": "상하이",
+    "eta": "2026-10-21",
+    "dwellHours": 40,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-003-PC3",
+    "vesselId": "KR-SYN-003",
+    "port": "부산",
+    "eta": "2026-10-26",
+    "dwellHours": 44,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-004-PC1",
+    "vesselId": "KR-SYN-004",
+    "port": "상하이",
+    "eta": "2026-10-14",
+    "dwellHours": 63,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-004-PC2",
+    "vesselId": "KR-SYN-004",
+    "port": "싱가포르",
+    "eta": "2026-10-15",
+    "dwellHours": 22,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-004-PC3",
+    "vesselId": "KR-SYN-004",
+    "port": "앤트워프",
+    "eta": "2026-10-28",
+    "dwellHours": 66,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-005-PC1",
+    "vesselId": "KR-SYN-005",
+    "port": "두바이",
+    "eta": "2026-10-14",
+    "dwellHours": 57,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-005-PC2",
+    "vesselId": "KR-SYN-005",
+    "port": "상하이",
+    "eta": "2026-10-20",
+    "dwellHours": 56,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-005-PC3",
+    "vesselId": "KR-SYN-005",
+    "port": "앤트워프",
+    "eta": "2026-10-24",
+    "dwellHours": 23,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-006-PC1",
+    "vesselId": "KR-SYN-006",
+    "port": "요코하마",
+    "eta": "2026-10-13",
+    "dwellHours": 32,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-006-PC2",
+    "vesselId": "KR-SYN-006",
+    "port": "앤트워프",
+    "eta": "2026-10-16",
+    "dwellHours": 63,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-006-PC3",
+    "vesselId": "KR-SYN-006",
+    "port": "상하이",
+    "eta": "2026-10-24",
+    "dwellHours": 39,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-007-PC1",
+    "vesselId": "KR-SYN-007",
+    "port": "상하이",
+    "eta": "2026-10-08",
+    "dwellHours": 20,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-007-PC2",
+    "vesselId": "KR-SYN-007",
+    "port": "요코하마",
+    "eta": "2026-10-21",
+    "dwellHours": 42,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-007-PC3",
+    "vesselId": "KR-SYN-007",
+    "port": "요코하마",
+    "eta": "2026-10-24",
+    "dwellHours": 45,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-008-PC1",
+    "vesselId": "KR-SYN-008",
+    "port": "부산",
+    "eta": "2026-10-12",
+    "dwellHours": 29,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-008-PC2",
+    "vesselId": "KR-SYN-008",
+    "port": "두바이",
+    "eta": "2026-10-15",
+    "dwellHours": 32,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-008-PC3",
+    "vesselId": "KR-SYN-008",
+    "port": "요코하마",
+    "eta": "2026-10-24",
+    "dwellHours": 62,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-009-PC1",
+    "vesselId": "KR-SYN-009",
+    "port": "두바이",
+    "eta": "2026-10-12",
+    "dwellHours": 6,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-009-PC2",
+    "vesselId": "KR-SYN-009",
+    "port": "부산",
+    "eta": "2026-10-18",
+    "dwellHours": 13,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-009-PC3",
+    "vesselId": "KR-SYN-009",
+    "port": "휴스턴",
+    "eta": "2026-10-27",
+    "dwellHours": 14,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-010-PC1",
+    "vesselId": "KR-SYN-010",
+    "port": "휴스턴",
+    "eta": "2026-10-10",
+    "dwellHours": 34,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-010-PC2",
+    "vesselId": "KR-SYN-010",
+    "port": "두바이",
+    "eta": "2026-10-15",
+    "dwellHours": 66,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-010-PC3",
+    "vesselId": "KR-SYN-010",
+    "port": "부산",
+    "eta": "2026-10-23",
+    "dwellHours": 39,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-011-PC1",
+    "vesselId": "KR-SYN-011",
+    "port": "앤트워프",
+    "eta": "2026-10-08",
+    "dwellHours": 68,
+    "inspectorAvailable": false
+  },
+  {
+    "portCallId": "KR-SYN-011-PC2",
+    "vesselId": "KR-SYN-011",
+    "port": "휴스턴",
+    "eta": "2026-10-15",
+    "dwellHours": 36,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-011-PC3",
+    "vesselId": "KR-SYN-011",
+    "port": "싱가포르",
+    "eta": "2026-10-27",
+    "dwellHours": 26,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-012-PC1",
+    "vesselId": "KR-SYN-012",
+    "port": "로테르담",
+    "eta": "2026-10-10",
+    "dwellHours": 43,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-012-PC2",
+    "vesselId": "KR-SYN-012",
+    "port": "요코하마",
+    "eta": "2026-10-15",
+    "dwellHours": 18,
+    "inspectorAvailable": true
+  },
+  {
+    "portCallId": "KR-SYN-012-PC3",
+    "vesselId": "KR-SYN-012",
+    "port": "로테르담",
+    "eta": "2026-10-25",
+    "dwellHours": 72,
+    "inspectorAvailable": true
+  }
+]

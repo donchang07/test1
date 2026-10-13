@@ -1,0 +1,1346 @@
+[
+  {
+    "memberId": "KR-SYN-001-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.153,
+    "fatigueRatePerYear": 0.051,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.092,
+    "fatigueRatePerYear": 0.036,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.323,
+    "fatigueRatePerYear": 0.047,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.08,
+    "fatigueRatePerYear": 0.054,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.219,
+    "fatigueRatePerYear": 0.011,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.291,
+    "fatigueRatePerYear": 0.044,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.263,
+    "fatigueRatePerYear": 0.021,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.382,
+    "fatigueRatePerYear": 0.047,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.356,
+    "fatigueRatePerYear": 0.056,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.062,
+    "fatigueRatePerYear": 0.053,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.354,
+    "fatigueRatePerYear": 0.015,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.384,
+    "fatigueRatePerYear": 0.058,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.268,
+    "fatigueRatePerYear": 0.031,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.123,
+    "fatigueRatePerYear": 0.028,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.28,
+    "fatigueRatePerYear": 0.013,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-001-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.06,
+    "fatigueRatePerYear": 0.018,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.432,
+    "fatigueRatePerYear": 0.035,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.383,
+    "fatigueRatePerYear": 0.021,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.192,
+    "fatigueRatePerYear": 0.031,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.364,
+    "fatigueRatePerYear": 0.016,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.253,
+    "fatigueRatePerYear": 0.052,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.283,
+    "fatigueRatePerYear": 0.017,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.258,
+    "fatigueRatePerYear": 0.033,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.257,
+    "fatigueRatePerYear": 0.047,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.082,
+    "fatigueRatePerYear": 0.043,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.266,
+    "fatigueRatePerYear": 0.029,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.231,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.178,
+    "fatigueRatePerYear": 0.027,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.278,
+    "fatigueRatePerYear": 0.052,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.1,
+    "fatigueRatePerYear": 0.037,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.178,
+    "fatigueRatePerYear": 0.054,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-002-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.415,
+    "fatigueRatePerYear": 0.014,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.095,
+    "fatigueRatePerYear": 0.048,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.242,
+    "fatigueRatePerYear": 0.027,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.116,
+    "fatigueRatePerYear": 0.043,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.304,
+    "fatigueRatePerYear": 0.039,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.172,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.231,
+    "fatigueRatePerYear": 0.011,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.104,
+    "fatigueRatePerYear": 0.033,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.057,
+    "fatigueRatePerYear": 0.037,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.182,
+    "fatigueRatePerYear": 0.05,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.275,
+    "fatigueRatePerYear": 0.018,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.181,
+    "fatigueRatePerYear": 0.021,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.372,
+    "fatigueRatePerYear": 0.02,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.415,
+    "fatigueRatePerYear": 0.019,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.191,
+    "fatigueRatePerYear": 0.058,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.244,
+    "fatigueRatePerYear": 0.027,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-003-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.132,
+    "fatigueRatePerYear": 0.014,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.146,
+    "fatigueRatePerYear": 0.035,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.387,
+    "fatigueRatePerYear": 0.021,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.343,
+    "fatigueRatePerYear": 0.057,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.218,
+    "fatigueRatePerYear": 0.046,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.331,
+    "fatigueRatePerYear": 0.053,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.086,
+    "fatigueRatePerYear": 0.058,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.127,
+    "fatigueRatePerYear": 0.03,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.371,
+    "fatigueRatePerYear": 0.059,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.353,
+    "fatigueRatePerYear": 0.042,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.183,
+    "fatigueRatePerYear": 0.013,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.243,
+    "fatigueRatePerYear": 0.016,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.277,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.195,
+    "fatigueRatePerYear": 0.025,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.067,
+    "fatigueRatePerYear": 0.048,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.331,
+    "fatigueRatePerYear": 0.039,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-004-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.144,
+    "fatigueRatePerYear": 0.036,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.114,
+    "fatigueRatePerYear": 0.032,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.28,
+    "fatigueRatePerYear": 0.06,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.17,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.303,
+    "fatigueRatePerYear": 0.026,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.436,
+    "fatigueRatePerYear": 0.032,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.323,
+    "fatigueRatePerYear": 0.023,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.055,
+    "fatigueRatePerYear": 0.022,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.406,
+    "fatigueRatePerYear": 0.027,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.367,
+    "fatigueRatePerYear": 0.046,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.075,
+    "fatigueRatePerYear": 0.016,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.183,
+    "fatigueRatePerYear": 0.027,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.381,
+    "fatigueRatePerYear": 0.053,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.143,
+    "fatigueRatePerYear": 0.052,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.348,
+    "fatigueRatePerYear": 0.044,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.123,
+    "fatigueRatePerYear": 0.049,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-005-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.144,
+    "fatigueRatePerYear": 0.033,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.248,
+    "fatigueRatePerYear": 0.033,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.129,
+    "fatigueRatePerYear": 0.046,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.113,
+    "fatigueRatePerYear": 0.054,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.402,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.249,
+    "fatigueRatePerYear": 0.04,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.371,
+    "fatigueRatePerYear": 0.049,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.304,
+    "fatigueRatePerYear": 0.051,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.393,
+    "fatigueRatePerYear": 0.046,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.12,
+    "fatigueRatePerYear": 0.032,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.052,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.323,
+    "fatigueRatePerYear": 0.057,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.236,
+    "fatigueRatePerYear": 0.038,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.327,
+    "fatigueRatePerYear": 0.014,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.152,
+    "fatigueRatePerYear": 0.057,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.25,
+    "fatigueRatePerYear": 0.023,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-006-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.087,
+    "fatigueRatePerYear": 0.043,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.094,
+    "fatigueRatePerYear": 0.044,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.431,
+    "fatigueRatePerYear": 0.038,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.213,
+    "fatigueRatePerYear": 0.028,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.314,
+    "fatigueRatePerYear": 0.047,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.188,
+    "fatigueRatePerYear": 0.038,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.438,
+    "fatigueRatePerYear": 0.011,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.398,
+    "fatigueRatePerYear": 0.016,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.361,
+    "fatigueRatePerYear": 0.025,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.44,
+    "fatigueRatePerYear": 0.056,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.259,
+    "fatigueRatePerYear": 0.016,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.155,
+    "fatigueRatePerYear": 0.042,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.426,
+    "fatigueRatePerYear": 0.053,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.246,
+    "fatigueRatePerYear": 0.052,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.292,
+    "fatigueRatePerYear": 0.032,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.154,
+    "fatigueRatePerYear": 0.022,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-007-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.318,
+    "fatigueRatePerYear": 0.04,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.236,
+    "fatigueRatePerYear": 0.036,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.35,
+    "fatigueRatePerYear": 0.015,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.11,
+    "fatigueRatePerYear": 0.047,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.169,
+    "fatigueRatePerYear": 0.023,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.064,
+    "fatigueRatePerYear": 0.045,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.233,
+    "fatigueRatePerYear": 0.017,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.082,
+    "fatigueRatePerYear": 0.034,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.17,
+    "fatigueRatePerYear": 0.044,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.099,
+    "fatigueRatePerYear": 0.054,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.141,
+    "fatigueRatePerYear": 0.036,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.226,
+    "fatigueRatePerYear": 0.033,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.232,
+    "fatigueRatePerYear": 0.054,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.323,
+    "fatigueRatePerYear": 0.055,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.13,
+    "fatigueRatePerYear": 0.053,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.085,
+    "fatigueRatePerYear": 0.034,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-008-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.116,
+    "fatigueRatePerYear": 0.054,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.392,
+    "fatigueRatePerYear": 0.034,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.261,
+    "fatigueRatePerYear": 0.028,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.42,
+    "fatigueRatePerYear": 0.038,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.424,
+    "fatigueRatePerYear": 0.015,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.366,
+    "fatigueRatePerYear": 0.016,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.356,
+    "fatigueRatePerYear": 0.025,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.133,
+    "fatigueRatePerYear": 0.02,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.216,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.232,
+    "fatigueRatePerYear": 0.034,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.099,
+    "fatigueRatePerYear": 0.059,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.385,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.249,
+    "fatigueRatePerYear": 0.03,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.403,
+    "fatigueRatePerYear": 0.05,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.192,
+    "fatigueRatePerYear": 0.049,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.144,
+    "fatigueRatePerYear": 0.053,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-009-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.081,
+    "fatigueRatePerYear": 0.047,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.211,
+    "fatigueRatePerYear": 0.036,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.411,
+    "fatigueRatePerYear": 0.035,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.195,
+    "fatigueRatePerYear": 0.052,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.1,
+    "fatigueRatePerYear": 0.023,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.1,
+    "fatigueRatePerYear": 0.055,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.309,
+    "fatigueRatePerYear": 0.045,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.23,
+    "fatigueRatePerYear": 0.045,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.123,
+    "fatigueRatePerYear": 0.055,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.184,
+    "fatigueRatePerYear": 0.017,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.332,
+    "fatigueRatePerYear": 0.012,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.356,
+    "fatigueRatePerYear": 0.031,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.129,
+    "fatigueRatePerYear": 0.045,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.185,
+    "fatigueRatePerYear": 0.051,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.37,
+    "fatigueRatePerYear": 0.042,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.285,
+    "fatigueRatePerYear": 0.047,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-010-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.07,
+    "fatigueRatePerYear": 0.035,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.376,
+    "fatigueRatePerYear": 0.044,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.413,
+    "fatigueRatePerYear": 0.011,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.438,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.07,
+    "fatigueRatePerYear": 0.014,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.309,
+    "fatigueRatePerYear": 0.014,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.212,
+    "fatigueRatePerYear": 0.046,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.389,
+    "fatigueRatePerYear": 0.054,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.214,
+    "fatigueRatePerYear": 0.059,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.323,
+    "fatigueRatePerYear": 0.031,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.195,
+    "fatigueRatePerYear": 0.029,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.366,
+    "fatigueRatePerYear": 0.039,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.384,
+    "fatigueRatePerYear": 0.051,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.216,
+    "fatigueRatePerYear": 0.012,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.122,
+    "fatigueRatePerYear": 0.06,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.274,
+    "fatigueRatePerYear": 0.023,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-011-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.351,
+    "fatigueRatePerYear": 0.025,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M01",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.148,
+    "fatigueRatePerYear": 0.036,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M02",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.267,
+    "fatigueRatePerYear": 0.053,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M03",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.081,
+    "fatigueRatePerYear": 0.011,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M04",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.382,
+    "fatigueRatePerYear": 0.048,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M05",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.077,
+    "fatigueRatePerYear": 0.04,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M06",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.409,
+    "fatigueRatePerYear": 0.046,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M07",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.13,
+    "fatigueRatePerYear": 0.048,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M08",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.433,
+    "fatigueRatePerYear": 0.01,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M09",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.207,
+    "fatigueRatePerYear": 0.015,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M10",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.143,
+    "fatigueRatePerYear": 0.02,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M11",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.309,
+    "fatigueRatePerYear": 0.038,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M12",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.393,
+    "fatigueRatePerYear": 0.026,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M13",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.106,
+    "fatigueRatePerYear": 0.014,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M14",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.136,
+    "fatigueRatePerYear": 0.036,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M15",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.228,
+    "fatigueRatePerYear": 0.017,
+    "source": "합성 선체 응력 센서 요약"
+  },
+  {
+    "memberId": "KR-SYN-012-M16",
+    "asOfDate": "2026-10-01",
+    "fatigueUsage": 0.279,
+    "fatigueRatePerYear": 0.041,
+    "source": "합성 선체 응력 센서 요약"
+  }
+]

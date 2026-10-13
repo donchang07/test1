@@ -1,0 +1,39 @@
+{
+  "generator": "scripts/generate-synthetic-data.mjs",
+  "seed": 20261001,
+  "asOfDate": "2026-10-01",
+  "notice": "모든 데이터는 합성 데이터이며 실제 선박·선급 기록이 아니다.",
+  "scenarios": {
+    "crackVessel": {
+      "vesselId": "KR-SYN-003",
+      "memberId": "KR-SYN-003-M06"
+    },
+    "infeasibleVessel": {
+      "vesselId": "KR-SYN-005"
+    },
+    "noImageVessel": {
+      "vesselId": "KR-SYN-007"
+    },
+    "noPortVessel": {
+      "vesselId": "KR-SYN-009"
+    },
+    "aiFailedVessel": {
+      "vesselId": "KR-SYN-010"
+    },
+    "sparseVessel": {
+      "vesselId": "KR-SYN-012",
+      "memberId": "KR-SYN-012-M01"
+    },
+    "reviewedVessel": {
+      "vesselId": "KR-SYN-002"
+    }
+  },
+  "counts": {
+    "vessels": 12,
+    "members": 192,
+    "measurements": 574,
+    "images": 69,
+    "findings": 104,
+    "portCalls": 36
+  }
+}

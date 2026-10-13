@@ -1,0 +1,122 @@
+[
+  {
+    "vesselId": "KR-SYN-001",
+    "name": "SYN 오로라",
+    "shipType": "벌크선",
+    "builtYear": 2010,
+    "grossTonnage": 49000,
+    "classNotation": "KRS1 합성-벌크선",
+    "nextSpecialSurveyDue": "2027-01-23",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-002",
+    "name": "SYN 보레아스",
+    "shipType": "유조선",
+    "builtYear": 2008,
+    "grossTonnage": 54000,
+    "classNotation": "KRS1 합성-유조선",
+    "nextSpecialSurveyDue": "2028-03-26",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-003",
+    "name": "SYN 칼립소",
+    "shipType": "컨테이너선",
+    "builtYear": 2011,
+    "grossTonnage": 85000,
+    "classNotation": "KRS1 합성-컨테이너선",
+    "nextSpecialSurveyDue": "2026-12-22",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-004",
+    "name": "SYN 델피니",
+    "shipType": "벌크선",
+    "builtYear": 2008,
+    "grossTonnage": 35000,
+    "classNotation": "KRS1 합성-벌크선",
+    "nextSpecialSurveyDue": "2028-12-08",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-005",
+    "name": "SYN 에코",
+    "shipType": "유조선",
+    "builtYear": 2009,
+    "grossTonnage": 113000,
+    "classNotation": "KRS1 합성-유조선",
+    "nextSpecialSurveyDue": "2027-02-03",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-006",
+    "name": "SYN 포르투나",
+    "shipType": "컨테이너선",
+    "builtYear": 2014,
+    "grossTonnage": 134000,
+    "classNotation": "KRS1 합성-컨테이너선",
+    "nextSpecialSurveyDue": "2028-03-01",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-007",
+    "name": "SYN 갈라테아",
+    "shipType": "벌크선",
+    "builtYear": 2015,
+    "grossTonnage": 101000,
+    "classNotation": "KRS1 합성-벌크선",
+    "nextSpecialSurveyDue": "2028-09-05",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-008",
+    "name": "SYN 헬리오스",
+    "shipType": "유조선",
+    "builtYear": 2011,
+    "grossTonnage": 152000,
+    "classNotation": "KRS1 합성-유조선",
+    "nextSpecialSurveyDue": "2027-02-19",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-009",
+    "name": "SYN 이리스",
+    "shipType": "컨테이너선",
+    "builtYear": 2011,
+    "grossTonnage": 78000,
+    "classNotation": "KRS1 합성-컨테이너선",
+    "nextSpecialSurveyDue": "2027-06-22",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-010",
+    "name": "SYN 주노",
+    "shipType": "벌크선",
+    "builtYear": 2014,
+    "grossTonnage": 37000,
+    "classNotation": "KRS1 합성-벌크선",
+    "nextSpecialSurveyDue": "2027-09-16",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-011",
+    "name": "SYN 케이론",
+    "shipType": "유조선",
+    "builtYear": 2016,
+    "grossTonnage": 56000,
+    "classNotation": "KRS1 합성-유조선",
+    "nextSpecialSurveyDue": "2029-02-16",
+    "dataLabel": "합성"
+  },
+  {
+    "vesselId": "KR-SYN-012",
+    "name": "SYN 루미나",
+    "shipType": "컨테이너선",
+    "builtYear": 2010,
+    "grossTonnage": 147000,
+    "classNotation": "KRS1 합성-컨테이너선",
+    "nextSpecialSurveyDue": "2027-03-27",
+    "dataLabel": "합성"
+  }
+]
