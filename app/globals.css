@@ -135,3 +135,11 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 .placeholder { color: var(--ink-muted-80); }
 /* SCR-001 모바일: 카드 폭 100%(좌우 16px) */
 @media (max-width: 639px) { .login-main { padding-left: 16px; padding-right: 16px; } }
+
+/* SCR-008 모델 설정: 단일 열 폼(REF-04) */
+.settings-wrap { max-width: 640px; margin: 24px 0; }
+.settings-form { display: grid; gap: 16px; }
+.settings-form .actions { display: flex; gap: 12px; justify-content: flex-end; flex-wrap: wrap; }
+.settings-form .inline-alert { margin: 0; }
+.settings-form .inline-alert p { margin: 0; }
+.section-title { font-size: 21px; font-weight: 600; margin: 40px 0 12px; text-align: left; caption-side: top; }
