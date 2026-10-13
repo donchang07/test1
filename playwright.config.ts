@@ -1,7 +1,9 @@
 import { defineConfig, devices } from '@playwright/test';
 
-// PRD NFR-04·05: Chromium, 프로덕션 빌드, APP_TEST_MODE=1, 파일 저장소를 공유하므로 workers=1.
+// PRD NFR-04·05: Chromium, 프로덕션 빌드, APP_TEST_MODE=1, 테스트용 Supabase DB를 공유하므로 workers=1.
 const baseURL = process.env.E2E_BASE_URL || 'http://localhost:3000';
+// Vercel Preview처럼 보호된 배포를 대상으로 할 때만 우회 헤더를 붙인다(PRD 11.3).
+const bypass = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 
 export default defineConfig({
   testDir: 'tests/e2e',
@@ -13,6 +15,9 @@ export default defineConfig({
     baseURL,
     trace: 'retain-on-failure',
     testIdAttribute: 'data-testid',
+    extraHTTPHeaders: bypass
+      ? { 'x-vercel-protection-bypass': bypass, 'x-vercel-set-bypass-cookie': 'true' }
+      : undefined,
   },
   projects: [
     {

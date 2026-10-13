@@ -2,9 +2,9 @@
 
 | 항목 | 값 |
 |---|---|
-| 대상 | `docs/PRD.md` v1.0 (screen-first-v2) |
+| 대상 | `docs/PRD.md` v1.1 (screen-first-v2) |
 | 검사일 | 2026-10-13 |
-| 판정 | **조건부 착수** — Blocker 0, Major 2, Minor 4, 보조 점수 86/100 |
+| 판정 | **조건부 착수** — Blocker 0, Major 2, Minor 5, 보조 점수 86/100 |
 | 기계 검사 | `npm run prd:check` 통과(오류 0) · `npm run test:unit` 13/13 통과 · `npm run test:e2e:list` 34건 수집 |
 
 ## Hard Gate
@@ -18,7 +18,7 @@
 | 시스템 가정 10칸 | 통과 — 빈 칸 없음 |
 | 비목표 표(NG) | 통과 — 8건, 이유·재검토 시점 포함 |
 | AI 판정 계약 | 통과 — 11.4.5, AI값·사람값 필드 분리, 되돌리기 FR-016 |
-| 되돌릴 수 없는 미결 결정 | 없음 — D-1~D-4 모두 fallback 있음 |
+| 되돌릴 수 없는 미결 결정 | 없음 — D-2·D-3 확정(v1.1), D-1·D-4·D-5는 fallback 있음 |
 
 ## 결함
 
@@ -29,6 +29,7 @@
 | Minor | m-1 | 해상 배수(0.8/1.0/1.3)는 설정 화면에서 바꿀 수 없음 | 의도된 범위. 필요 시 SCR-008에 요소 추가 |
 | Minor | m-2 | 저장 실패 E2E를 오프라인 전환으로 유도 → 저장 동작을 클라이언트 fetch로 구현해야 함(NFR-07) | Design 단계에서 확정 |
 | Minor | m-3 | 모델 수치 전부 `[가설]` 시연값 | D-1 결정 시 KR 규칙값으로 대체 |
+| Minor | m-5 | v1.1: Supabase 세션 8시간 제한은 앱 미들웨어 판정(Supabase 자체 세션 시간 제한 기능 사용 여부는 Design에서 확인) | Design 단계에서 확정 |
 | Minor | m-4 | `PRD.html`은 Pretendard를 CDN에서 읽음(읽기용 사본 한정) | 오프라인 열람 시 시스템 폰트로 대체됨 |
 
 ## 보조 점수
