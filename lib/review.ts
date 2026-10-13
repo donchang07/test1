@@ -11,7 +11,7 @@ export const LABELS: Label[] = ['corrosion', 'crack', 'coating_breakdown', 'none
 export type FindingCard = {
   findingId: string; imageId: string; imagePath: string; memberId: string; memberName: string;
   aiStatus: 'completed' | 'failed'; aiLabel: Label | null; aiSeverity: number | null; aiConfidence: number | null;
-  humanDecision: Decision; humanLabel: Label | null; humanSeverity: number | null; version: number;
+  humanDecision: Decision; humanLabel: Label | null; humanSeverity: number | null; humanNote: string | null; version: number;
 };
 
 type Row = Record<string, unknown>;
@@ -28,6 +28,7 @@ const toCard = (r: Row): FindingCard => ({
   humanDecision: r.human_decision as Decision,
   humanLabel: (r.human_label as Label | null) ?? null,
   humanSeverity: (r.human_severity as number | null) ?? null,
+  humanNote: (r.human_note as string | null) ?? null,
   version: r.version as number,
 });
 
@@ -44,7 +45,7 @@ export function imageCount(vesselId: string): number {
 
 export type DecideInput =
   | { action: 'confirm' | 'reject' | 'revert'; version: number }
-  | { action: 'revise'; version: number; label: Label; severity: number | null };
+  | { action: 'revise'; version: number; label: Label; severity: number | null; note?: string | null };
 
 export type DecideResult =
   | { ok: true; card: FindingCard }
@@ -59,7 +60,7 @@ export function decide(findingId: string, input: DecideInput, actor: string): De
     const card = toCard(row);
     if (card.version !== input.version) return { ok: false, status: 409, error: 'conflict' };
 
-    let next: { decision: Decision; label: Label | null; severity: number | null };
+    let next: { decision: Decision; label: Label | null; severity: number | null; note?: string | null };
     if (input.action === 'revert') {
       if (card.humanDecision === 'pending') return { ok: false, status: 409, error: 'invalid_transition' };
       next = { decision: 'pending', label: null, severity: null };
@@ -73,26 +74,31 @@ export function decide(findingId: string, input: DecideInput, actor: string): De
         if (card.aiStatus !== 'completed') return { ok: false, status: 400, error: 'ai_failed' };
         next = { decision: 'rejected', label: null, severity: null };
       } else {
-        const { label, severity } = input as Extract<DecideInput, { action: 'revise' }>;
+        const { label, severity, note: rawNote } = input as Extract<DecideInput, { action: 'revise' }>;
         if (!LABELS.includes(label)) return { ok: false, status: 400, error: 'invalid_label' };
+        // SCR-004-EL-21: 선택, 0~200자, 공백만 있으면 null
+        const note = typeof rawNote === 'string' && rawNote.trim() ? rawNote.trim() : null;
+        if (note && note.length > 200) return { ok: false, status: 400, error: 'invalid_note' };
         if (label === 'none') {
-          next = { decision: 'rejected', label: 'none', severity: null };
+          next = { decision: 'rejected', label: 'none', severity: null, note };
         } else {
           if (![1, 2, 3].includes(Number(severity))) return { ok: false, status: 400, error: 'invalid_severity' };
-          next = { decision: 'confirmed', label, severity: Number(severity) };
+          next = { decision: 'confirmed', label, severity: Number(severity), note };
         }
       }
     }
 
     const now = new Date().toISOString();
     const reviewed = next.decision === 'pending' ? { by: null, at: null } : { by: actor, at: now };
-    conn.prepare(`UPDATE findings SET human_decision = ?, human_label = ?, human_severity = ?, reviewed_by = ?, reviewed_at = ?,
+    // 확정·기각은 메모를 비우고, 수정은 입력한 메모를, 검토 취소는 메모를 비운다
+    const note = next.note ?? null;
+    conn.prepare(`UPDATE findings SET human_decision = ?, human_label = ?, human_severity = ?, human_note = ?, reviewed_by = ?, reviewed_at = ?,
       version = version + 1 WHERE finding_id = ?`)
-      .run(next.decision, next.label, next.severity, reviewed.by, reviewed.at, findingId);
+      .run(next.decision, next.label, next.severity, note, reviewed.by, reviewed.at, findingId);
     conn.prepare('INSERT INTO audit_log (audit_id, actor, action, target, before, after, at) VALUES (?, ?, ?, ?, ?, ?, ?)').run(
       randomBytes(8).toString('hex'), actor, input.action === 'revert' ? 'finding.revert' : 'finding.decide', findingId,
-      JSON.stringify({ humanDecision: card.humanDecision, humanLabel: card.humanLabel, humanSeverity: card.humanSeverity }),
-      JSON.stringify({ humanDecision: next.decision, humanLabel: next.label, humanSeverity: next.severity }), now,
+      JSON.stringify({ humanDecision: card.humanDecision, humanLabel: card.humanLabel, humanSeverity: card.humanSeverity, humanNote: card.humanNote }),
+      JSON.stringify({ humanDecision: next.decision, humanLabel: next.label, humanSeverity: next.severity, humanNote: note }), now,
     );
     return { ok: true, card: toCard(conn.prepare(`${SELECT} WHERE f.finding_id = ?`).get(findingId) as Row) };
   })();

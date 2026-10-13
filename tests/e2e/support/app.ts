@@ -72,13 +72,14 @@ export async function optimize(page: Page, vesselId: string, budget?: number) {
 }
 
 /** 판독 화면에서 사람 판정을 수정 저장한다. */
-export async function reviseFinding(page: Page, vesselId: string, findingId: string, label: string, severity?: number) {
+export async function reviseFinding(page: Page, vesselId: string, findingId: string, label: string, severity?: number, note?: string) {
   await page.goto(`/vessels/${vesselId}/review`);
   await selectAllFindings(page);
   await tid(page, 'SCR-004-EL-05', findingId).click();
   await expect(tid(page, 'SCR-004-EL-07')).toBeVisible();
   await tid(page, 'SCR-004-EL-08', label).click();
   if (severity !== undefined) await tid(page, 'SCR-004-EL-09', String(severity)).click();
+  if (note !== undefined) await tid(page, 'SCR-004-EL-21').fill(note);
   await tid(page, 'SCR-004-EL-10').click();
   await expect(tid(page, 'SCR-004-EL-03', findingId, 'status')).toHaveText(label === 'none' ? '기각' : '확정');
 }

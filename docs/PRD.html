@@ -52,7 +52,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </thead>
 <tbody><tr>
 <td>정본 개정</td>
-<td>v1.6</td>
+<td>v1.7</td>
 </tr>
 <tr>
 <td>PRD 스키마</td>
@@ -554,7 +554,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <td>① 판독</td>
 <td>검사원·관리자</td>
 <td><a href="#SCR-004">SCR-004</a></td>
-<td>링크 + 미검토 수 배지</td>
+<td>링크 + 미검토 수 <code>status-badge</code>(미검토 0이면 배지 없음)</td>
 <td>가로 스크롤 칩</td>
 <td>현재 Route</td>
 </tr>
@@ -1311,7 +1311,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <td id="SCR-004-EL-03" class="id">SCR-004-EL-03</td>
 <td>카드</td>
 <td><code>store-utility-card</code></td>
-<td>testid <code><a href="#SCR-004-EL-03">SCR-004-EL-03</a>-{findingId}</code>, findingId 오름차순. 결정 후에도 화면을 다시 불러오거나 칩을 바꾸기 전까지 카드 위치 유지. 이미지(alt <code>{imageId} 합성 검사 이미지</code>), <code>{부재명}</code>, <code>AI: {라벨} · 심각도 {n} · 신뢰도 {p}%</code>(하위 testid <code>-ai</code>), 사람 결정 시 <code>판정: {라벨} · 심각도 {n}</code>(하위 <code>-human</code>), 상태 <code>status-badge</code>(하위 <code>-status</code>: <code>미검토</code>/<code>확정</code>/<code>기각</code>)</td>
+<td>testid <code><a href="#SCR-004-EL-03">SCR-004-EL-03</a>-{findingId}</code>, findingId 오름차순. 결정 후에도 화면을 다시 불러오거나 칩을 바꾸기 전까지 카드 위치 유지. 이미지(alt <code>{imageId} 합성 검사 이미지</code>), <code>{부재명}</code>, <code>AI: {라벨} · 심각도 {n} · 신뢰도 {p}%</code>(하위 testid <code>-ai</code>), 사람 결정 시 <code>판정: {라벨} · 심각도 {n}</code>(하위 <code>-human</code>), 메모가 있으면 <code>메모: {humanNote}</code>(하위 <code>-note</code>), 상태 <code>status-badge</code>(하위 <code>-status</code>: <code>미검토</code>/<code>확정</code>/<code>기각</code>)</td>
 <td>전체</td>
 <td>필터 일치</td>
 <td><a href="#DATA-004">DATA-004</a>, 005, <a href="#DATA-003">DATA-003</a>.name</td>
@@ -1504,6 +1504,17 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <td>정적</td>
 <td>—</td>
 <td>—</td>
+</tr>
+<tr>
+<td id="SCR-004-EL-21" class="id">SCR-004-EL-21</td>
+<td>입력</td>
+<td><code>text-input</code>(textarea)</td>
+<td>라벨 <code>메모(선택)</code>, 기본값 = 기존 humanNote(없으면 빈 칸)</td>
+<td>전체</td>
+<td>시트 열림</td>
+<td><a href="#DATA-005">DATA-005</a>.humanNote</td>
+<td>선택, 0&#126;200자(초과 입력 불가). 앞뒤 공백 제거 후 빈 값이면 null</td>
+<td>EL-10 저장 시 함께 저장</td>
 </tr>
 </tbody></table>
 <table>
@@ -2772,10 +2783,10 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <td><code>수정</code>은 사람이 고른 라벨·심각도·메모로 <code>confirmed</code> 저장(라벨 <code>결함 아님</code>이면 <code>rejected</code>)하고 AI 원래 값은 보존한다</td>
 <td>P0 (High)</td>
 <td>US-01</td>
-<td><a href="#SCR-004-EL-05">SCR-004-EL-05</a>, 07&#126;11</td>
+<td><a href="#SCR-004-EL-05">SCR-004-EL-05</a>, 07&#126;11, 21</td>
 <td><a href="#DATA-005">DATA-005</a></td>
 <td><a href="#SC-014">SC-014</a>, <a href="#SC-017">SC-017</a></td>
-<td>[E2E] 균열·3으로 수정 → <code>-human</code>·<code>-ai</code> 둘 다 표시</td>
+<td>[E2E] 균열·3·메모로 수정 → <code>-human</code>·<code>-ai</code>·<code>-note</code> 표시</td>
 </tr>
 <tr>
 <td id="FR-015" class="id">FR-015</td>
@@ -3158,7 +3169,7 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 <tr>
 <td id="SC-014" class="id">SC-014</td>
-<td>KR-SYN-003 균열 판독 <code>수정</code> → <code>균열</code>·<code>3</code> 저장 → <code>-human</code> <code>판정: 균열 · 심각도 3</code>, <code>-ai</code> 유지. 보고서 초안에 부재명 포함</td>
+<td>KR-SYN-003 균열 판독 <code>수정</code> → <code>균열</code>·<code>3</code>·메모 <code>선체 균열 길이 재측정 필요</code> 저장 → <code>-human</code> <code>판정: 균열 · 심각도 3</code>, <code>-note</code>에 메모, <code>-ai</code> 유지. 보고서 초안에 부재명 포함</td>
 <td><a href="#FR-014">FR-014</a>, <a href="#FR-018">FR-018</a> · <a href="#SCR-004">SCR-004</a></td>
 <td>[E2E] 수정 저장·초안</td>
 <td>예</td>
@@ -4817,8 +4828,8 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 <td>아니오</td>
 <td>null</td>
 <td>0&#126;200자</td>
-<td><a href="#SCR-004-EL-03">SCR-004-EL-03</a></td>
-<td><a href="#SCR-004-EL-07">SCR-004-EL-07</a></td>
+<td><a href="#SCR-004-EL-03">SCR-004-EL-03</a> <code>-note</code></td>
+<td><a href="#SCR-004-EL-21">SCR-004-EL-21</a></td>
 <td>—</td>
 </tr>
 <tr>
@@ -5418,6 +5429,12 @@ hr{border:0;border-top:1px solid var(--hairline);margin:32px 0}
 </tr>
 </thead>
 <tbody><tr>
+<td>v1.7</td>
+<td>2026-10-13</td>
+<td><a href="#FR-014">FR-014</a> 메모 입력 요소 <a href="#SCR-004-EL-21">SCR-004-EL-21</a> 신설(EL-03 <code>-note</code> 표시, <a href="#SC-014">SC-014</a>·<a href="#DATA-005">DATA-005</a> 갱신), <a href="#NAV-12">NAV-12</a> 미검토 수를 <code>status-badge</code>로 명시</td>
+<td>to-prd</td>
+</tr>
+<tr>
 <td>v1.6</td>
 <td>2026-10-13</td>
 <td>auth-fleet Check 결과 반영: 5.5 공통 시스템 페이지(<code>NOT-FOUND-PAGE</code> 404 신설, <code>ERROR-PAGE</code> footer), 8장·<a href="#NFR-09">NFR-09</a>·14장 갱신, 9.1·9.2 보조 텍스트 색 예외(<code>ink-muted-48</code>은 비활성 전용, WCAG AA), 15장 완료 조건을 feature 누적 SC 기준으로 명확화(전체 E2E 통과는 마지막 feature 관문)</td>

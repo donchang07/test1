@@ -12,7 +12,7 @@ type Filter = Decision | 'all';
 export type Card = {
   findingId: string; imageId: string; imagePath: string; memberId: string; memberName: string;
   aiStatus: 'completed' | 'failed'; aiLabel: Label | null; aiSeverity: number | null; aiConfidence: number | null;
-  humanDecision: Decision; humanLabel: Label | null; humanSeverity: number | null; version: number;
+  humanDecision: Decision; humanLabel: Label | null; humanSeverity: number | null; humanNote: string | null; version: number;
 };
 
 const LABEL_TEXT: Record<Label, string> = { corrosion: '부식', crack: '균열', coating_breakdown: '도장 손상', none: '결함 아님' };
@@ -144,8 +144,8 @@ export default function ReviewBoard({ vesselId, vesselName, asOfDate, hasImages,
 
       {editing && (
         <ReviseSheet card={editing} busy={busy === editing.findingId} onClose={() => setEditing(null)}
-          onSave={async (label, severity) => {
-            const ok = await save(editing, { action: 'revise', label, severity });
+          onSave={async (label, severity, note) => {
+            const ok = await save(editing, { action: 'revise', label, severity, note });
             if (ok) setEditing(null);
           }} />
       )}
@@ -177,6 +177,7 @@ function FindingCardView({ card: c, busy, onConfirm, onReject, onRevert, onEdit 
       {c.humanDecision !== 'pending' && c.humanLabel && (
         <p data-testid={`${id}-human`}>판정: {LABEL_TEXT[c.humanLabel]}{c.humanSeverity ? ` · 심각도 ${c.humanSeverity}` : ''}</p>
       )}
+      {c.humanDecision !== 'pending' && c.humanNote && <p className="caption" data-testid={`${id}-note`}>메모: {c.humanNote}</p>}
       {!aiOk && pending && (
         <div className="inline-alert warning" role="status" data-testid={`SCR-004-EL-13-${c.findingId}`}>AI 판독에 실패했습니다. 수동으로 판정하세요.</div>
       )}
@@ -199,16 +200,16 @@ function FindingCardView({ card: c, busy, onConfirm, onReject, onRevert, onEdit 
 }
 
 function ReviseSheet({ card, busy, onClose, onSave }: {
-  card: Card; busy: boolean; onClose: () => void; onSave: (label: Label, severity: number | null) => void;
+  card: Card; busy: boolean; onClose: () => void; onSave: (label: Label, severity: number | null, note: string | null) => void;
 }) {
   const aiOk = card.aiStatus === 'completed';
   const [label, setLabel] = useState<Label | null>(aiOk ? card.aiLabel : null);
   const [severity, setSeverity] = useState<number | null>(aiOk ? card.aiSeverity : null);
+  const [note, setNote] = useState(card.humanNote ?? '');
   const needsSeverity = label !== null && label !== 'none';
   const valid = label !== null && (!needsSeverity || severity !== null);
   return (
     <ModalSheet testid="SCR-004-EL-07" title="판정 수정" onClose={onClose}>
-      <p className="caption">{card.memberName} · {card.imageId}</p>
       <div className="chip-group" role="group" aria-label="결함 라벨">
         {(Object.keys(LABEL_TEXT) as Label[]).map((l) => (
           <button key={l} type="button" className="configurator-option-chip" aria-pressed={label === l}
@@ -223,10 +224,15 @@ function ReviseSheet({ card, busy, onClose, onSave }: {
           ))}
         </div>
       )}
+      <div className="field">
+        <label htmlFor="finding-note">메모(선택)</label>
+        <textarea id="finding-note" className="text-area" rows={3} maxLength={200} data-testid="SCR-004-EL-21"
+          value={note} onChange={(e) => setNote(e.target.value)} />
+      </div>
       <div className="actions">
         <button type="button" className="button-secondary-pill" data-testid="SCR-004-EL-11" onClick={onClose}>취소</button>
         <button type="button" className="button-primary" data-testid="SCR-004-EL-10" disabled={!valid || busy}
-          onClick={() => valid && onSave(label!, needsSeverity ? severity : null)}>저장</button>
+          onClick={() => valid && onSave(label!, needsSeverity ? severity : null, note.trim() || null)}>저장</button>
       </div>
     </ModalSheet>
   );

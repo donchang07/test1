@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 개정 | v1.6 |
+| 정본 개정 | v1.7 |
 | PRD 스키마 | screen-first-v2 |
 | 작성일 | 2026-10-13 |
 | 작성 | to-prd(Claude Code) — 요청자: 장동인 교수 |
@@ -140,7 +140,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | NAV-05 | 전역 내비 우측 2 | 로그아웃 | 검사원·관리자 | SCR-001 | `button-dark-utility` | NAV-06 트레이 안 | — |
 | NAV-06 | 전역 내비 우측(모바일) | 메뉴 열기 | 검사원·관리자 | NAV-02~05 트레이 | 숨김 | `button-icon-circular` | 트레이 열림 시 `aria-expanded=true` |
 | NAV-11 | 선박 하위 내비 1 | 개요 | 검사원·관리자 | SCR-003 | `sub-nav-frosted` 링크 | 가로 스크롤 칩 | 현재 Route |
-| NAV-12 | 선박 하위 내비 2 | ① 판독 | 검사원·관리자 | SCR-004 | 링크 + 미검토 수 배지 | 가로 스크롤 칩 | 현재 Route |
+| NAV-12 | 선박 하위 내비 2 | ① 판독 | 검사원·관리자 | SCR-004 | 링크 + 미검토 수 `status-badge`(미검토 0이면 배지 없음) | 가로 스크롤 칩 | 현재 Route |
 | NAV-13 | 선박 하위 내비 3 | ② 예측 | 검사원·관리자 | SCR-005 | 링크 | 가로 스크롤 칩 | 현재 Route |
 | NAV-14 | 선박 하위 내비 4 | ③ 시뮬레이션 | 검사원·관리자 | SCR-006 | 링크 | 가로 스크롤 칩 | 현재 Route |
 | NAV-15 | 선박 하위 내비 5 | ④ 계획 | 검사원·관리자 | SCR-007 | 링크 | 가로 스크롤 칩 | 현재 Route |
@@ -316,7 +316,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 |---|---|---|---|---|---|---|---|---|
 | SCR-004-EL-01 | 요약 | 텍스트(body-strong) | `전체 {n}건 · 미검토 {a}건 · 확정 {b}건 · 기각 {c}건` | 전체 | 판독 1건 이상 | DATA-005 | — | — |
 | SCR-004-EL-02 | 칩 그룹 | `configurator-option-chip` | `미검토` `확정` `기각` `전체` (testid `SCR-004-EL-02-{pending\|confirmed\|rejected\|all}`) | 전체 | 기본 `미검토` | DATA-005.humanDecision | 단일 선택 | EL-03 필터 |
-| SCR-004-EL-03 | 카드 | `store-utility-card` | testid `SCR-004-EL-03-{findingId}`, findingId 오름차순. 결정 후에도 화면을 다시 불러오거나 칩을 바꾸기 전까지 카드 위치 유지. 이미지(alt `{imageId} 합성 검사 이미지`), `{부재명}`, `AI: {라벨} · 심각도 {n} · 신뢰도 {p}%`(하위 testid `-ai`), 사람 결정 시 `판정: {라벨} · 심각도 {n}`(하위 `-human`), 상태 `status-badge`(하위 `-status`: `미검토`/`확정`/`기각`) | 전체 | 필터 일치 | DATA-004, 005, DATA-003.name | — | — |
+| SCR-004-EL-03 | 카드 | `store-utility-card` | testid `SCR-004-EL-03-{findingId}`, findingId 오름차순. 결정 후에도 화면을 다시 불러오거나 칩을 바꾸기 전까지 카드 위치 유지. 이미지(alt `{imageId} 합성 검사 이미지`), `{부재명}`, `AI: {라벨} · 심각도 {n} · 신뢰도 {p}%`(하위 testid `-ai`), 사람 결정 시 `판정: {라벨} · 심각도 {n}`(하위 `-human`), 메모가 있으면 `메모: {humanNote}`(하위 `-note`), 상태 `status-badge`(하위 `-status`: `미검토`/`확정`/`기각`) | 전체 | 필터 일치 | DATA-004, 005, DATA-003.name | — | — |
 | SCR-004-EL-04 | 버튼 | `button-pearl-capsule` | `확정` (testid `SCR-004-EL-04-{findingId}`) | 전체 | pending 이고 aiStatus=completed | — | — | FR-013 |
 | SCR-004-EL-05 | 버튼 | `button-pearl-capsule` | `수정` (testid `SCR-004-EL-05-{findingId}`) | 전체 | pending | — | — | EL-07 열기 |
 | SCR-004-EL-06 | 버튼 | `button-pearl-capsule` | `기각` (testid `SCR-004-EL-06-{findingId}`) | 전체 | pending 이고 aiStatus=completed | — | — | FR-015 |
@@ -334,6 +334,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | SCR-004-EL-18 | 알림 | `inline-alert`(error) | `저장하지 못했습니다. 네트워크를 확인하고 다시 시도하세요.` | 전체 | 저장 실패 | 정적 | — | 카드 상태 변경 없음 |
 | SCR-004-EL-19 | 버튼 | `button-primary` | `열화 예측 보기` | 전체 | 항상 | — | — | → SCR-005 |
 | SCR-004-EL-20 | 빈 상태 | `inline-alert`(info) | `이 조건에 해당하는 판독이 없습니다.` | 전체 | 필터 결과 0건(이미지는 있음) | 정적 | — | — |
+| SCR-004-EL-21 | 입력 | `text-input`(textarea) | 라벨 `메모(선택)`, 기본값 = 기존 humanNote(없으면 빈 칸) | 전체 | 시트 열림 | DATA-005.humanNote | 선택, 0~200자(초과 입력 불가). 앞뒤 공백 제거 후 빈 값이면 null | EL-10 저장 시 함께 저장 |
 
 | 상태 | 정의 | 검증 SC |
 |---|---|---|
@@ -560,7 +561,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | FR-011 | 선박 개요는 제원과 4단계 상태 카드, 5.5 규칙의 다음 단계 버튼을 표시하고 없는 선박은 404 + EL-08이다 | P0 (High) | US-01 | SCR-003-EL-01~08 | DATA-002, 005, 009, 010 | SC-012 | [E2E] 카드 문구·CTA 이동·404 |
 | FR-012 | 판독 화면은 선박의 판독을 카드로 표시하고 상태 칩으로 필터하며 요약 수를 표시한다 | P0 (High) | US-01 | SCR-004-EL-01~03, EL-20 | DATA-004, 005 | SC-013, SC-016 | [E2E] 요약 수가 시드와 일치 |
 | FR-013 | `확정`은 AI 라벨·심각도를 사람 판정값으로 복사해 `confirmed`로 저장한다 | P0 (High) | US-01 | SCR-004-EL-04, EL-15 | DATA-005 | SC-013 | [E2E] 확정 후 상태·미검토 수 |
-| FR-014 | `수정`은 사람이 고른 라벨·심각도·메모로 `confirmed` 저장(라벨 `결함 아님`이면 `rejected`)하고 AI 원래 값은 보존한다 | P0 (High) | US-01 | SCR-004-EL-05, 07~11 | DATA-005 | SC-014, SC-017 | [E2E] 균열·3으로 수정 → `-human`·`-ai` 둘 다 표시 |
+| FR-014 | `수정`은 사람이 고른 라벨·심각도·메모로 `confirmed` 저장(라벨 `결함 아님`이면 `rejected`)하고 AI 원래 값은 보존한다 | P0 (High) | US-01 | SCR-004-EL-05, 07~11, 21 | DATA-005 | SC-014, SC-017 | [E2E] 균열·3·메모로 수정 → `-human`·`-ai`·`-note` 표시 |
 | FR-015 | `기각`은 `rejected`로 저장하고 예측에 반영하지 않는다 | P0 (High) | US-01 | SCR-004-EL-06 | DATA-005 | SC-015 | [E2E] 기각 → 상태 `기각` |
 | FR-016 | `검토 취소`는 사람 판정값을 비우고 `pending`으로 되돌린다 | P0 (High) | US-01 | SCR-004-EL-12 | DATA-005 | SC-015 | [E2E] 기각 → 검토 취소 → `미검토` |
 | FR-017 | AI 실패 판독은 EL-13을 표시하고 `확정`·`기각` 없이 `수정`으로만 판정한다 | P0 (High) | US-01 | SCR-004-EL-05, EL-13 | DATA-005.aiStatus | SC-017 | [E2E] KR-SYN-010 실패 카드 |
@@ -616,7 +617,7 @@ KR Smart RBI는 한국선급(KR) 검사원과 검사기획 관리자가 **① �
 | SC-011 | 관리자: 판독 1건 확정 → 초기화 확인 → EL-12, 해당 판독 `미검토`. 검사원 화면에는 EL-10 없음 | FR-006, FR-009 · SCR-002, 004 | [E2E] 초기화 왕복 | 예 |
 | SC-012 | KR-SYN-003 개요: EL-03 `미검토 {n}건`, EL-05 `미실행`, EL-07 `판독 시작하기` → SCR-004. `/vessels/KR-SYN-999` → EL-08 | FR-011 · SCR-003 | [E2E] 카드·CTA·404 | 예 |
 | SC-013 | 미검토 판독 `확정` → 카드 `-status` `확정`, EL-01 미검토 1 감소, EL-15 표시 | FR-012, FR-013 · SCR-004 | [E2E] KR-SYN-001 첫 미검토 카드 | 예 |
-| SC-014 | KR-SYN-003 균열 판독 `수정` → `균열`·`3` 저장 → `-human` `판정: 균열 · 심각도 3`, `-ai` 유지. 보고서 초안에 부재명 포함 | FR-014, FR-018 · SCR-004 | [E2E] 수정 저장·초안 | 예 |
+| SC-014 | KR-SYN-003 균열 판독 `수정` → `균열`·`3`·메모 `선체 균열 길이 재측정 필요` 저장 → `-human` `판정: 균열 · 심각도 3`, `-note`에 메모, `-ai` 유지. 보고서 초안에 부재명 포함 | FR-014, FR-018 · SCR-004 | [E2E] 수정 저장·초안 | 예 |
 | SC-015 | `기각` → `기각` → `검토 취소` → `미검토`. 필터 `기각` 0건이면 EL-20 | FR-015, FR-016 · SCR-004 | [E2E] 왕복 | 예 |
 | SC-016 | KR-SYN-007 판독 화면 → EL-14 | FR-012 · SCR-004 | [E2E] 빈 상태 | 예 |
 | SC-017 | KR-SYN-010 실패 판독: EL-13 표시, EL-04·06 없음, `수정`에서 라벨 미선택 시 저장 비활성 → `부식`·`2` 저장 → `확정` | FR-014, FR-017 · SCR-004 | [E2E] 실패 카드 수동 판정 | 예 |
@@ -987,7 +988,7 @@ SC 배치 원칙(v1.5): 각 SC는 판정에 필요한 화면이 모두 갖춰지
 | humanDecision | enum(pending, confirmed, rejected) | 예 | pending | — | SCR-002-EL-03·08, SCR-003, SCR-004, SCR-005-EL-01 | SCR-004-EL-04~06·10·12 | — |
 | humanLabel | enum \| null | 아니오 | null | confirmed면 필수 | SCR-004 `-human`, 11.4.2·3 | SCR-004-EL-04·08·10 | — |
 | humanSeverity | int \| null | 아니오 | null | confirmed이고 none 아님이면 1~3 | 같음 | SCR-004-EL-04·09·10 | — |
-| humanNote | string \| null | 아니오 | null | 0~200자 | SCR-004-EL-03 | SCR-004-EL-07 | — |
+| humanNote | string \| null | 아니오 | null | 0~200자 | SCR-004-EL-03 `-note` | SCR-004-EL-21 | — |
 | reviewedBy / reviewedAt | string / datetime | 아니오 | null | 결정 시 필수 | SCR-004-EL-03 | 서버 | — |
 | version | int | 예(런타임) | 0 | 낙관적 잠금 | 서버 | 서버 | — |
 
@@ -1083,6 +1084,7 @@ SC 배치 원칙(v1.5): 각 SC는 판정에 필요한 화면이 모두 갖춰지
 
 | 개정 | 일자 | 내용 | 작성 |
 |---|---|---|---|
+| v1.7 | 2026-10-13 | FR-014 메모 입력 요소 SCR-004-EL-21 신설(EL-03 `-note` 표시, SC-014·DATA-005 갱신), NAV-12 미검토 수를 `status-badge`로 명시 | to-prd |
 | v1.6 | 2026-10-13 | auth-fleet Check 결과 반영: 5.5 공통 시스템 페이지(`NOT-FOUND-PAGE` 404 신설, `ERROR-PAGE` footer), 8장·NFR-09·14장 갱신, 9.1·9.2 보조 텍스트 색 예외(`ink-muted-48`은 비활성 전용, WCAG AA), 15장 완료 조건을 feature 누적 SC 기준으로 명확화(전체 E2E 통과는 마지막 feature 관문) | to-prd |
 | v1.5 | 2026-10-13 | 14장 SC 배치 조정: 다른 feature 화면이 있어야 판정 가능한 SC-002·004·011·033·034를 판정 가능한 첫 feature로 이동, Check마다 누적 회귀 실행 | to-prd |
 | v1.4 | 2026-10-13 | 사용자 결정: Check 통과 기준 95%(15장), bkit v2.1.40 프로젝트 범위 설치 | to-prd |

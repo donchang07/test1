@@ -48,8 +48,10 @@ test('SC-013 AI 결과 확정', async ({ page }) => {
 test('SC-014 수정 후 확정과 보고서 초안', async ({ page }) => {
   const { vesselId, memberId } = scenarios.crackVessel;
   const crack = seed.findings.find((f: any) => f.memberId === memberId && f.aiLabel === 'crack');
-  await reviseFinding(page, vesselId, crack.findingId, 'crack', 3);
+  const note = '선체 균열 길이 재측정 필요';
+  await reviseFinding(page, vesselId, crack.findingId, 'crack', 3, note);
   await expect(tid(page, 'SCR-004-EL-03', crack.findingId, 'human')).toContainText('판정: 균열 · 심각도 3');
+  await expect(tid(page, 'SCR-004-EL-03', crack.findingId, 'note')).toHaveText(`메모: ${note}`);
   await expect(tid(page, 'SCR-004-EL-03', crack.findingId, 'ai')).toContainText('AI: 균열');
   await expect(tid(page, 'SCR-004-EL-03', crack.findingId, 'ai')).toContainText('91%');
 

@@ -19,7 +19,8 @@ export default function VesselSubNav({ vesselId, name, active, pending }: {
         <nav aria-label="선박 단계">
           {STEPS.map((s) => (
             <Link key={s.id} href={`/vessels/${vesselId}${s.path}`} data-testid={s.id} aria-current={active === s.path ? 'page' : undefined}>
-              {s.label}{s.id === 'NAV-12' && pending > 0 ? ` (${pending})` : ''}
+              {s.label}
+              {s.id === 'NAV-12' && pending > 0 && <span className="status-badge medium"><span className="sr-only">미검토 </span>{pending}<span className="sr-only">건</span></span>}
             </Link>
           ))}
         </nav>

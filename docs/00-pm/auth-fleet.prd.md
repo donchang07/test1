@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 정본 | `docs/PRD.md` v1.6 |
+| 정본 | `docs/PRD.md` v1.7 |
 | 성격 | 파생본 — 직접 편집 금지. 정본 수정 후 `node scripts/derive-feature-prds.mjs`로 재생성 |
 | 순서·의존 | 1 · 없음 |
 | 규모 | M |
@@ -539,7 +539,7 @@ Blocker 없음: D-1~D-4 모두 fallback으로 P0 설계가 바뀌지 않는다.
 | humanDecision | enum(pending, confirmed, rejected) | 예 | pending | — | SCR-002-EL-03·08, SCR-003, SCR-004, SCR-005-EL-01 | SCR-004-EL-04~06·10·12 | — |
 | humanLabel | enum \| null | 아니오 | null | confirmed면 필수 | SCR-004 `-human`, 11.4.2·3 | SCR-004-EL-04·08·10 | — |
 | humanSeverity | int \| null | 아니오 | null | confirmed이고 none 아님이면 1~3 | 같음 | SCR-004-EL-04·09·10 | — |
-| humanNote | string \| null | 아니오 | null | 0~200자 | SCR-004-EL-03 | SCR-004-EL-07 | — |
+| humanNote | string \| null | 아니오 | null | 0~200자 | SCR-004-EL-03 `-note` | SCR-004-EL-21 | — |
 | reviewedBy / reviewedAt | string / datetime | 아니오 | null | 결정 시 필수 | SCR-004-EL-03 | 서버 | — |
 | version | int | 예(런타임) | 0 | 낙관적 잠금 | 서버 | 서버 | — |
 

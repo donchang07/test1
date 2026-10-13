@@ -60,7 +60,7 @@ h1 { font-size: 40px; font-weight: 600; line-height: 1.1; margin: 0; }
 .sub-nav-frosted .inner { max-width: 1440px; margin: 0 auto; padding: 0 24px; height: 52px; display: flex; align-items: center; gap: 24px; overflow-x: auto; }
 .sub-nav-frosted .title { font-size: 21px; font-weight: 600; white-space: nowrap; }
 .sub-nav-frosted nav { display: flex; gap: 16px; font-size: 14px; white-space: nowrap; }
-.sub-nav-frosted nav a { color: var(--ink); text-decoration: none; padding: 4px 0; }
+.sub-nav-frosted nav a { color: var(--ink); text-decoration: none; padding: 4px 0; display: inline-flex; align-items: center; gap: 6px; }
 .sub-nav-frosted nav a[aria-current='page'] { color: var(--primary); font-weight: 600; }
 
 /* buttons */
@@ -165,9 +165,10 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 .report h2 { font-size: 21px; margin: 0 0 12px; }
 .report pre { white-space: pre-wrap; font-family: var(--font); font-size: 17px; margin: 0; }
 
-/* SCR-005 표 + 우측 상세 패널(834px 미만은 아래) */
+/* SCR-005 표 + 우측 상세 패널(834px 미만은 아래, 834~1100px은 패널 폭 축소) */
 .split { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 24px; align-items: start; margin-bottom: 24px; }
-@media (max-width: 1100px) { .split { grid-template-columns: 1fr; } }
+@media (max-width: 1100px) { .split { grid-template-columns: minmax(0, 1fr) 340px; } }
+@media (max-width: 833px) { .split { grid-template-columns: 1fr; } }
 .data-table tr[aria-current='true'] td { background: var(--parchment); }
 .detail h2 { font-size: 21px; margin: 0 0 12px; }
 
